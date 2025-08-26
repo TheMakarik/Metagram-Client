@@ -9,9 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{E0AA490B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metagram", "src\Metagram\Metagram.csproj", "{A716D4BC-D673-40EB-BD76-A0BADCBAB9EE}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dev", "dev", "{36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metagram.Analyzers", "Metagram.Analyzers\Metagram.Analyzers.csproj", "{BBBD4521-1ABB-4491-A2CC-2FBB03D339EE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metagram.Analyzers", "dev\Metagram.Analyzers\Metagram.Analyzers.csproj", "{BBBD4521-1ABB-4491-A2CC-2FBB03D339EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
