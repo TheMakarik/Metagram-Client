@@ -1,4 +1,4 @@
-namespace Metagram.Model.Options;
+namespace Metagram.Models.Options;
 
 public sealed class SqliteOptions
 {
