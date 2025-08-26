@@ -7,6 +7,7 @@ global using Microsoft.Extensions.Configuration;
 global using Microsoft.Extensions.DependencyInjection;
 global using Microsoft.Extensions.Hosting;
 global using Microsoft.Extensions.Logging;
+global using Microsoft.Extensions.Options;
 
 //.NET
 global using System.Windows;
@@ -17,11 +18,11 @@ global using System.Windows.Input;
 global using System.Windows.Media;
 global using System.Windows.Threading;
 
-
 //Serilog
 global using Serilog;
 
 //Project usings
+global using Metagram.Models.Options;
 global using Metagram.Views;
 global using Metagram.Services.AppDataServices.Abstractions;
 
