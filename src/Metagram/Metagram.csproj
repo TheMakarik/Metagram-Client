@@ -1,7 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <OutputType>WinExe</OutputType>
         <TargetFramework>net8.0-windows</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
@@ -10,7 +9,15 @@
         <ApplicationIcon>Assets\Icon.ico</ApplicationIcon>
     </PropertyGroup>
 
-    <ItemGroup>
+	<PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+		<OutputType>Exe</OutputType>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)' == 'Release'">
+		<OutputType>WinExe</OutputType>
+	</PropertyGroup>
+
+	<ItemGroup>
       <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
       <PackageReference Include="Dapper" Version="2.1.66" />
       <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.8" />

@@ -1,7 +1,5 @@
-﻿using Metagram.Models.Options;
-using Metagram.Services.AppDataServices;
+﻿using Metagram.Services.AppDataServices;
 using Microsoft.Data.Sqlite;
-using Microsoft.Extensions.Options;
 
 namespace Metagram;
 
