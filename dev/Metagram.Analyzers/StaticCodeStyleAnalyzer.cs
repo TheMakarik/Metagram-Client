@@ -19,7 +19,16 @@ public sealed class StaticCodeStyleAnalyzer : DiagnosticAnalyzer
         defaultSeverity: DiagnosticSeverity.Warning,
         isEnabledByDefault: true);
 
-    public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics { get; } = [VarRule, NewRule];
+    private static readonly DiagnosticDescriptor NamespaceWithSemicolonRule = new DiagnosticDescriptor(
+        id: "TMCSR001", // TheMakarik's code style Rule 001
+        title: "Forbidden to use namespace declaration without semicolon'",
+        messageFormat: "Dont use namespace declaration without semicolon like \"namespace {...}\", use like \"namespace;\"",
+        category: "CodeStyle",
+        defaultSeverity: DiagnosticSeverity.Warning,
+        isEnabledByDefault: true
+    );
+
+    public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics { get; } = [VarRule, NewRule, NamespaceWithSemicolonRule];
 
     public override void Initialize(AnalysisContext context)
     {
@@ -35,18 +44,22 @@ public sealed class StaticCodeStyleAnalyzer : DiagnosticAnalyzer
     {
         VariableDeclarationSyntax declaration = (VariableDeclarationSyntax)context.Node;
         if (declaration.Type.IsVar)
-        {
             context.ReportDiagnostic(Diagnostic.Create(VarRule, declaration.Type.GetLocation()));
-        }
     }
 
     private void AnalyzeNew(SyntaxNodeAnalysisContext context)
     {
         ObjectCreationExpressionSyntax creation = (ObjectCreationExpressionSyntax)context.Node;
         if (creation.Type.IsMissing)
-        {
             context.ReportDiagnostic(Diagnostic.Create(NewRule, creation.GetLocation()));
-        }
+    }
+
+    private void AnalyzeNamespace(SyntaxNodeAnalysisContext context)
+    {
+        NamespaceDeclarationSyntax namespaceDeclaration = (NamespaceDeclarationSyntax)context.Node;
+        if(namespaceDeclaration.SemicolonToken.IsKind(SyntaxKind.SemicolonToken))
+            context.ReportDiagnostic(Diagnostic.Create(NamespaceWithSemicolonRule, namespaceDeclaration.GetLocation()));
+            
     }
 }
 
