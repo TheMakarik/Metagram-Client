@@ -5,7 +5,7 @@ using Microsoft.Extensions.Options;
 
 namespace Metagram;
 
-public sealed partial class App
+public sealed partial class App : IHostedApplication
 {
     private const string ApplicationWasStoppedLogMessage = "Application was stopped with exit code {code}";
     private const string AppSettingsPath = "appsettings.json";
@@ -22,8 +22,7 @@ public sealed partial class App
     {
         ServiceCollection servicesCollection = new ServiceCollection();
         ConfigurationManager configurationManager = new ConfigurationManager();
-        servicesCollection
-            .AddLogging(loggingBuilder => Configure(servicesCollection, configurationManager, loggingBuilder));
+        servicesCollection.AddLogging(loggingBuilder => Configure(servicesCollection, configurationManager, loggingBuilder));
 
         Configuration = configurationManager;
         Services = servicesCollection.BuildServiceProvider();
@@ -39,16 +38,16 @@ public sealed partial class App
 
         //TO DO: Add ViewModelLocator 
         services
+            .AddTransient<MainWindow>()
             .AddTransient<IDatabaseInitializer, DatabaseInitializer>(s =>
-                {
-                    SqliteOptions options = s.GetRequiredService<IOptions<SqliteOptions>>().Value;
-                    return new DatabaseInitializer(
-                        new SqliteConnection(options.ConnectionString),
-                        options.MessageTypes,
-                        s.GetRequiredService<ILogger<DatabaseInitializer>>()
-                    );
-                })
-            .AddTransient<MainWindow>();
+            {
+                SqliteOptions options = s.GetRequiredService<IOptions<SqliteOptions>>().Value;
+                return new DatabaseInitializer(
+                    new SqliteConnection(options.ConnectionString),
+                    options.MessageTypes,
+                    s.GetRequiredService<ILogger<DatabaseInitializer>>()
+                );
+            });
 
         Log.Logger = new LoggerConfiguration()
             .ReadFrom.Configuration(configuration)
@@ -83,7 +82,6 @@ public sealed partial class App
         if (Configuration is IDisposable configurationDisposable)
             configurationDisposable?.Dispose();
 
-        // ReSharper disable once GCSuppressFinalizeForTypeWithoutDestructor
         GC.SuppressFinalize(this);
         _isDisposed = true;
     }
