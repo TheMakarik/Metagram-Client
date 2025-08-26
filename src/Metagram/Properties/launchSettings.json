@@ -5,7 +5,8 @@
       "commandName": "Project",
       "environmentVariables": {
         "METAGRAM_APPDATA": "%APPDATA$\\Metagram",
-        "METAGRAM_LOGS": "%METAGRAM_APPDATA%\\Logs"
+        "METAGRAM_LOGS": "%METAGRAM_APPDATA%\\Logs",
+        "PATH_TO_DB": "%METAGRAM_APPDATA%\\database.db"
       }
     }
   }

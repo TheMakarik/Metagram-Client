@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metagram", "src\Metagram\Me
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metagram.Analyzers", "dev\Metagram.Analyzers\Metagram.Analyzers.csproj", "{BBBD4521-1ABB-4491-A2CC-2FBB03D339EE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dev", "dev", "{72BF7444-B002-4C50-901D-95AA20A35FA3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,6 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A716D4BC-D673-40EB-BD76-A0BADCBAB9EE} = {31D49BAE-4A7F-4E77-9653-0B911ADA8576}
-		{BBBD4521-1ABB-4491-A2CC-2FBB03D339EE} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
+		{BBBD4521-1ABB-4491-A2CC-2FBB03D339EE} = {72BF7444-B002-4C50-901D-95AA20A35FA3}
 	EndGlobalSection
 EndGlobal

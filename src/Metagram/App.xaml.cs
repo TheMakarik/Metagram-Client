@@ -1,4 +1,10 @@
-﻿namespace Metagram;
+﻿using Microsoft.Data.Sqlite;
+using Metagram.Model.Options;
+using Metagram.Services.AppDataServices;
+using Microsoft.Extensions.Options;
+
+
+namespace Metagram;
 
 public partial class App
 {
@@ -14,7 +20,18 @@ public partial class App
         builder.Configuration
             .AddJsonFile(AppSettingsPath);
 
-        builder.Services.AddTransient<MainWindow>(); //TO DO: Add ViewModelLocator 
+        builder.Services
+            .AddTransient<IDatabaseInitializer, DatabaseInitializer>(s =>
+                {
+                    SqliteOptions options = s.GetRequiredService<IOptions<SqliteOptions>>().Value;
+                    return new DatabaseInitializer(
+                        new SqliteConnection(options.ConnectionString),
+                        options.MessageTypes,
+                        s.GetRequiredService<ILogger<DatabaseInitializer>>()
+                    );
+                }
+                  
+            ).AddTransient<MainWindow>(); //TO DO: Add ViewModelLocator 
         
         Log.Logger = new LoggerConfiguration()
             .ReadFrom.Configuration(builder.Configuration)
@@ -29,10 +46,10 @@ public partial class App
         
     }
 
-    protected override void OnStartup(StartupEventArgs e)
+    protected override async void OnStartup(StartupEventArgs e)
     {
         _app.Services.GetRequiredService<MainWindow>().Show();
-        
+        await _app.Services.GetRequiredService<IDatabaseInitializer>().InitializeAsync();
         base.OnStartup(e);
     }
 
