@@ -10,7 +10,7 @@ namespace Metagram.Analyzers
     public class StaticCodeStyleAnalyzer : DiagnosticAnalyzer
     {
         private static readonly DiagnosticDescriptor VarRule = new DiagnosticDescriptor(
-            id: "RCSR-001", // Rikitav's code style Rule 001
+            id: "RCSR001", // Rikitav's code style Rule 001
             title: "Запрещено использовать 'var'",
             messageFormat: "Не используйте 'var', укажите тип явно",
             category: "CodeStyle",
@@ -18,7 +18,7 @@ namespace Metagram.Analyzers
             isEnabledByDefault: true);
 
         private static readonly DiagnosticDescriptor NewRule = new DiagnosticDescriptor(
-            id: "RCSR-002", // Rikitav's code style Rule 002
+            id: "RCSR002", // Rikitav's code style Rule 002
             title: "Запрещено использовать неявную инициализацию 'new()'",
             messageFormat: "Не используйте 'new()', укажите тип явно",
             category: "CodeStyle",

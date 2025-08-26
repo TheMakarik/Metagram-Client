@@ -42,7 +42,7 @@
     </ItemGroup>
 
     <ItemGroup>
-	  <ProjectReference Include="..\..\dev\Metagram.Analyzers\Metagram.Analyzers.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+	  <ProjectReference Include="..\..\Metagram.Analyzers\Metagram.Analyzers.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
     </ItemGroup>
 
 </Project>
