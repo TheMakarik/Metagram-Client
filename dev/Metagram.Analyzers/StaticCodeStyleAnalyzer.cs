@@ -37,6 +37,7 @@ public sealed class StaticCodeStyleAnalyzer : DiagnosticAnalyzer
                                                GeneratedCodeAnalysisFlags.ReportDiagnostics);
 
         context.RegisterSyntaxNodeAction(AnalyzeVar, SyntaxKind.VariableDeclaration);
+        context.RegisterSyntaxNodeAction(AnalyzeNamespace, SyntaxKind.NamespaceDeclaration);
         context.RegisterSyntaxNodeAction(AnalyzeNew, SyntaxKind.ObjectCreationExpression);
     }
 
