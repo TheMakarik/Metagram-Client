@@ -9,6 +9,12 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:Metagram"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <Grid />
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:controls="clr-namespace:Metagram.Controls">
+
+    <Grid>
+        <DockPanel>
+            <controls:ChatsPanel x:Name="chatsPanel" DockPanel.Dock="Left" Width="200"/>
+            <controls:ChatPresenter x:Name="chatPresenter"/>
+        </DockPanel>
+    </Grid>
 </Window>
