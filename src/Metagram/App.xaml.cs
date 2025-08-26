@@ -1,11 +1,9 @@
-﻿using Metagram.Models.Options;
-using Metagram.Services.AppDataServices;
+﻿using Metagram.Services.AppDataServices;
 using Microsoft.Data.Sqlite;
-using Microsoft.Extensions.Options;
 
 namespace Metagram;
 
-public sealed partial class App : IHostedApplication
+public sealed partial class App : Application, IHostedApplication
 {
     private const string ApplicationWasStoppedLogMessage = "Application was stopped with exit code {code}";
     private const string AppSettingsPath = "appsettings.json";
