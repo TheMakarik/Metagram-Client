@@ -1,69 +1,62 @@
-﻿using Telegram.Bot;
-using Telegram.Bot.Polling;
-using Telegram.Bot.Requests;
-using Telegram.Bot.Types;
+﻿namespace Metagram.Services.Polling;
 
-namespace Metagram.Services.Polling
+internal class HostedUpdateReceiver(ITelegramBotClient client, IUpdateHandler handler) : IHostedService, IUpdateReceiver
 {
-    internal class HostedUpdateReceiver(ITelegramBotClient client, IUpdateHandler handler) : IHostedService, IUpdateReceiver
+    private readonly CancellationTokenSource _cancellationToken = new CancellationTokenSource();
+
+    public Task StartAsync(CancellationToken cancellationToken)
     {
-        private readonly ITelegramBotClient _client = client;
-        private readonly IUpdateHandler _handler = handler;
-        private readonly CancellationTokenSource _cancell = new CancellationTokenSource();
+        Task.Run(async ()
+            => await ReceiveAsync(handler, _cancellationToken.Token), _cancellationToken.Token);
+        return Task.CompletedTask;
+    }
 
-        public Task StartAsync(CancellationToken cancellationToken)
-        {
-            Task.Run(async () => await ReceiveAsync(_handler, _cancell.Token), _cancell.Token);
-            return Task.CompletedTask;
-        }
+    public Task StopAsync(CancellationToken cancellationToken)
+    {
+        _cancellationToken.Cancel();
+        return Task.CompletedTask;
+    }
 
-        public Task StopAsync(CancellationToken cancellationToken)
+    public async Task ReceiveAsync(IUpdateHandler updateHandler, CancellationToken cancellationToken = default)
+    {
+        cancellationToken = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken).Token;
+        GetUpdatesRequest request = new GetUpdatesRequest()
         {
-            _cancell.Cancel();
-            return Task.CompletedTask;
-        }
+            AllowedUpdates = null,
+            Limit = 100,
+            Offset = null
+        };
 
-        public async Task ReceiveAsync(IUpdateHandler updateHandler, CancellationToken cancellationToken = default)
+        while (!cancellationToken.IsCancellationRequested)
         {
-            cancellationToken = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken).Token;
-            GetUpdatesRequest request = new GetUpdatesRequest()
+            try
             {
-                AllowedUpdates = null,
-                Limit = 100,
-                Offset = null
-            };
-
-            while (!cancellationToken.IsCancellationRequested)
-            {
-                try
+                request.Timeout = (int)client.Timeout.TotalSeconds;
+                foreach (Update update in await client.SendRequest(request, cancellationToken).ConfigureAwait(false))
                 {
-                    request.Timeout = (int)_client.Timeout.TotalSeconds;
-                    foreach (Update update in await _client.SendRequest(request, cancellationToken).ConfigureAwait(false))
+                    try
                     {
-                        try
-                        {
-                            request.Offset = update.Id + 1;
-                            await updateHandler.HandleUpdateAsync(_client, update, cancellationToken);
-                        }
-                        catch (OperationCanceledException)
-                        {
-                            continue;
-                        }
-                        catch (Exception exception)
-                        {
-                            await updateHandler.HandleErrorAsync(_client, exception, HandleErrorSource.HandleUpdateError, cancellationToken);
-                        }
+                        request.Offset = update.Id + 1;
+                        await updateHandler.HandleUpdateAsync(client, update, cancellationToken);
+                    }
+                    catch (OperationCanceledException) { }
+                    catch (Exception exception)
+                    {
+                        await updateHandler.HandleErrorAsync(client, exception, HandleErrorSource.HandleUpdateError,
+                            cancellationToken);
                     }
                 }
-                catch (OperationCanceledException)
-                {
-                    break;
-                }
-                catch (Exception exception)
-                {
-                    await updateHandler.HandleErrorAsync(_client, exception, HandleErrorSource.PollingError, cancellationToken);
-                }
+            }
+            catch (OperationCanceledException)
+            {
+                break;
+            }
+            catch (Exception exception)
+            {
+                await updateHandler.HandleErrorAsync(client, exception, HandleErrorSource.PollingError,
+                    cancellationToken);
             }
         }
     }
 }
+

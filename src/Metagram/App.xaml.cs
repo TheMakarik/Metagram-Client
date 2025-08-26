@@ -1,13 +1,19 @@
-﻿namespace Metagram;
+﻿using Metagram.Models.Options;
+using Metagram.Services.AppDataServices;
+using Microsoft.Data.Sqlite;
+using Microsoft.Extensions.Options;
 
-public partial class App
+namespace Metagram;
+
+public sealed partial class App
 {
     private const string ApplicationWasStoppedLogMessage = "Application was stopped with exit code {code}";
-
+    private const string AppSettingsPath = "appsettings.json";
+    
     private readonly ILogger<App> _logger;
     private readonly MainWindow _mainWindow;
 
-    private bool isDisposed = false;
+    private bool _isDisposed;
 
     public IServiceProvider Services { get; }
     public IConfiguration Configuration { get; }
@@ -16,7 +22,8 @@ public partial class App
     {
         ServiceCollection servicesCollection = new ServiceCollection();
         ConfigurationManager configurationManager = new ConfigurationManager();
-        servicesCollection.AddLogging(loggingBuilder => Configure(servicesCollection, configurationManager, loggingBuilder));
+        servicesCollection
+            .AddLogging(loggingBuilder => Configure(servicesCollection, configurationManager, loggingBuilder));
 
         Configuration = configurationManager;
         Services = servicesCollection.BuildServiceProvider();
@@ -25,13 +32,22 @@ public partial class App
         _mainWindow = Services.GetRequiredService<MainWindow>();
     }
 
-    protected virtual void Configure(IServiceCollection services, IConfigurationManager configuration, ILoggingBuilder logging)
+    private void Configure(IServiceCollection services, IConfigurationManager configuration, ILoggingBuilder logging)
     {
         configuration
-            .AddJsonFile("appsettings.json");
+            .AddJsonFile(AppSettingsPath);
 
         //TO DO: Add ViewModelLocator 
         services
+            .AddTransient<IDatabaseInitializer, DatabaseInitializer>(s =>
+                {
+                    SqliteOptions options = s.GetRequiredService<IOptions<SqliteOptions>>().Value;
+                    return new DatabaseInitializer(
+                        new SqliteConnection(options.ConnectionString),
+                        options.MessageTypes,
+                        s.GetRequiredService<ILogger<DatabaseInitializer>>()
+                    );
+                })
             .AddTransient<MainWindow>();
 
         Log.Logger = new LoggerConfiguration()
@@ -58,7 +74,7 @@ public partial class App
 
     public void Dispose()
     {
-        if (isDisposed)
+        if (_isDisposed)
             return;
 
         if (Services is IDisposable servicesDisposable)
@@ -67,7 +83,8 @@ public partial class App
         if (Configuration is IDisposable configurationDisposable)
             configurationDisposable?.Dispose();
 
+        // ReSharper disable once GCSuppressFinalizeForTypeWithoutDestructor
         GC.SuppressFinalize(this);
-        isDisposed = true;
+        _isDisposed = true;
     }
 }

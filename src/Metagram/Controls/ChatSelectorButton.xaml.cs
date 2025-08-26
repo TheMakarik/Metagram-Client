@@ -1,15 +1,9 @@
-﻿using System.Windows.Controls;
+﻿namespace Metagram.Controls;
 
-namespace Metagram.Controls
+public partial class ChatSelectorButton
 {
-    /// <summary>
-    /// Логика взаимодействия для ChatSelectorButton.xaml
-    /// </summary>
-    public partial class ChatSelectorButton : UserControl
+    public ChatSelectorButton()
     {
-        public ChatSelectorButton()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
     }
 }

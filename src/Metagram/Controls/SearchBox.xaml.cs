@@ -1,13 +1,6 @@
-﻿using System.Windows.Controls;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Threading;
-
+﻿
 namespace Metagram.Controls
 {
-    /// <summary>
-    /// Логика взаимодействия для SearchBox.xaml
-    /// </summary>
     public partial class SearchBox : UserControl
     {
         private readonly DispatcherTimer textChangeTimer;

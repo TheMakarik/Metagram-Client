@@ -1,8 +1,8 @@
-﻿namespace Metagram
+﻿namespace Metagram;
+
+internal interface IHostedApplication : IDisposable
 {
-    internal interface IHostedApplication : IDisposable
-    {
-        public IServiceProvider Services { get; }
-        public IConfiguration Configuration { get; }
-    }
+     public IServiceProvider Services { get; }
+     public IConfiguration Configuration { get; }
 }
+

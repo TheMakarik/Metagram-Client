@@ -1,15 +1,9 @@
-﻿using System.Windows.Controls;
+﻿namespace Metagram.Controls;
 
-namespace Metagram.Controls
+public partial class ChatPresenter 
 {
-    /// <summary>
-    /// Логика взаимодействия для ChatPresenter.xaml
-    /// </summary>
-    public partial class ChatPresenter : UserControl
+    public ChatPresenter()
     {
-        public ChatPresenter()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
     }
 }

@@ -8,8 +8,6 @@
         <UseWPF>true</UseWPF>
         <Version>0.1.0</Version>
         <ApplicationIcon>Assets\Icon.ico</ApplicationIcon>
-		<ApplicationDefinition> </ApplicationDefinition>
-		<StartupObject>Metagram.Program</StartupObject>
     </PropertyGroup>
 
     <ItemGroup>
