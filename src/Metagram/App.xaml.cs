@@ -1,48 +1,73 @@
 ﻿namespace Metagram;
 
-public partial class App
+public partial class App : Application, IHostedApplication
 {
-    private const string AppSettingsPath = "appsettings.json";
     private const string ApplicationWasStoppedLogMessage = "Application was stopped with exit code {code}";
-    
-    private readonly IHost _app;
-    
+
+    private readonly ILogger<App> _logger;
+    private readonly MainWindow _mainWindow;
+
+    private bool isDisposed = false;
+
+    public IServiceProvider Services { get; }
+    public IConfiguration Configuration { get; }
+
     public App()
     {
-        HostApplicationBuilder builder = Host.CreateApplicationBuilder();
+        ServiceCollection servicesCollection = new ServiceCollection();
+        ConfigurationManager configurationManager = new ConfigurationManager();
+        servicesCollection.AddLogging(loggingBuilder => Configure(servicesCollection, configurationManager, loggingBuilder));
 
-        builder.Configuration
-            .AddJsonFile(AppSettingsPath);
+        Configuration = configurationManager;
+        Services = servicesCollection.BuildServiceProvider();
 
-        builder.Services.AddTransient<MainWindow>(); //TO DO: Add ViewModelLocator 
-        
+        _logger = Services.GetRequiredService<ILogger<App>>();
+        _mainWindow = Services.GetRequiredService<MainWindow>();
+    }
+
+    protected virtual void Configure(IServiceCollection services, IConfigurationManager configuration, ILoggingBuilder logging)
+    {
+        configuration
+            .AddJsonFile("appsettings.json");
+
+        //TO DO: Add ViewModelLocator 
+        services
+            .AddTransient<MainWindow>();
+
         Log.Logger = new LoggerConfiguration()
-            .ReadFrom.Configuration(builder.Configuration)
+            .ReadFrom.Configuration(configuration)
             .CreateLogger();
 
-        builder.Logging
+        logging
             .ClearProviders()
-            .AddSerilog(Log.Logger, dispose: true);
-
-        _app = builder.Build();
-        _app.RunAsync(); //Dont use Run()
-        
+            .AddSerilog(Log.Logger, dispose: true)
+            .AddConsole();
     }
 
     protected override void OnStartup(StartupEventArgs e)
     {
-        _app.Services.GetRequiredService<MainWindow>().Show();
-        
+        _mainWindow.Show();
         base.OnStartup(e);
     }
 
     protected override void OnExit(ExitEventArgs e)
     {
-        using IServiceScope scope = _app.Services.CreateScope();
-        
-        scope.ServiceProvider.GetRequiredService<ILogger<App>>().
-            LogInformation(ApplicationWasStoppedLogMessage, e.ApplicationExitCode);
-        
+        _logger.LogInformation(ApplicationWasStoppedLogMessage, e.ApplicationExitCode);
         base.OnExit(e);
+    }
+
+    public void Dispose()
+    {
+        if (isDisposed)
+            return;
+
+        if (Services is IDisposable servicesDisposable)
+            servicesDisposable?.Dispose();
+
+        if (Configuration is IDisposable configurationDisposable)
+            configurationDisposable?.Dispose();
+
+        GC.SuppressFinalize(this);
+        isDisposed = true;
     }
 }

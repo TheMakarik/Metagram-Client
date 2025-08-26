@@ -8,11 +8,13 @@
              d:DesignHeight="450" d:DesignWidth="300">
     <Grid>
         <DockPanel>
-            <local:SearchBox DockPanel.Dock="Top"/>
+            <local:SearchBox DockPanel.Dock="Top" Height="40"/>
 
             <ItemsControl>
                 <ItemsControl.ItemTemplate>
-                    <local:ChatSelectorButton/>
+                    <DataTemplate>
+                        <local:ChatSelectorButton/>
+                    </DataTemplate>
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
         </DockPanel>
