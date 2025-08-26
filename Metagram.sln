@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{31D49BAE-4A7F-4E77-9653-0B911ADA8576}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{E0AA490B-6231-46B0-BDC1-A02A75D4CA4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metagram", "src\Metagram\Metagram.csproj", "{A716D4BC-D673-40EB-BD76-A0BADCBAB9EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A716D4BC-D673-40EB-BD76-A0BADCBAB9EE} = {31D49BAE-4A7F-4E77-9653-0B911ADA8576}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A716D4BC-D673-40EB-BD76-A0BADCBAB9EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A716D4BC-D673-40EB-BD76-A0BADCBAB9EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A716D4BC-D673-40EB-BD76-A0BADCBAB9EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A716D4BC-D673-40EB-BD76-A0BADCBAB9EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

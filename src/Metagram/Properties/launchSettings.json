@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "Metagram": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "METAGRAM_APPDATA": "%APPDATA$\\Metagram",
+        "METAGRAM_LOGS": "%METAGRAM_APPDATA%\\Logs"
+      }
+    }
+  }
+}
