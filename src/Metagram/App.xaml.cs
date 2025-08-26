@@ -1,6 +1,6 @@
 ﻿namespace Metagram;
 
-public partial class App : Application, IHostedApplication
+public partial class App
 {
     private const string ApplicationWasStoppedLogMessage = "Application was stopped with exit code {code}";
 

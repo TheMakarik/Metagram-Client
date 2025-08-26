@@ -16,6 +16,7 @@
       <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
       <PackageReference Include="Dapper" Version="2.1.66" />
       <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.8" />
+      <PackageReference Include="Microsoft.Data.Sqlite" Version="9.0.8" />
       <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.8" />
       <PackageReference Include="Serilog" Version="4.3.0" />
       <PackageReference Include="Serilog.Enrichers.Thread" Version="4.0.0" />
@@ -44,10 +45,6 @@
       <Content Include="appsettings.json">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Content>
-    </ItemGroup>
-
-    <ItemGroup>
-      <Page Include="App.xaml" />
     </ItemGroup>
 
     <ItemGroup>
