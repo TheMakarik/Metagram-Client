@@ -52,10 +52,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Page Include="App.xaml" />
-    </ItemGroup>
-
-    <ItemGroup>
 	  <ProjectReference Include="..\..\dev\Metagram.Analyzers\Metagram.Analyzers.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
     </ItemGroup>
 
