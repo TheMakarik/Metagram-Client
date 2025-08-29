@@ -1,9 +1,4 @@
-﻿using Metagram.Models.Options;
-using Metagram.Services.AppDataServices;
-using Microsoft.Data.Sqlite;
-using Microsoft.Extensions.Options;
-
-namespace Metagram;
+﻿namespace Metagram;
 
 public sealed partial class App : IHostedApplication
 {
@@ -38,16 +33,13 @@ public sealed partial class App : IHostedApplication
 
         //TO DO: Add ViewModelLocator 
         services
+            .Configure<HostedUpdateReceiverOptions>(configuration.GetSection(nameof(HostedUpdateReceiverOptions)))
+            .Configure<SqliteOptions>(configuration.GetSection(nameof(SqliteOptions)));
+        
+        services
+            .AddScoped<ISqliteConnectionFactory, SqliteConnectionFactory>()
             .AddTransient<MainWindow>()
-            .AddTransient<IDatabaseInitializer, DatabaseInitializer>(s =>
-            {
-                SqliteOptions options = s.GetRequiredService<IOptions<SqliteOptions>>().Value;
-                return new DatabaseInitializer(
-                    new SqliteConnection(options.ConnectionString),
-                    options.MessageTypes,
-                    s.GetRequiredService<ILogger<DatabaseInitializer>>()
-                );
-            });
+            .AddTransient<IDatabaseInitializer, DatabaseInitializer>();
 
         Log.Logger = new LoggerConfiguration()
             .ReadFrom.Configuration(configuration)
@@ -55,12 +47,13 @@ public sealed partial class App : IHostedApplication
 
         logging
             .ClearProviders()
-            .AddSerilog(Log.Logger, dispose: true)
-            .AddConsole();
+            .AddSerilog(Log.Logger, dispose: true);
     }
 
-    protected override void OnStartup(StartupEventArgs e)
+    protected override async void OnStartup(StartupEventArgs e)
     {
+        using IServiceScope scope = Services.CreateScope();
+        await scope.ServiceProvider.GetRequiredService<IDatabaseInitializer>().InitializeAsync();
         _mainWindow.Show();
         base.OnStartup(e);
     }
@@ -82,6 +75,7 @@ public sealed partial class App : IHostedApplication
         if (Configuration is IDisposable configurationDisposable)
             configurationDisposable?.Dispose();
 
+        // ReSharper disable once GCSuppressFinalizeForTypeWithoutDestructor
         GC.SuppressFinalize(this);
         _isDisposed = true;
     }
