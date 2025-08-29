@@ -5,7 +5,7 @@ global using CommunityToolkit.Mvvm.ComponentModel;
 //Microsoft.Extensions;
 global using Microsoft.Extensions.Configuration;
 global using Microsoft.Extensions.DependencyInjection;
-global using Microsoft.Extensions.Hosting;
+//global using Microsoft.Extensions.Hosting;
 global using Microsoft.Extensions.Logging;
 global using Microsoft.Extensions.Options;
 
@@ -19,7 +19,7 @@ global using System.Windows.Media;
 global using System.Windows.Threading;
 
 //Serilog
-global using Serilog;
+//global using Serilog;
 
 //Project usings
 global using Metagram.Models.Options;
@@ -34,4 +34,5 @@ global using Telegram.Bot;
 global using Telegram.Bot.Polling;
 global using Telegram.Bot.Requests;
 global using Telegram.Bot.Types;
+global using Telegram.Bot.Types.Enums;
 

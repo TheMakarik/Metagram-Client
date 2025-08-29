@@ -7,3 +7,4 @@ Rule ID | Category | Severity | Notes
 --------|----------|----------|-------
 RCSR001 | CodeStyle | Warning | StaticCodeStyleAnalyzer
 RCSR002 | CodeStyle | Warning | StaticCodeStyleAnalyzer
+TMCSR001 | CodeStyle | Warning | StaticCodeStyleAnalyzer

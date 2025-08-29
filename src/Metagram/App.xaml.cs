@@ -1,4 +1,5 @@
-﻿using Metagram.Services.AppDataServices;
+﻿using Metagram.Services;
+using Metagram.Services.AppDataServices;
 using Metagram.Services.PollingServices;
 using Metagram.Services.ViewServices;
 using Metagram.ViewModels;
@@ -25,7 +26,7 @@ public sealed partial class App : Application, IDisposable
         // Creating and configuring app infrastructure
         ServiceCollection servicesCollection = new ServiceCollection();
         ConfigurationManager configurationManager = new ConfigurationManager();
-        servicesCollection.AddLogging(loggingBuilder => Configure(servicesCollection, configurationManager, loggingBuilder));
+        Configure(servicesCollection, configurationManager);
 
         // Building providers
         Configuration = configurationManager;
@@ -36,7 +37,7 @@ public sealed partial class App : Application, IDisposable
         _mainWindow = Services.GetRequiredService<MainWindow>();
     }
 
-    private static void Configure(IServiceCollection services, IConfigurationManager configuration, ILoggingBuilder logging)
+    private static void Configure(IServiceCollection services, IConfigurationManager configuration)
     {
         // Configuration and settings
         configuration
@@ -63,28 +64,30 @@ public sealed partial class App : Application, IDisposable
         services.AddViewModelLocator(locator => locator
             .AddViewModel<MainWindowViewModel, MainWindow>());
 
-        // Day 3 of waiting when'll TheMakarik remove SeriLog
+        /* Fuck it, i'll do it myself
+        // Day 4 of waiting when'll TheMakarik remove SeriLog
         Log.Logger = new LoggerConfiguration()
             .ReadFrom.Configuration(configuration)
             .CreateLogger();
+        */
 
         services.AddLogging(logging => logging
             .ClearProviders()
-            .AddSerilog(Log.Logger, dispose: true)
+            //.AddSerilog(Log.Logger, dispose: true)
             .AddConsole());
 
     }
 
     protected override void OnStartup(StartupEventArgs e)
     {
+        // Resolving hosted services
         foreach (IHostedService hostedService in Services.GetServices<IHostedService>())
-        {
-            // DO NOT REMOVE AWAITER
-            // Services's StartAsync method should ONLY contain initializations
-            // Every other background shit should be managed by service, not the host
-            hostedService.StartAsync(default).Wait();
             _hostedServices.Add(hostedService);
-        }
+
+        // DO NOT REMOVE AWAITER
+        // Services's StartAsync method should ONLY contain initializations
+        // Every other background shit should be managed by service, not the host
+        Task.WaitAll(_hostedServices.Select(srv => srv.StartAsync(default)).ToArray());
 
         _mainWindow.Show();
         base.OnStartup(e);
@@ -92,12 +95,10 @@ public sealed partial class App : Application, IDisposable
 
     protected override void OnExit(ExitEventArgs e)
     {
-        foreach (IHostedService hostedService in _hostedServices)
-        {
-            // I removed feature with limited time to stop all background operations
-            // Which is dangerous, but lets be optimistic :)
-            hostedService.StopAsync(default).Wait();
-        }
+        // I removed feature with limited time to stop all background operations
+        // Which is dangerous, but lets be optimistic :)
+        Task.WaitAll(_hostedServices.Select(srv => srv.StopAsync(default)).ToArray());
+        _hostedServices.Clear();
 
         _logger.LogInformation(ApplicationWasStoppedLogMessage, e.ApplicationExitCode);
         base.OnExit(e);
@@ -106,15 +107,14 @@ public sealed partial class App : Application, IDisposable
 
     public void Dispose()
     {
-        // STUPID disposer, that is HATED by TheMakarik >:)
         if (_isDisposed)
             return;
 
         if (Services is IDisposable servicesDisposable)
-            servicesDisposable?.Dispose();
+            servicesDisposable.Dispose();
 
         if (Configuration is IDisposable configurationDisposable)
-            configurationDisposable?.Dispose();
+            configurationDisposable.Dispose();
 
         GC.SuppressFinalize(this);
         _isDisposed = true;
