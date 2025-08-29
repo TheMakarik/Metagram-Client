@@ -7,6 +7,7 @@ public class SqliteConnectionFactoryTests : IDisposable
     
     private readonly IOptions<SqliteOptions> _stubOptions;
     private readonly ILogger<SqliteConnectionFactory> _stubLogger;
+    private IDbConnection _connection;
 
     public SqliteConnectionFactoryTests()
     {
@@ -22,14 +23,15 @@ public class SqliteConnectionFactoryTests : IDisposable
         SqliteConnectionFactory factory = new SqliteConnectionFactory(_stubOptions, _stubLogger);
       
         //Act
-        using IDbConnection connection = factory.GetFactory();
+        _connection = factory.GetFactory();
        
         //Assert
-        Assert.Equal(ConnectionString, connection.ConnectionString);
+        Assert.Equal(ConnectionString, _connection.ConnectionString);
     }
 
     public void Dispose()
     {
+        _connection.Dispose();
         File.Delete(DbPath);
     }
 }
