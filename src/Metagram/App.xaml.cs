@@ -1,40 +1,48 @@
 ﻿using Metagram.Services.AppDataServices;
+using Metagram.Services.PollingServices;
+using Metagram.Services.ViewServices;
+using Metagram.ViewModels;
 using Microsoft.Data.Sqlite;
 
 namespace Metagram;
 
-public sealed partial class App : IHostedApplication
+public sealed partial class App : Application, IDisposable
 {
     private const string ApplicationWasStoppedLogMessage = "Application was stopped with exit code {code}";
     private const string AppSettingsPath = "appsettings.json";
-    
+
+    private readonly List<IHostedService> _hostedServices = [];
     private readonly ILogger<App> _logger;
     private readonly MainWindow _mainWindow;
 
     private bool _isDisposed;
 
-    public IServiceProvider Services { get; }
-    public IConfiguration Configuration { get; }
+    public static IServiceProvider Services { get; private set; } = default!;
+    public static IConfiguration Configuration { get; private set; } = default!;
 
     public App()
     {
+        // Creating and configuring app infrastructure
         ServiceCollection servicesCollection = new ServiceCollection();
         ConfigurationManager configurationManager = new ConfigurationManager();
         servicesCollection.AddLogging(loggingBuilder => Configure(servicesCollection, configurationManager, loggingBuilder));
 
+        // Building providers
         Configuration = configurationManager;
         Services = servicesCollection.BuildServiceProvider();
 
+        // Resolving required services
         _logger = Services.GetRequiredService<ILogger<App>>();
         _mainWindow = Services.GetRequiredService<MainWindow>();
     }
 
-    private void Configure(IServiceCollection services, IConfigurationManager configuration, ILoggingBuilder logging)
+    private static void Configure(IServiceCollection services, IConfigurationManager configuration, ILoggingBuilder logging)
     {
+        // Configuration and settings
         configuration
             .AddJsonFile(AppSettingsPath);
 
-        //TO DO: Add ViewModelLocator 
+        // TO DO: Add ViewModelLocator, DONE
         services
             .AddTransient<MainWindow>()
             .AddTransient<IDatabaseInitializer, DatabaseInitializer>(s =>
@@ -47,30 +55,58 @@ public sealed partial class App : IHostedApplication
                 );
             });
 
+        // Hosted services
+        services
+            .AddHostedService<HostedUpdateReceiver>();
+
+        // View models and locator
+        services.AddViewModelLocator(locator => locator
+            .AddViewModel<MainWindowViewModel, MainWindow>());
+
+        // Day 3 of waiting when'll TheMakarik remove SeriLog
         Log.Logger = new LoggerConfiguration()
             .ReadFrom.Configuration(configuration)
             .CreateLogger();
 
-        logging
+        services.AddLogging(logging => logging
             .ClearProviders()
             .AddSerilog(Log.Logger, dispose: true)
-            .AddConsole();
+            .AddConsole());
+
     }
 
     protected override void OnStartup(StartupEventArgs e)
     {
+        foreach (IHostedService hostedService in Services.GetServices<IHostedService>())
+        {
+            // DO NOT REMOVE AWAITER
+            // Services's StartAsync method should ONLY contain initializations
+            // Every other background shit should be managed by service, not the host
+            hostedService.StartAsync(default).Wait();
+            _hostedServices.Add(hostedService);
+        }
+
         _mainWindow.Show();
         base.OnStartup(e);
     }
 
     protected override void OnExit(ExitEventArgs e)
     {
+        foreach (IHostedService hostedService in _hostedServices)
+        {
+            // I removed feature with limited time to stop all background operations
+            // Which is dangerous, but lets be optimistic :)
+            hostedService.StopAsync(default).Wait();
+        }
+
         _logger.LogInformation(ApplicationWasStoppedLogMessage, e.ApplicationExitCode);
         base.OnExit(e);
+        Dispose();
     }
 
     public void Dispose()
     {
+        // STUPID disposer, that is HATED by TheMakarik >:)
         if (_isDisposed)
             return;
 

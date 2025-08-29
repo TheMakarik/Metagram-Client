@@ -13,7 +13,7 @@ public sealed class DatabaseInitializer(
     
     #if DEBUG
     private const string QueryExecutionTimerLogMessage = "Creational query was executed for {time} milliseconds";
-    private Stopwatch _executionTimer = new Stopwatch();
+    private readonly Stopwatch _executionTimer = new Stopwatch();
     #endif
     
     private const string CreatingQuery = @"
