@@ -19,16 +19,18 @@ public sealed class StaticCodeStyleAnalyzer : DiagnosticAnalyzer
         defaultSeverity: DiagnosticSeverity.Warning,
         isEnabledByDefault: true);
 
-    private static readonly DiagnosticDescriptor NamespaceWithSemicolonRule = new DiagnosticDescriptor(
+    private static readonly DiagnosticDescriptor BlockNamespaceRule = new DiagnosticDescriptor(
         id: "TMCSR001", // TheMakarik's code style Rule 001
         title: "Forbidden to use namespace declaration without semicolon'",
-        messageFormat: "Dont use namespace declaration without semicolon like \"namespace {...}\", use like \"namespace;\"",
+        messageFormat:
+        "Dont use namespace declaration without semicolon like \"namespace {...}\", use like \"namespace;\"",
         category: "CodeStyle",
         defaultSeverity: DiagnosticSeverity.Warning,
         isEnabledByDefault: true
     );
 
-    public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics { get; } = [VarRule, NewRule, NamespaceWithSemicolonRule];
+    public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics { get; } =
+        [VarRule, NewRule, BlockNamespaceRule];
 
     public override void Initialize(AnalysisContext context)
     {
@@ -37,7 +39,7 @@ public sealed class StaticCodeStyleAnalyzer : DiagnosticAnalyzer
                                                GeneratedCodeAnalysisFlags.ReportDiagnostics);
 
         context.RegisterSyntaxNodeAction(AnalyzeVar, SyntaxKind.VariableDeclaration);
-        context.RegisterSyntaxNodeAction(AnalyzeNamespace, SyntaxKind.NamespaceDeclaration);
+        context.RegisterSyntaxNodeAction(AnalyzeBlockNamespace, SyntaxKind.NamespaceDeclaration);
         context.RegisterSyntaxNodeAction(AnalyzeNew, SyntaxKind.ObjectCreationExpression);
     }
 
@@ -55,12 +57,10 @@ public sealed class StaticCodeStyleAnalyzer : DiagnosticAnalyzer
             context.ReportDiagnostic(Diagnostic.Create(NewRule, creation.GetLocation()));
     }
 
-    private void AnalyzeNamespace(SyntaxNodeAnalysisContext context)
+    private void AnalyzeBlockNamespace(SyntaxNodeAnalysisContext context)
     {
         NamespaceDeclarationSyntax namespaceDeclaration = (NamespaceDeclarationSyntax)context.Node;
-        if(namespaceDeclaration.SemicolonToken.IsKind(SyntaxKind.SemicolonToken))
-            context.ReportDiagnostic(Diagnostic.Create(NamespaceWithSemicolonRule, namespaceDeclaration.GetLocation()));
-            
+        context.ReportDiagnostic(Diagnostic.Create(BlockNamespaceRule, namespaceDeclaration.GetLocation()));
     }
 }
 
