@@ -19,6 +19,14 @@ public sealed class StaticCodeStyleAnalyzer : DiagnosticAnalyzer
         defaultSeverity: DiagnosticSeverity.Warning,
         isEnabledByDefault: true);
 
+    private static readonly DiagnosticDescriptor EmptyCatchRule = new DiagnosticDescriptor(
+        id: "RCSR003", // Rikitav's code style Rule 003
+        title: "Dont leave empty catch blocks",
+        messageFormat: "Dont leave empty catch blocks — add exception handling or at least comment",
+        category: "CodeStyle",
+        defaultSeverity: DiagnosticSeverity.Warning,
+        isEnabledByDefault: true);
+
     private static readonly DiagnosticDescriptor NamespaceWithSemicolonRule = new DiagnosticDescriptor(
         id: "TMCSR001", // TheMakarik's code style Rule 001
         title: "Forbidden to use namespace declaration without semicolon'",
@@ -39,6 +47,7 @@ public sealed class StaticCodeStyleAnalyzer : DiagnosticAnalyzer
         context.RegisterSyntaxNodeAction(AnalyzeVar, SyntaxKind.VariableDeclaration);
         context.RegisterSyntaxNodeAction(AnalyzeNamespace, SyntaxKind.NamespaceDeclaration);
         context.RegisterSyntaxNodeAction(AnalyzeNew, SyntaxKind.ObjectCreationExpression);
+        context.RegisterSyntaxNodeAction(AnalyzeEmptyCatch, SyntaxKind.CatchClause);
     }
 
     private void AnalyzeVar(SyntaxNodeAnalysisContext context)
@@ -53,6 +62,22 @@ public sealed class StaticCodeStyleAnalyzer : DiagnosticAnalyzer
         ObjectCreationExpressionSyntax creation = (ObjectCreationExpressionSyntax)context.Node;
         if (creation.Type.IsMissing)
             context.ReportDiagnostic(Diagnostic.Create(NewRule, creation.GetLocation()));
+    }
+
+    private void AnalyzeEmptyCatch(SyntaxNodeAnalysisContext context)
+    {
+        CatchClauseSyntax catchClause = (CatchClauseSyntax)context.Node;
+
+        // Если тело catch пустое (нет операторов)
+        if (!catchClause.Block.Statements.Any())
+        {
+            // Проверим, нет ли хотя бы комментариев
+            IEnumerable<SyntaxTrivia> trivia = catchClause.Block.DescendantTrivia();
+            bool hasComment = trivia.Any(t => t.IsKind(SyntaxKind.SingleLineCommentTrivia) || t.IsKind(SyntaxKind.MultiLineCommentTrivia));
+
+            if (!hasComment)
+                context.ReportDiagnostic(Diagnostic.Create(EmptyCatchRule, catchClause.Block.GetLocation()));
+        }
     }
 
     private void AnalyzeNamespace(SyntaxNodeAnalysisContext context)
