@@ -8,6 +8,4 @@ public sealed class Message
     public string? MediaPath { get; set; }
     public DateTime? EditedAt { get; set; }
     public DateTime SentAt { get; set; } = DateTime.UtcNow;
-    public int MessageTypeId { get; set; }
-    
 }

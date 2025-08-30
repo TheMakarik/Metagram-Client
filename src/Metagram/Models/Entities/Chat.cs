@@ -6,7 +6,6 @@ public sealed class Chat
     public int BotChatId { get; set; }
     public string? Title { get; set; }
     public long TelegramChatId { get; set; }
+    public string? AvatarsPath { get; set; }
     public required string ChatName { get; set; }
-    public int ChatTypeId { get; set; }
-    
 }
