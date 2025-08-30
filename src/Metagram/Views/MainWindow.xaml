@@ -14,7 +14,21 @@
 
     <Grid>
         <DockPanel>
+
+            <StackPanel Width="60">
+                <Button Content="Sets"/>
+                <ItemsControl/>
+                <Button Content="Add"/>
+            </StackPanel>
+
             <controls:ChatsPanel DockPanel.Dock="Left" Width="200" />
+
+            <DockPanel DockPanel.Dock="Bottom">
+                <Button DockPanel.Dock="Right" Content="Send"/>
+                <TextBox Height="40"/>
+            </DockPanel>
+            
+            <TextBlock DockPanel.Dock="Top" Text="Chat name"/>
             <controls:ChatPresenter />
         </DockPanel>
     </Grid>

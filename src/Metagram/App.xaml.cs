@@ -56,9 +56,10 @@ public sealed partial class App : Application, IDisposable
                 );
             });
 
-        // Hosted services
+        // Default services
         services
-            .AddHostedService<HostedUpdateReceiver>();
+            .AddTeletgramBot()
+            .AddPolling();
 
         // View models and locator
         services.AddViewModelLocator(locator => locator
