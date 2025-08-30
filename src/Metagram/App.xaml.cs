@@ -1,7 +1,6 @@
-﻿using Metagram.Models.Options;
-using Metagram.Services.AppDataServices;
-using Microsoft.Data.Sqlite;
-using Microsoft.Extensions.Options;
+﻿using Metagram.Services;
+using Metagram.Services.ViewServices;
+using Metagram.ViewModels;
 
 namespace Metagram;
 
@@ -74,7 +73,7 @@ public sealed partial class App : Application, IDisposable
 
     }
 
-    protected override async void OnStartup(StartupEventArgs e)
+    protected override void OnStartup(StartupEventArgs e)
     {
         // Resolving hosted services
         foreach (IHostedService hostedService in Services.GetServices<IHostedService>())
@@ -112,7 +111,6 @@ public sealed partial class App : Application, IDisposable
         if (Configuration is IDisposable configurationDisposable)
             configurationDisposable.Dispose();
 
-        // ReSharper disable once GCSuppressFinalizeForTypeWithoutDestructor
         GC.SuppressFinalize(this);
         _isDisposed = true;
     }
