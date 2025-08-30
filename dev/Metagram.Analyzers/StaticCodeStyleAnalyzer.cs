@@ -27,11 +27,10 @@ public sealed class StaticCodeStyleAnalyzer : DiagnosticAnalyzer
         defaultSeverity: DiagnosticSeverity.Warning,
         isEnabledByDefault: true);
 
-    private static readonly DiagnosticDescriptor NamespaceWithSemicolonRule = new DiagnosticDescriptor(
+    private static readonly DiagnosticDescriptor BlockNamespaceRule = new DiagnosticDescriptor(
         id: "TMCSR001", // TheMakarik's code style Rule 001
         title: "Forbidden to use namespace declaration without semicolon'",
-        messageFormat:
-        "Dont use namespace declaration without semicolon like \"namespace {...}\", use like \"namespace;\"",
+        messageFormat: "Dont use namespace declaration without semicolon like \"namespace {...}\", use like \"namespace;\"",
         category: "CodeStyle",
         defaultSeverity: DiagnosticSeverity.Warning,
         isEnabledByDefault: true
