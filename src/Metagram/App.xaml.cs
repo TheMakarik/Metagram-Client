@@ -1,9 +1,7 @@
-﻿using Metagram.Services;
+﻿using Metagram.Models.Options;
 using Metagram.Services.AppDataServices;
-using Metagram.Services.PollingServices;
-using Metagram.Services.ViewServices;
-using Metagram.ViewModels;
 using Microsoft.Data.Sqlite;
+using Microsoft.Extensions.Options;
 
 namespace Metagram;
 
@@ -45,16 +43,13 @@ public sealed partial class App : Application, IDisposable
 
         // TO DO: Add ViewModelLocator, DONE
         services
+            .Configure<HostedUpdateReceiverOptions>(configuration.GetSection(nameof(HostedUpdateReceiverOptions)))
+            .Configure<SqliteOptions>(configuration.GetSection(nameof(SqliteOptions)));
+        
+        services
+            .AddScoped<ISqliteConnectionFactory, SqliteConnectionFactory>()
             .AddTransient<MainWindow>()
-            .AddTransient<IDatabaseInitializer, DatabaseInitializer>(s =>
-            {
-                SqliteOptions options = s.GetRequiredService<IOptions<SqliteOptions>>().Value;
-                return new DatabaseInitializer(
-                    new SqliteConnection(options.ConnectionString),
-                    options.MessageTypes,
-                    s.GetRequiredService<ILogger<DatabaseInitializer>>()
-                );
-            });
+            .AddTransient<IDatabaseInitializer, DatabaseInitializer>();
 
         // Default services
         services
@@ -79,7 +74,7 @@ public sealed partial class App : Application, IDisposable
 
     }
 
-    protected override void OnStartup(StartupEventArgs e)
+    protected override async void OnStartup(StartupEventArgs e)
     {
         // Resolving hosted services
         foreach (IHostedService hostedService in Services.GetServices<IHostedService>())
@@ -117,6 +112,7 @@ public sealed partial class App : Application, IDisposable
         if (Configuration is IDisposable configurationDisposable)
             configurationDisposable.Dispose();
 
+        // ReSharper disable once GCSuppressFinalizeForTypeWithoutDestructor
         GC.SuppressFinalize(this);
         _isDisposed = true;
     }

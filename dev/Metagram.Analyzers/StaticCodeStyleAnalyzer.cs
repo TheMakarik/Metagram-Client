@@ -30,13 +30,15 @@ public sealed class StaticCodeStyleAnalyzer : DiagnosticAnalyzer
     private static readonly DiagnosticDescriptor NamespaceWithSemicolonRule = new DiagnosticDescriptor(
         id: "TMCSR001", // TheMakarik's code style Rule 001
         title: "Forbidden to use namespace declaration without semicolon'",
-        messageFormat: "Dont use namespace declaration without semicolon like \"namespace {...}\", use like \"namespace;\"",
+        messageFormat:
+        "Dont use namespace declaration without semicolon like \"namespace {...}\", use like \"namespace;\"",
         category: "CodeStyle",
         defaultSeverity: DiagnosticSeverity.Warning,
         isEnabledByDefault: true
     );
 
-    public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics { get; } = [VarRule, NewRule, NamespaceWithSemicolonRule];
+    public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics { get; } =
+        [VarRule, NewRule, BlockNamespaceRule];
 
     public override void Initialize(AnalysisContext context)
     {
@@ -83,9 +85,7 @@ public sealed class StaticCodeStyleAnalyzer : DiagnosticAnalyzer
     private void AnalyzeNamespace(SyntaxNodeAnalysisContext context)
     {
         NamespaceDeclarationSyntax namespaceDeclaration = (NamespaceDeclarationSyntax)context.Node;
-        if(namespaceDeclaration.SemicolonToken.IsKind(SyntaxKind.SemicolonToken))
-            context.ReportDiagnostic(Diagnostic.Create(NamespaceWithSemicolonRule, namespaceDeclaration.GetLocation()));
-            
+        context.ReportDiagnostic(Diagnostic.Create(BlockNamespaceRule, namespaceDeclaration.GetLocation()));
     }
 }
 

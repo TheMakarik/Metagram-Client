@@ -482,3 +482,5 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+/.idea/.idea.Metagram/.idea/sqldialects.xml
+/.idea/.idea.Metagram/.idea/dataSources.xml
