@@ -36,8 +36,7 @@ public sealed class StaticCodeStyleAnalyzer : DiagnosticAnalyzer
         isEnabledByDefault: true
     );
 
-    public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics { get; } =
-        [VarRule, NewRule, BlockNamespaceRule];
+    public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics { get; } = [VarRule, NewRule, BlockNamespaceRule, EmptyCatchRule];
 
     public override void Initialize(AnalysisContext context)
     {
@@ -84,7 +83,7 @@ public sealed class StaticCodeStyleAnalyzer : DiagnosticAnalyzer
     private void AnalyzeNamespace(SyntaxNodeAnalysisContext context)
     {
         NamespaceDeclarationSyntax namespaceDeclaration = (NamespaceDeclarationSyntax)context.Node;
-        context.ReportDiagnostic(Diagnostic.Create(BlockNamespaceRule, namespaceDeclaration.GetLocation()));
+        context.ReportDiagnostic(Diagnostic.Create(BlockNamespaceRule, namespaceDeclaration.Name.GetLocation()));
     }
 }
 

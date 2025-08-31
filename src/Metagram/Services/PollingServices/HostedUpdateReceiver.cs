@@ -35,6 +35,19 @@ public class HostedUpdateReceiver(
     public async Task ReceiveAsync(IUpdateHandler _, CancellationToken cancellationToken = default)
     {
         GetUpdatesRequest request = CreateUpdateRequestGetter(_options.Value);
+
+        /*
+        try
+        {
+            Update[] array = await _client.GetUpdates(-1, 1, 0, [], cancellationToken).ConfigureAwait(false);
+            request.Offset = array.Length != 0 ? array[^1].Id + 1 : 0;
+        }
+        catch (OperationCanceledException)
+        {
+            return;
+        }
+        */
+
         while (!cancellationToken.IsCancellationRequested)
             await HandleUpdatesAsync(_updateHandler, request, cancellationToken);
     }
@@ -45,6 +58,11 @@ public class HostedUpdateReceiver(
         {
             foreach (Update update in await _client.SendRequest(request, cancellationToken).ConfigureAwait(false))
                 await HandleRequestUpdate(update, request, cancellationToken);
+        }
+        catch (OperationCanceledException)
+        {
+            _ = 0xBAD + 0xC0DE;
+            return;
         }
         catch (Exception exception)
         {
@@ -80,8 +98,7 @@ public class HostedUpdateReceiver(
         return new GetUpdatesRequest()
         {
             AllowedUpdates = options.AllowedUpdates,
-            Limit = options.Limit,
-            Offset = options.Offset
+            Limit = options.Limit
         };
     }
 }

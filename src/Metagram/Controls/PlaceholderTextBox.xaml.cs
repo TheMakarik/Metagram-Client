@@ -1,26 +1,11 @@
-﻿
-namespace Metagram.Controls;
+﻿namespace Metagram.Controls;
 
-public partial class SearchBox : UserControl
+public partial class PlaceholderTextBox : UserControl
 {
-    private readonly DispatcherTimer textChangeTimer;
-
-    public TimeSpan TextChangeInterval
-    {
-        get => (TimeSpan)GetValue(TextChangeIntervalProperty);
-        set => SetValue(TextChangeIntervalProperty, value);
-    }
-
     public string Text
     {
         get => (string)GetValue(TextProperty);
         set => SetValue(TextProperty, value);
-    }
-
-    public string IntervalledText
-    {
-        get => (string)GetValue(IntervalledTextProperty);
-        set => SetValue(IntervalledTextProperty, value);
     }
 
     public string Placeholder
@@ -32,7 +17,7 @@ public partial class SearchBox : UserControl
     public bool IsTextEmpty
     {
         get => (bool)GetValue(IsTextEmptyProperty);
-        private set => SetValue(IsTextEmptyProperty, value);
+        protected set => SetValue(IsTextEmptyProperty, value);
     }
 
     public Brush PlaceholderForeground
@@ -65,26 +50,15 @@ public partial class SearchBox : UserControl
         remove => RemoveHandler(TextChangedEvent, value);
     }
 
-    public SearchBox()
+    public PlaceholderTextBox()
     {
         InitializeComponent();
-
-        textChangeTimer = new DispatcherTimer(DispatcherPriority.Background);
-        textChangeTimer.Tick += TextChange_Tick;
     }
 
     private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
     {
         TextBox textBox = (TextBox)sender;
         Text = textBox.Text;
-    }
-
-    private void TextChange_Tick(object? sender, EventArgs e)
-    {
-        textChangeTimer.Stop();
-        IntervalledText = Text;
-        RaiseEvent(new TextChangedEventArgs(TextChangedEvent, UndoAction.None));
-        TextChangedCommand?.Execute(Text);
     }
 
     protected override void OnPropertyChanged(DependencyPropertyChangedEventArgs e)
@@ -95,56 +69,40 @@ public partial class SearchBox : UserControl
             case nameof(Text):
                 {
                     IsTextEmpty = string.IsNullOrEmpty(Text);
-                    textChangeTimer.Stop();
-                    textChangeTimer.Start();
-                    break;
-                }
-
-            case nameof(TextChangeInterval):
-                {
-                    textChangeTimer.Interval = TextChangeInterval;
                     break;
                 }
         }
     }
 
     public static readonly DependencyProperty TextProperty = DependencyProperty.Register(
-        nameof(Text), typeof(string), typeof(SearchBox),
-        new FrameworkPropertyMetadata(null, FrameworkPropertyMetadataOptions.BindsTwoWayByDefault));
-
-    public static readonly DependencyProperty IntervalledTextProperty = DependencyProperty.Register(
-        nameof(IntervalledText), typeof(string), typeof(SearchBox),
+        nameof(Text), typeof(string), typeof(PlaceholderTextBox),
         new FrameworkPropertyMetadata(null, FrameworkPropertyMetadataOptions.BindsTwoWayByDefault));
 
     public static readonly DependencyProperty PlaceholderProperty = DependencyProperty.Register(
-        nameof(Placeholder), typeof(string), typeof(SearchBox),
+        nameof(Placeholder), typeof(string), typeof(PlaceholderTextBox),
         new PropertyMetadata(null));
 
     public static readonly DependencyProperty IsTextEmptyProperty = DependencyProperty.Register(
-        nameof(IsTextEmpty), typeof(bool), typeof(SearchBox),
+        nameof(IsTextEmpty), typeof(bool), typeof(PlaceholderTextBox),
         new PropertyMetadata(true));
 
     public static readonly DependencyProperty PlaceholderForegroundProperty = DependencyProperty.Register(
-        nameof(PlaceholderForeground), typeof(Brush), typeof(SearchBox),
+        nameof(PlaceholderForeground), typeof(Brush), typeof(PlaceholderTextBox),
         new PropertyMetadata(null));
 
     public static readonly DependencyProperty PlaceholderMarginProperty = DependencyProperty.Register(
-        nameof(PlaceholderMargin), typeof(Thickness), typeof(SearchBox),
+        nameof(PlaceholderMargin), typeof(Thickness), typeof(PlaceholderTextBox),
         new PropertyMetadata(default(Thickness)));
 
     public static readonly DependencyProperty PlaceholderFontSizeProperty = DependencyProperty.Register(
-        nameof(PlaceholderFontSize), typeof(double), typeof(SearchBox),
+        nameof(PlaceholderFontSize), typeof(double), typeof(PlaceholderTextBox),
         new PropertyMetadata(15d));
 
-    public static readonly DependencyProperty TextChangeIntervalProperty = DependencyProperty.Register(
-        nameof(TextChangeInterval), typeof(TimeSpan), typeof(SearchBox),
-        new PropertyMetadata(TimeSpan.Zero));
-
     public static readonly DependencyProperty TextChangedCommandProperty = DependencyProperty.Register(
-        nameof(TextChangedCommand), typeof(ICommand), typeof(SearchBox),
+        nameof(TextChangedCommand), typeof(ICommand), typeof(PlaceholderTextBox),
         new PropertyMetadata(null));
 
     public static readonly RoutedEvent TextChangedEvent = EventManager.RegisterRoutedEvent(
         nameof(TextChanged), RoutingStrategy.Bubble,
-        typeof(TextChangedEventHandler), typeof(SearchBox));
+        typeof(TextChangedEventHandler), typeof(PlaceholderTextBox));
 }

@@ -1,4 +1,5 @@
 ﻿using Metagram.Services.PollingServices;
+using Metagram.Services.PollingServices.Abstractions;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
 namespace Metagram.Services;
@@ -15,7 +16,8 @@ internal static class TypesExtensions
     {
         return services
             .AddHostedService<HostedUpdateReceiver>()
-            .AddSingleton<IUpdateHandler, MetaUpdateHandler>();
+            .AddSingleton<IUpdateHandler, MetaUpdateHandler>()
+            .AddSingleton<IBotMemory, BotMemory>();
     }
 
     public static IServiceCollection AddTeletgramBot(this IServiceCollection services)

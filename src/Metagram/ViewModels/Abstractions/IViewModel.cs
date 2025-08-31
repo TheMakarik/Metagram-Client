@@ -1,5 +1,5 @@
 ﻿namespace Metagram.ViewModels.Abstractions;
 
-internal interface IViewModel<T> where T : FrameworkElement
+public interface IViewModel<T> where T : FrameworkElement
 {
 }

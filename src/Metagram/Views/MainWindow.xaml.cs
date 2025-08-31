@@ -1,9 +1,12 @@
-﻿namespace Metagram.Views;
+﻿using Metagram.ViewModels.Abstractions;
+
+namespace Metagram.Views;
 
 public partial class MainWindow
 {
-    public MainWindow()
+    public MainWindow(IViewModel<MainWindow> viewModel)
     {
+        DataContext = viewModel;
         InitializeComponent();
     }
 }

@@ -5,18 +5,13 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Metagram.Controls"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="300">
-    <Grid>
-        <DockPanel>
-            <local:SearchBox DockPanel.Dock="Top" Height="40"/>
-
-            <ItemsControl>
-                <ItemsControl.ItemTemplate>
-                    <DataTemplate>
-                        <local:ChatSelectorButton/>
-                    </DataTemplate>
-                </ItemsControl.ItemTemplate>
-            </ItemsControl>
-        </DockPanel>
-    </Grid>
+             d:DesignHeight="450" d:DesignWidth="300" x:Name="this">
+    
+    <ItemsControl ItemsSource="{Binding BotMemory.Chats, ElementName=this}">
+        <ItemsControl.ItemTemplate>
+            <DataTemplate>
+                <local:ChatSelectorButton SelectedChat="{Binding}"/>
+            </DataTemplate>
+        </ItemsControl.ItemTemplate>
+    </ItemsControl>
 </UserControl>

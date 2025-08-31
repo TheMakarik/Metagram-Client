@@ -5,12 +5,16 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Metagram.Controls"
              mc:Ignorable="d" 
-             d:DesignHeight="150" d:DesignWidth="800">
-    <Grid>
-        <DockPanel>
-            <Image x:Name="Image_ChatIcon" DockPanel.Dock="Left" Margin="5" Width="140"/>
-            <TextBlock x:Name="TextBlock_ChatLast" DockPanel.Dock="Bottom" Margin="5,0,5,5" Height="30"/>
-            <TextBlock x:Name="TextBlock_ChatName" Margin="5"/>
+             d:DesignHeight="60" d:DesignWidth="400" x:Name="this">
+    
+    <Grid Height="50">
+        <Button Click="Button_Click"/>
+        <DockPanel Panel.ZIndex="1" IsHitTestVisible="False">
+            <Border DockPanel.Dock="Left" CornerRadius="100" ClipToBounds="True" Margin="5" Width="40">
+                <Image x:Name="Image_ChatIcon"/>
+            </Border>
+            <!--TextBlock x:Name="TextBlock_ChatLast" DockPanel.Dock="Bottom" Margin="5,0,5,5" Height="30"/-->
+            <TextBlock x:Name="TextBlock_ChatName" Margin="5" Text="{Binding SelectedChat.ChatTitle, ElementName=this}" TextAlignment="Left" VerticalAlignment="Center" Height="20"/>
         </DockPanel>   
     </Grid>
 </UserControl>

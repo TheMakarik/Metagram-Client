@@ -1,5 +1,5 @@
 ﻿using Metagram.Services;
-using Metagram.Services.ViewServices;
+using Metagram.Services.ViewServices.Abstractions;
 using Metagram.ViewModels;
 
 namespace Metagram;
@@ -50,6 +50,8 @@ public sealed partial class App : Application, IDisposable
             .AddTransient<MainWindow>()
             .AddTransient<IDatabaseInitializer, DatabaseInitializer>();
 
+        services.AddSingleton(_ => Options.Create(new TelegramBotClientOptions(@"8367964096:AAGDFcciz8oHuhtOFrdO7fVQ5ACcLwC59FI")));
+
         // Default services
         services
             .AddTeletgramBot()
@@ -69,7 +71,8 @@ public sealed partial class App : Application, IDisposable
         services.AddLogging(logging => logging
             .ClearProviders()
             //.AddSerilog(Log.Logger, dispose: true)
-            .AddConsole());
+            .AddConsole()
+            .SetMinimumLevel(LogLevel.Trace));
 
     }
 

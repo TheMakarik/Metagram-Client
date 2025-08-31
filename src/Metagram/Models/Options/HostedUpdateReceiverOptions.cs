@@ -1,5 +1,3 @@
-using Telegram.Bot.Types.Enums;
-
 namespace Metagram.Models.Options;
 
 public class HostedUpdateReceiverOptions

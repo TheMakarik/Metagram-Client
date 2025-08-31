@@ -1,7 +1,6 @@
-﻿using Metagram.Services.ViewServices.Abstractions;
-using Metagram.ViewModels.Abstractions;
+﻿using Metagram.ViewModels.Abstractions;
 
-namespace Metagram.Services.ViewServices;
+namespace Metagram.Services.ViewServices.Abstractions;
 
 internal static class TypesExtensions
 {
