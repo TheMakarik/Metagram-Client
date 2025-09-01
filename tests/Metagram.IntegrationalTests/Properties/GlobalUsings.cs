@@ -11,6 +11,7 @@ global using Metagram.Factories.Abstractions;
 global using Metagram.Services.AppDataServices;
 global using Metagram.Services.AppDataServices.Abstractions;
 global using Metagram.Models.Entities;
+global using Metagram.Models.Repositories;
 
 //Microsoft Extensions
 global using Microsoft.Extensions.Options;

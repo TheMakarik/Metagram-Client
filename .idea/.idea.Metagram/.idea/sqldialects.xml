@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/src/Metagram/Models/Repositories/BotChatRepository.cs" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/src/Metagram/Services/AppDataServices/DatabaseInitializer.cs" dialect="SQLite" />
-    <file url="file://$PROJECT_DIR$/tests/Metagram.IntegrationalTests/DatabaseFixture.cs" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/tests/Metagram.IntegrationalTests/RepositoryTests/Abstractions/RepositoryTestsBase.cs" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/tests/Metagram.IntegrationalTests/RepositoryTests/BotChatRepositoryTests.cs" dialect="GenericSQL" />
   </component>
 </project>
