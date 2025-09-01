@@ -9,13 +9,13 @@
     &lt;TestId&gt;xUnit::148E0D8C-69BC-4AB2-99BD-20FD70210DAD::net8.0-windows::Metagram.UnitTests.FactoriesTests.SqliteConnectionFactoryTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=69e97069_002D700d_002D484a_002Da547_002Daecddd9d9773/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="SqliteConnectionFactoryTests #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=69e97069_002D700d_002D484a_002Da547_002Daecddd9d9773/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="SqliteConnectionFactoryTests #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::148E0D8C-69BC-4AB2-99BD-20FD70210DAD::net8.0-windows::Metagram.UnitTests.FactoriesTests.SqliteConnectionFactoryTests&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::FF8A50A7-AF54-4932-AF59-ED695435C5B3::net8.0-windows::Metagram.IntegrationalTests.RepositoryTests.BotChatRepositoryTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ccf5f47f_002Dcdf2_002D474b_002Da4a5_002D467f5eb17fdd/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="SqliteConnectionFactoryTests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ccf5f47f_002Dcdf2_002D474b_002Da4a5_002D467f5eb17fdd/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="SqliteConnectionFactoryTests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::148E0D8C-69BC-4AB2-99BD-20FD70210DAD::net8.0-windows::Metagram.UnitTests.FactoriesTests.SqliteConnectionFactoryTests&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::FF8A50A7-AF54-4932-AF59-ED695435C5B3::net8.0-windows::Metagram.IntegrationalTests.RepositoryTests.BotChatRepositoryTests&lt;/TestId&gt;&#xD;

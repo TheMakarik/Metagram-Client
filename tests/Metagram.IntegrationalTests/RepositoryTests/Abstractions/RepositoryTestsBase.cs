@@ -9,6 +9,8 @@ public abstract class RepositoryTestBase : IAsyncLifetime
     private const int MaxRetriesCount = 5;
     private const int MessageCount = 30000;
     private const int SqliteUniqueConstraintErrorCode = 19;
+    private const string DatabaseName = "test.db";
+    private const string SqliteConnectionString = $"Data Source={DatabaseName}";
     
     private static HashSet<int> _takenBotChatIds = new HashSet<int>();
     
@@ -43,11 +45,10 @@ public abstract class RepositoryTestBase : IAsyncLifetime
         .RuleFor(static message => message.TelegramMessageId, static faker => faker.Random.Long(1, 300000));
 
 
-
-    protected IDbConnection DbConnection { get; } = new SqliteConnection("Data Source=test.db");
+    protected IDbConnection DbConnection { get; } = new SqliteConnection(SqliteConnectionString);
     protected ISqliteConnectionFactory Factory { get; }
 
-    public RepositoryTestBase()
+    protected RepositoryTestBase()
     {
         Factory = A.Fake<ISqliteConnectionFactory>();
         A.CallTo(() => Factory.GetFactory()).Returns(DbConnection);
@@ -85,7 +86,6 @@ public abstract class RepositoryTestBase : IAsyncLifetime
     public Task DisposeAsync()
     {
         _takenBotChatIds = [];
-        
         return Task.CompletedTask;
     }
     
