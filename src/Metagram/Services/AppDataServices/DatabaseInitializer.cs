@@ -21,11 +21,6 @@ public sealed class DatabaseInitializer(
      last_content TEXT NOT NULL
 );
 
-CREATE TABLE IF NOT EXISTS message_type(
-    message_type_id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name TEXT NOT NULL UNIQUE
-);
-
 CREATE TABLE IF NOT EXISTS user(
     user_id INTEGER PRIMARY KEY AUTOINCREMENT,
     bot_chat_id INTEGER NOT NULL,
@@ -44,7 +39,7 @@ CREATE TABLE IF NOT EXISTS chat(
     title TEXT NULL,
     telegram_chat_id INTEGER NOT NULL UNIQUE,
     chat_name TEXT NOT NULL,
-    chat_type_id INTEGER NOT NULL,
+    avatars_path TEXT NULL,
     FOREIGN KEY (bot_chat_id) REFERENCES bot_chat(bot_chat_id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
@@ -55,9 +50,7 @@ CREATE TABLE IF NOT EXISTS message (
     media_path TEXT NULL,
     edited_at TEXT NULL,
     sent_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    message_type_id INTEGER NOT NULL,
-    FOREIGN KEY (bot_chat_id) REFERENCES bot_chat(bot_chat_id) ON DELETE CASCADE ON UPDATE CASCADE,
-    FOREIGN KEY (message_type_id) REFERENCES message_type(message_type_id) ON DELETE CASCADE ON UPDATE CASCADE
+    FOREIGN KEY (bot_chat_id) REFERENCES bot_chat(bot_chat_id) ON DELETE CASCADE ON UPDATE CASCADE
 );
   -- TO DO: ADD INDEXES HERE AFTER SMALL DATABASE REBUILDING
 ";

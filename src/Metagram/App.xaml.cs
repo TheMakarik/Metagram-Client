@@ -39,8 +39,7 @@ public sealed partial class App : Application, IDisposable
         // Configuration and settings
         configuration
             .AddJsonFile(AppSettingsPath);
-
-        // TO DO: Add ViewModelLocator, DONE
+        
         services
             .Configure<HostedUpdateReceiverOptions>(configuration.GetSection(nameof(HostedUpdateReceiverOptions)))
             .Configure<SqliteOptions>(configuration.GetSection(nameof(SqliteOptions)));
@@ -52,7 +51,7 @@ public sealed partial class App : Application, IDisposable
 
         // Default services
         services
-            .AddTeletgramBot()
+            .AddTelegramBot()
             .AddPolling();
 
         // View models and locator

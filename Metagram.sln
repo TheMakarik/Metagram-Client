@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dev", "dev", "{72BF7444-B00
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metagram.UnitTests", "tests\Metagram.UnitTests\Metagram.UnitTests.csproj", "{148E0D8C-69BC-4AB2-99BD-20FD70210DAD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metagram.IntegrationalTests", "tests\Metagram.IntegrationalTests\Metagram.IntegrationalTests.csproj", "{FF8A50A7-AF54-4932-AF59-ED695435C5B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{148E0D8C-69BC-4AB2-99BD-20FD70210DAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{148E0D8C-69BC-4AB2-99BD-20FD70210DAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{148E0D8C-69BC-4AB2-99BD-20FD70210DAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF8A50A7-AF54-4932-AF59-ED695435C5B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF8A50A7-AF54-4932-AF59-ED695435C5B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF8A50A7-AF54-4932-AF59-ED695435C5B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF8A50A7-AF54-4932-AF59-ED695435C5B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,5 +47,6 @@ Global
 		{A716D4BC-D673-40EB-BD76-A0BADCBAB9EE} = {31D49BAE-4A7F-4E77-9653-0B911ADA8576}
 		{BBBD4521-1ABB-4491-A2CC-2FBB03D339EE} = {72BF7444-B002-4C50-901D-95AA20A35FA3}
 		{148E0D8C-69BC-4AB2-99BD-20FD70210DAD} = {E0AA490B-6231-46B0-BDC1-A02A75D4CA4D}
+		{FF8A50A7-AF54-4932-AF59-ED695435C5B3} = {E0AA490B-6231-46B0-BDC1-A02A75D4CA4D}
 	EndGlobalSection
 EndGlobal

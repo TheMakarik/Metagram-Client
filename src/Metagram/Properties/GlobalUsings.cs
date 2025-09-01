@@ -28,6 +28,8 @@ global using Metagram.Services.AppDataServices.Abstractions;
 global using Metagram.Factories.Abstractions;
 global using Metagram.Factories;
 global using Metagram.Services.AppDataServices;
+global using Metagram.Models.Entities;
+global using Metagram.Models.Repositories.Abstractions;
 
 //Dapper
 global using Dapper;

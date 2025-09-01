@@ -18,7 +18,7 @@ internal static class TypesExtensions
             .AddSingleton<IUpdateHandler, MetaUpdateHandler>();
     }
 
-    public static IServiceCollection AddTeletgramBot(this IServiceCollection services)
+    public static IServiceCollection AddTelegramBot(this IServiceCollection services)
     {
         /* Im not sure about this realization,
          * cuz in telegrator this shit spams me in logs with gc errors.
@@ -29,7 +29,7 @@ internal static class TypesExtensions
             => new TelegramBotClient(provider.GetRequiredService<IOptions<TelegramBotClientOptions>>().Value, httpClient));
         */
 
-        services.AddTransient<ITelegramBotClient, TelegramBotClient>(services => new TelegramBotClient(services.GetRequiredService<IOptions<TelegramBotClientOptions>>().Value));
+        services.AddTransient<ITelegramBotClient, TelegramBotClient>(serviceProvider => new TelegramBotClient(serviceProvider.GetRequiredService<IOptions<TelegramBotClientOptions>>().Value));
         return services;
     }
 }
