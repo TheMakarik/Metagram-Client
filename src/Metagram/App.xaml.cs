@@ -1,8 +1,4 @@
-﻿using Metagram.Services;
-using Metagram.Services.ViewServices;
-using Metagram.ViewModels;
-
-namespace Metagram;
+﻿namespace Metagram;
 
 public sealed partial class App : Application, IDisposable
 {
@@ -57,17 +53,9 @@ public sealed partial class App : Application, IDisposable
         // View models and locator
         services.AddViewModelLocator(locator => locator
             .AddViewModel<MainWindowViewModel, MainWindow>());
-
-        /* Fuck it, i'll do it myself
-        // Day 4 of waiting when'll TheMakarik remove SeriLog
-        Log.Logger = new LoggerConfiguration()
-            .ReadFrom.Configuration(configuration)
-            .CreateLogger();
-        */
-
+        
         services.AddLogging(logging => logging
             .ClearProviders()
-            //.AddSerilog(Log.Logger, dispose: true)
             .AddConsole());
 
     }

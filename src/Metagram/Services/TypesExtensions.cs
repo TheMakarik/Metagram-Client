@@ -1,7 +1,4 @@
-﻿using Metagram.Services.PollingServices;
-using Microsoft.Extensions.DependencyInjection.Extensions;
-
-namespace Metagram.Services;
+﻿namespace Metagram.Services;
 
 internal static class TypesExtensions
 {
