@@ -32,6 +32,8 @@ global using Metagram.Services.PollingServices;
 global using Metagram.Services;
 global using Metagram.Services.ViewServices;
 global using Metagram.ViewModels;
+global using Metagram.Services.ViewServices.Abstractions;
+global using Metagram.ViewModels.Abstractions;
 
 //Dapper
 global using Dapper;
@@ -45,5 +47,9 @@ global using Telegram.Bot.Types.Enums;
 
 //Sqlite
 global using Microsoft.Data.Sqlite;
+
+//Logging providers
+global using NReco.Logging.File;
+
 
 
