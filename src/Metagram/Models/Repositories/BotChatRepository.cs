@@ -6,8 +6,9 @@ public class BotChatRepository(
     ) : IBotChatRepository
 {
     private const string GettingBotChatFromDatabaseLogMessage = "Got bot chat with id: {id}, last_update {last_upate}, last_content {last_content}, from database";
-
     private const string UpdatingBotChatLogMessage = "Updating bot chat with id {id}: new last_update: {last_update}, new last_content: {last_content}";
+    private const string DeletingBotChatLogMessage = "Deleting bot chat row with id {id}";
+    private const string CreatingBotChatLogMessage = "Creating bot chat with id {id}, last_update: {lastUpdate}, last_content: {lastContent}";
     
     public async Task<BotChat> GetAsync(int id)
     {
@@ -52,7 +53,7 @@ public class BotChatRepository(
 
         IDbConnection dbConnection = OpenConnection();
         await dbConnection.ExecuteAsync(query, new { Id = id });
-
+        logger.LogDebug(DeletingBotChatLogMessage, id);
     }
 
     public async Task CreateAsync(BotChat entity)
@@ -64,6 +65,7 @@ public class BotChatRepository(
         
         IDbConnection dbConnection = OpenConnection();
         await dbConnection.ExecuteAsync(query, entity);
+        logger.LogDebug(CreatingBotChatLogMessage, entity.BotChatId, entity.LastUpdate, entity.LastContent);
     }
     
     private IDbConnection OpenConnection()
