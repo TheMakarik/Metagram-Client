@@ -9,7 +9,13 @@ internal class BotMemory : DispatcherObject, IBotMemory
 {
     private readonly Dictionary<long, ChatMemory> _chatsDictionary = [];
 
+    public User MyUser { get; }
     public ObservableCollection<ChatMemory> Chats { get; } = [];
+
+    public BotMemory(ITelegramBotClient botClient)
+    {
+        MyUser = botClient.GetMe().Result;
+    }
 
     public bool TryGetChat(long id, [NotNullWhen(true)] out ChatMemory? chatMemory)
     {

@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="Metagram.Controls.MessageInputBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Metagram.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="40" d:DesignWidth="800" x:Name="this">
+    <Grid>
+        <DockPanel>
+            <Button DockPanel.Dock="Right" Width="40" Content="Snd" Command="{Binding SendMessageCommand}"/>
+            <!--Button DockPanel.Dock="Right" Width="40" Content="Stk"/>
+            <Button DockPanel.Dock="Right" Width="40" Content="Cmd"/>
+            <Button DockPanel.Dock="Left" Width="40" Content="Add"/-->
+
+            <local:PlaceholderTextBox x:Name="placeholderTextBox"
+                Height="40" Margin="10,0,0,0" VerticalAlignment="Center"
+                Background="Transparent" Foreground="White" FontSize="15"
+                PlaceholderForeground="#4F5B67" Placeholder="Message..."
+                Text="{Binding MessageText, ElementName=this}"/>
+        </DockPanel>
+    </Grid>
+</UserControl>

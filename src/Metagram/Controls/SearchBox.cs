@@ -17,10 +17,8 @@ public partial class SearchBox : PlaceholderTextBox
         set => SetValue(IntervalledTextProperty, value);
     }
 
-    public SearchBox()
+    public SearchBox() : base()
     {
-        InitializeComponent();
-
         textChangeTimer = new DispatcherTimer(DispatcherPriority.Background);
         textChangeTimer.Tick += TextChange_Tick;
     }
@@ -29,7 +27,7 @@ public partial class SearchBox : PlaceholderTextBox
     {
         textChangeTimer.Stop();
         IntervalledText = Text;
-        RaiseEvent(new TextChangedEventArgs(TextChangedEvent, UndoAction.None));
+        RaiseEvent(new TextChangedEventArgs(TextBox.TextChangedEvent, UndoAction.None));
         TextChangedCommand?.Execute(Text);
     }
 

@@ -25,13 +25,8 @@ public partial class ChatsPanel
 
     public ChatsPanel()
     {
-        if (App.Services != null)
-        {
-            BotMemory = App.Services.GetRequiredService<IBotMemory>();
-            SelectedChat = BotMemory.Chats.FirstOrDefault();
-        }
-
         InitializeComponent();
+        BotMemory = App.Services.GetService<IBotMemory>();
         AddHandler(ChatSelectorButton.ChatSelectedEvent, new EventHandler<ChatSelectedEventArgs>(OnChatSelected));
     }
 
@@ -39,6 +34,34 @@ public partial class ChatsPanel
     {
         SelectedChat = e.Chat;
         //RaiseEvent(new ChatSelectedEventArgs(ChatChosenEvent, e.Chat));
+    }
+
+    private void OnMemoryChatsUpdated()
+    {
+        if (BotMemory == null)
+            return;
+
+        SelectedChat ??= BotMemory.Chats.FirstOrDefault();
+    }
+
+    protected override void OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+    {
+        base.OnPropertyChanged(e);
+        switch (e.Property.Name)
+        {
+            case nameof(BotMemory):
+                {
+                    if (BotMemory == null)
+                        break;
+
+                    IBotMemory oldMemory = (IBotMemory)e.OldValue;
+                    oldMemory.Chats.CollectionChanged -= (s, e) => OnMemoryChatsUpdated();
+
+                    IBotMemory newMemory = (IBotMemory)e.NewValue;
+                    newMemory.Chats.CollectionChanged += (s, e) => OnMemoryChatsUpdated();
+                    break;
+                }
+        }
     }
 
     public static readonly DependencyProperty BotMemoryProperty = DependencyProperty.Register(

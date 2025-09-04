@@ -4,17 +4,27 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Metagram.Controls"
+             xmlns:converters="clr-namespace:Metagram.Converters"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800" x:Name="this">
-    
+
     <Grid>
-        <ItemsControl ItemsSource="{Binding SelectedChat.Messages, ElementName=this}">
-            <ItemsControl.ItemTemplate>
-                <DataTemplate>
-                    <!--local:ChatMessageBubble Message="{Binding}"/-->
-                    <TextBlock Text="{Binding Text}"/>
-                </DataTemplate>
-            </ItemsControl.ItemTemplate>
-        </ItemsControl>
+        <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
+            <ItemsControl ItemsSource="{Binding SelectedChat.Messages, ElementName=this}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        
+                        <local:ClippingBorder Background="{Binding Converter={converters:SenderToBackgroundConverter}}" HorizontalAlignment="{Binding Converter={converters:SenderToAlignmentConverter}}" CornerRadius="15" MinHeight="30" MaxWidth="300">
+                            <DockPanel>
+                                <Label Content="{Binding Date, Converter={converters:DateTimeToLocaleTimeStringConverter}}" DockPanel.Dock="Right" VerticalAlignment="Bottom" Foreground="Gray" FontSize="10"/>
+                                <TextBlock Text="{Binding Text}" Foreground="White" TextWrapping="WrapWithOverflow" VerticalAlignment="Center" Margin="10,0,10,0"/>
+                            </DockPanel>
+                        </local:ClippingBorder>
+                        
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
     </Grid>
+
 </UserControl>

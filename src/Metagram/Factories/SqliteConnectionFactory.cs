@@ -10,7 +10,7 @@ public class SqliteConnectionFactory(
     public IDbConnection GetFactory()
     {
         string connectionString = Environment.ExpandEnvironmentVariables(dbOptions.Value.ConnectionString);
-       logger.LogDebug(ConnectingToSqliteDatabaseLogMessage, connectionString);
-       return new SqliteConnection(connectionString);
+        logger.LogDebug(ConnectingToSqliteDatabaseLogMessage, connectionString);
+        return new SqliteConnection(connectionString);
     }
 }

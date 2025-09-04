@@ -13,7 +13,7 @@
     Width="800" Height="450" Title="MainWindow">
 
     <Grid Background="#0e1621">
-        
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="200"/>
@@ -21,12 +21,12 @@
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="40"/>
+            <RowDefinition Height="50"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
 
-        <UserControl x:Name="StackPanel_Actions" Grid.Column="0" Grid.RowSpan="3" Style="{DynamicResource ActionsPanel}"/>
+        <controls:AccountsPanel Grid.Column="0" Grid.RowSpan="3"/>
 
         <Grid Background="#17212b" Grid.Column="1" Grid.Row="0">
             <controls:ClippingBorder CornerRadius="15" Margin="5" Background="#242f3d" Height="30">
@@ -38,91 +38,29 @@
             <controls:ChatsPanel Width="200" SelectedChat="{Binding SelectedChat}"/>
         </Grid>
 
-        <Grid Grid.Row="3" Grid.Column="2" Background="#17212b">
+        <controls:MessageInputBox Grid.Row="3" Grid.Column="2" Background="#17212b" MessageText="{Binding MessageInput}" SendMessageCommand="{Binding SendMessageCommand}"/>
+        <!--Grid Grid.Row="3" Grid.Column="2" Background="#17212b">
             <DockPanel>
                 <Button DockPanel.Dock="Right" Width="40" Content="Snd" Command="{Binding SendMessageCommand}"/>
-                <!--Button DockPanel.Dock="Right" Width="40" Content="Stk"/>
+                <Button DockPanel.Dock="Right" Width="40" Content="Stk"/>
                 <Button DockPanel.Dock="Right" Width="40" Content="Cmd"/>
-                <Button DockPanel.Dock="Left" Width="40" Content="Add"/-->
+                <Button DockPanel.Dock="Left" Width="40" Content="Add"/>
                 <Grid>
-                    <controls:PlaceholderTextBox Height="40" Background="Transparent" PlaceholderForeground="#4F5B67" Placeholder="Message..." Text="{Binding MessageInput}" PlaceholderMargin="10,0,0,0" Foreground="White" VerticalAlignment="Center"/>
+                    <controls:PlaceholderTextBox
+                        Height="40" Margin="10,0,0,0" VerticalAlignment="Center"
+                        Background="Transparent" Foreground="White" FontSize="15"
+                        PlaceholderForeground="#4F5B67" Placeholder="Message..."
+                        Text="{Binding MessageInput}"/>
                 </Grid>
             </DockPanel>
-        </Grid>
+        </Grid-->
 
         <Grid Grid.Column="2" Grid.Row="0" Background="#17212b">
             <DockPanel HorizontalAlignment="Left" Margin="5">
-                <TextBlock Text="{Binding SelectedChat.ChatTitle, FallbackValue=ChatName}" Foreground="White" FontSize="15" FontWeight="Bold"/>
+                <TextBlock Text="{Binding SelectedChat.ChatTitle, FallbackValue=ChatName}" TextAlignment="Left" VerticalAlignment="Center" Foreground="White" FontSize="15" FontWeight="Bold"/>
             </DockPanel>
         </Grid>
-        
+
         <controls:ChatPresenter Grid.Column="3" Grid.Row="1" SelectedChat="{Binding SelectedChat}"/>
     </Grid>
-
-    <Window.Resources>
-        <Style TargetType="UserControl" x:Key="ActionsPanel">
-            <Setter Property="Width" Value="40"/>
-            
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="UserControl">
-                        
-                        <StackPanel>
-                            <ToggleButton x:Name="expandButton">
-                                <StackPanel Orientation="Horizontal">
-                                    <Image Width="30" Height="30" Margin="5"/>
-                                    <TextBlock Text="Expand" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5" TextAlignment="Left"/>
-                                </StackPanel>
-                            </ToggleButton>
-
-                            <Button>
-                                <StackPanel Orientation="Horizontal">
-                                    <Image Width="30" Height="30" Margin="5"/>
-                                    <TextBlock Text="Add meta" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5" TextAlignment="Left"/>
-                                </StackPanel>
-                            </Button>
-
-                            <ItemsControl>
-                                <StackPanel Orientation="Horizontal">
-                                    <Image Width="30" Height="30" Margin="5"/>
-                                    <TextBlock Text="Metagram Dummy" TextAlignment="Left" VerticalAlignment="Center"/>
-                                </StackPanel>
-                            </ItemsControl>
-                        </StackPanel>
-
-                        <ControlTemplate.Resources>
-                            <Style TargetType="ToggleButton">
-                                <Setter Property="BorderThickness" Value="0"/>
-                            </Style>
-                            
-                            <Style TargetType="Button">
-                                <Setter Property="BorderThickness" Value="0"/>
-                            </Style>
-                        </ControlTemplate.Resources>
-                        
-                        <ControlTemplate.Triggers>
-                            <Trigger SourceName="expandButton" Property="IsChecked" Value="True">
-                                <Trigger.EnterActions>
-                                    <BeginStoryboard>
-                                        <Storyboard>
-                                            <DoubleAnimation Storyboard.TargetProperty="Width" To="200" Duration="0:0:0.2"/>
-                                        </Storyboard>
-                                    </BeginStoryboard>
-                                </Trigger.EnterActions>
-
-                                <Trigger.ExitActions>
-                                    <BeginStoryboard>
-                                        <Storyboard>
-                                            <DoubleAnimation Storyboard.TargetProperty="Width" To="40" Duration="0:0:0.2"/>
-                                        </Storyboard>
-                                    </BeginStoryboard>
-                                </Trigger.ExitActions>
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                        
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-    </Window.Resources>
 </Window>
