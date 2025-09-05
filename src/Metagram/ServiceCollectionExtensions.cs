@@ -24,11 +24,7 @@ internal static class ServiceCollectionExtensions
 
     internal static IServiceCollection AddTelegramBot(this IServiceCollection services)
     {
-        /* Im not sure about this realization,
-         * cuz in telegrator this shit spams me in logs with gc errors.
-         * I need to hold a reference on client inside update receiver,
-         * but httpclientfactory thinks different
-
+        /*
         services.AddHttpClient<ITelegramBotClient>("tgreceiver").RemoveAllLoggers().AddTypedClient((httpClient, provider)
             => new TelegramBotClient(provider.GetRequiredService<IOptions<TelegramBotClientOptions>>().Value, httpClient));
         */
@@ -46,5 +42,4 @@ internal static class ServiceCollectionExtensions
         services.AddSingleton<IViewModelLocator, ViewModelLocator>(_ => locator);
         return services;
     }
-    
 }

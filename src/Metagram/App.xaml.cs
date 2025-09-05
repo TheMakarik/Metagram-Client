@@ -45,7 +45,7 @@ public sealed partial class App : IDisposable
             .AddTelegramBot()
             .AddPolling()
             .AddLogging(logging => logging
-                .SetMinimumLevel(LogLevel.Trace) //I don't know why Enum.Parse from Logging:LogLevel do not work, need to put it into configuration
+                .SetMinimumLevel(LogLevel.Trace) //I don't know why Enum.Parse from Logging:LogLevel do not work, need to put it into configuration.
                 .ClearProviders()
                 .AddFile(configuration.GetSection(FileLoggingSection))
                 .AddConsole()
