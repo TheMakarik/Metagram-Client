@@ -30,6 +30,7 @@
       <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="9.0.8" />
       <PackageReference Include="System.Data.SQLite" Version="2.0.1" />
       <PackageReference Include="Telegram.Bot" Version="22.6.2" />
+      <PackageReference Include="Telegrator" Version="1.15.9" />
     </ItemGroup>
 
     <ItemGroup>

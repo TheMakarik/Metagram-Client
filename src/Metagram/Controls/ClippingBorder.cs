@@ -14,7 +14,6 @@ public class ClippingBorder : Border
     public override UIElement Child
     {
         get => base.Child;
-
         set
         {
             if (Child != value)
