@@ -15,7 +15,7 @@ public sealed partial class App : Application, IDisposable
 
     private bool _isDisposed;
 
-    public static IServiceProvider Services { get; private set; } = default!;
+    public static IServiceProvider Services { get; private set; } = new ServiceCollection().BuildServiceProvider();
     public static IConfiguration Configuration { get; private set; } = default!;
 
     public App()

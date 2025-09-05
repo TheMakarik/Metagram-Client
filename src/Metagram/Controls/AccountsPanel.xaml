@@ -1,0 +1,68 @@
+﻿<UserControl x:Class="Metagram.Controls.AccountsPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Metagram.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="40" Width="40">
+    
+    <UserControl.Template>
+        <ControlTemplate TargetType="UserControl">
+
+            <StackPanel>
+                <ToggleButton x:Name="expandButton">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Width="30" Height="30" Margin="5"/>
+                        <TextBlock Text="Expand" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5" TextAlignment="Left"/>
+                    </StackPanel>
+                </ToggleButton>
+
+                <Button>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Width="30" Height="30" Margin="5"/>
+                        <TextBlock Text="Add meta" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5" TextAlignment="Left"/>
+                    </StackPanel>
+                </Button>
+
+                <ItemsControl>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Width="30" Height="30" Margin="5"/>
+                        <TextBlock Text="Metagram Dummy" TextAlignment="Left" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </ItemsControl>
+            </StackPanel>
+
+            <ControlTemplate.Resources>
+                <Style TargetType="ToggleButton">
+                    <Setter Property="BorderThickness" Value="0"/>
+                </Style>
+
+                <Style TargetType="Button">
+                    <Setter Property="BorderThickness" Value="0"/>
+                </Style>
+            </ControlTemplate.Resources>
+
+            <ControlTemplate.Triggers>
+                <Trigger SourceName="expandButton" Property="IsChecked" Value="True">
+                    <Trigger.EnterActions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetProperty="Width" To="200" Duration="0:0:0.2"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </Trigger.EnterActions>
+
+                    <Trigger.ExitActions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetProperty="Width" To="40" Duration="0:0:0.2"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </Trigger.ExitActions>
+                </Trigger>
+            </ControlTemplate.Triggers>
+
+        </ControlTemplate>
+    </UserControl.Template>
+</UserControl>

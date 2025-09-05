@@ -50,6 +50,12 @@ public partial class PlaceholderTextBox : UserControl
         remove => RemoveHandler(TextChangedEvent, value);
     }
 
+    public event KeyEventHandler TextPreviewKeyDown
+    {
+        add => AddHandler(TextBox.PreviewKeyDownEvent, value);
+        remove => RemoveHandler(TextBox.TextChangedEvent, value);
+    }
+
     public PlaceholderTextBox()
     {
         InitializeComponent();

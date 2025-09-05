@@ -6,7 +6,6 @@
              xmlns:local="clr-namespace:Metagram.Controls"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800" x:Name="this">
-    <Border>
-        <TextBlock Text="{Binding Message.Text, ElementName=this}" Foreground="White"/>
-    </Border>
+
+    
 </UserControl>

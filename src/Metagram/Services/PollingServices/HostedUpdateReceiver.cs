@@ -36,7 +36,7 @@ public class HostedUpdateReceiver(
     {
         GetUpdatesRequest request = CreateUpdateRequestGetter(_options.Value);
 
-        /*
+        /* Pending requests dropping
         try
         {
             Update[] array = await _client.GetUpdates(-1, 1, 0, [], cancellationToken).ConfigureAwait(false);

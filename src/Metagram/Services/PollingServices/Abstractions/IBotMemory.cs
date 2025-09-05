@@ -6,6 +6,7 @@ namespace Metagram.Services.PollingServices.Abstractions;
 
 public interface IBotMemory
 {
+    public User MyUser { get; }
     public ObservableCollection<ChatMemory> Chats { get; }
 
     public bool TryGetChat(long id, [NotNullWhen(true)] out ChatMemory? chatMemory);
