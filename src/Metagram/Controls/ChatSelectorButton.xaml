@@ -8,13 +8,33 @@
              d:DesignHeight="60" d:DesignWidth="400" x:Name="this">
     
     <Grid Height="50">
-        <Button Click="Button_Click"/>
+        <Button Panel.ZIndex="0" Style="{DynamicResource buttonTemplate}" Click="Button_Click"/>
         <DockPanel Panel.ZIndex="1" IsHitTestVisible="False">
-            <Border DockPanel.Dock="Left" CornerRadius="100" ClipToBounds="True" Margin="5" Width="40">
+            <local:ClippingBorder DockPanel.Dock="Left" CornerRadius="100" ClipToBounds="True" Margin="5" Width="40">
                 <Image x:Name="Image_ChatIcon"/>
-            </Border>
-            <!--TextBlock x:Name="TextBlock_ChatLast" DockPanel.Dock="Bottom" Margin="5,0,5,5" Height="30"/-->
-            <TextBlock x:Name="TextBlock_ChatName" Margin="5" Text="{Binding SelectedChat.ChatTitle, ElementName=this}" TextAlignment="Left" VerticalAlignment="Center" Height="20"/>
+            </local:ClippingBorder>
+
+            <TextBlock DockPanel.Dock="Bottom" Margin="5,0,5,5" Height="10" Text="testLastMessage" Foreground="#7F91A4" FontSize="7"/>
+            <TextBlock x:Name="TextBlock_ChatName" Margin="5" Text="{Binding SelectedChat.ChatTitle, ElementName=this, FallbackValue=testChatName}" FontSize="15" Foreground="White" TextAlignment="Left" VerticalAlignment="Center" Height="20"/>
         </DockPanel>   
     </Grid>
+
+    <UserControl.Resources>
+        <Style x:Key="buttonTemplate" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Rectangle x:Name="rect" Fill="#17212B"/>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="rect" Property="Fill" Value="#202b36"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+    
 </UserControl>

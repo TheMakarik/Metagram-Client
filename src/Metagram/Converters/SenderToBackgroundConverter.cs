@@ -2,6 +2,7 @@
 using System.Windows.Data;
 using System.Windows.Markup;
 using Color = System.Windows.Media.Color;
+using Message = Telegram.Bot.Types.Message;
 
 namespace Metagram.Converters;
 
@@ -15,7 +16,7 @@ public class SenderToBackgroundConverter : MarkupExtension, IValueConverter
     public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
     {
         if (value is not Message message)
-            throw new ArgumentException(nameof(value));
+            throw new ArgumentException("Should be Message", nameof(value));
 
         if (message.From is not { Id: > 0 } from)
             return ServiceMessageBackgroundBrush;

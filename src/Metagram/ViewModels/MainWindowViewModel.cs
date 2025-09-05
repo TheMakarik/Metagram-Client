@@ -1,6 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.Input;
 using Metagram.Models.Polling;
-using Metagram.ViewModels.Abstractions;
+using Message = Telegram.Bot.Types.Message;
 
 namespace Metagram.ViewModels;
 
@@ -13,7 +13,7 @@ internal partial class MainWindowViewModel : BaseViewModel<MainWindow>, IMainWin
     private ChatMemory? selectedChat;
 
     [ObservableProperty]
-    private string messageInput;
+    private string? messageInput;
 
     [ObservableProperty]
     private ICommand? sendMessageCommand;
@@ -32,8 +32,12 @@ internal partial class MainWindowViewModel : BaseViewModel<MainWindow>, IMainWin
             if (SelectedChat == null)
                 return;
 
+            if (MessageInput == null)
+                return;
+
             Message message = _botClient.SendMessage(SelectedChat.Chat, MessageInput).Result;
             SelectedChat.AddMessage(message);
+            MessageInput = string.Empty;
         }
         catch (Exception ex)
         {

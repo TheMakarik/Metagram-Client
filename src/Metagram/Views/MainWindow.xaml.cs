@@ -1,6 +1,4 @@
-﻿using Metagram.ViewModels.Abstractions;
-
-namespace Metagram.Views;
+﻿namespace Metagram.Views;
 
 public partial class MainWindow
 {

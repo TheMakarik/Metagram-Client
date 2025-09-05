@@ -41,8 +41,7 @@ public sealed class StaticCodeStyleAnalyzer : DiagnosticAnalyzer
     public override void Initialize(AnalysisContext context)
     {
         context.EnableConcurrentExecution();
-        context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.Analyze |
-                                               GeneratedCodeAnalysisFlags.ReportDiagnostics);
+        context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.Analyze | GeneratedCodeAnalysisFlags.ReportDiagnostics);
 
         context.RegisterSyntaxNodeAction(AnalyzeVar, SyntaxKind.VariableDeclaration);
         context.RegisterSyntaxNodeAction(AnalyzeNamespace, SyntaxKind.NamespaceDeclaration);
@@ -52,6 +51,9 @@ public sealed class StaticCodeStyleAnalyzer : DiagnosticAnalyzer
 
     private void AnalyzeVar(SyntaxNodeAnalysisContext context)
     {
+        if (context.IsGeneratedCode)
+            return;
+
         VariableDeclarationSyntax declaration = (VariableDeclarationSyntax)context.Node;
         if (declaration.Type.IsVar)
             context.ReportDiagnostic(Diagnostic.Create(VarRule, declaration.Type.GetLocation()));
@@ -59,6 +61,9 @@ public sealed class StaticCodeStyleAnalyzer : DiagnosticAnalyzer
 
     private void AnalyzeNew(SyntaxNodeAnalysisContext context)
     {
+        if (context.IsGeneratedCode)
+            return;
+
         ObjectCreationExpressionSyntax creation = (ObjectCreationExpressionSyntax)context.Node;
         if (creation.Type.IsMissing)
             context.ReportDiagnostic(Diagnostic.Create(NewRule, creation.GetLocation()));
@@ -66,9 +71,12 @@ public sealed class StaticCodeStyleAnalyzer : DiagnosticAnalyzer
 
     private void AnalyzeEmptyCatch(SyntaxNodeAnalysisContext context)
     {
+        if (context.IsGeneratedCode)
+            return;
+
         CatchClauseSyntax catchClause = (CatchClauseSyntax)context.Node;
 
-        // Если тело catch пустое (нет операторов)
+        // Если тело catch пустое
         if (!catchClause.Block.Statements.Any())
         {
             // Проверим, нет ли хотя бы комментариев
@@ -82,6 +90,9 @@ public sealed class StaticCodeStyleAnalyzer : DiagnosticAnalyzer
 
     private void AnalyzeNamespace(SyntaxNodeAnalysisContext context)
     {
+        if (context.IsGeneratedCode)
+            return;
+
         NamespaceDeclarationSyntax namespaceDeclaration = (NamespaceDeclarationSyntax)context.Node;
         context.ReportDiagnostic(Diagnostic.Create(BlockNamespaceRule, namespaceDeclaration.Name.GetLocation()));
     }

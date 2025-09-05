@@ -1,3 +1,5 @@
+using Metagram.Services.PollingServices.Abstractions;
+
 namespace Metagram;
 
 internal static class ServiceCollectionExtensions
@@ -19,7 +21,8 @@ internal static class ServiceCollectionExtensions
     {
         return services
             .AddHostedService<HostedUpdateReceiver>()
-            .AddSingleton<IUpdateHandler, MetaUpdateHandler>();
+            .AddSingleton<IUpdateHandler, MetaUpdateHandler>()
+            .AddSingleton<IBotMemory, BotMemory>();
     }
 
     internal static IServiceCollection AddTelegramBot(this IServiceCollection services)

@@ -2,6 +2,7 @@
 using Metagram.Services.PollingServices.Abstractions;
 using System.Collections.ObjectModel;
 using System.Diagnostics.CodeAnalysis;
+using User = Telegram.Bot.Types.User;
 
 namespace Metagram.Services.PollingServices;
 

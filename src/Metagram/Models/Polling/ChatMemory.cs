@@ -1,4 +1,6 @@
 ﻿using System.Collections.ObjectModel;
+using Chat = Telegram.Bot.Types.Chat;
+using Message = Telegram.Bot.Types.Message;
 
 namespace Metagram.Models.Polling;
 

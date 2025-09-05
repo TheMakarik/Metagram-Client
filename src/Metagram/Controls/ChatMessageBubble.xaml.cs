@@ -1,4 +1,5 @@
 ﻿using Metagram.Services.PollingServices.Abstractions;
+using Message = Telegram.Bot.Types.Message;
 
 namespace Metagram.Controls;
 

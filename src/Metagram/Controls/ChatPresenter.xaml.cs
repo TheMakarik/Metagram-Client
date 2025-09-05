@@ -1,4 +1,5 @@
 ﻿using Metagram.Models.Polling;
+using Message = Telegram.Bot.Types.Message;
 
 namespace Metagram.Controls;
 
@@ -32,6 +33,7 @@ public partial class ChatPresenter
         new PropertyMetadata(defaultValue: null));
 }
 
+/*
 public sealed class MessageBubbleTemplateSelector : DataTemplateSelector
 {
     public DataTemplate? StickerMessageTemplate { get; set; }
@@ -48,3 +50,4 @@ public sealed class MessageBubbleTemplateSelector : DataTemplateSelector
         return base.SelectTemplate(item, container);
     }
 }
+*/

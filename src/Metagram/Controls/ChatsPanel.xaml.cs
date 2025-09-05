@@ -51,14 +51,12 @@ public partial class ChatsPanel
         {
             case nameof(BotMemory):
                 {
-                    if (BotMemory == null)
-                        break;
+                    if (e.OldValue is IBotMemory { } oldMemory)
+                        oldMemory.Chats.CollectionChanged -= (s, e) => OnMemoryChatsUpdated();
 
-                    IBotMemory oldMemory = (IBotMemory)e.OldValue;
-                    oldMemory.Chats.CollectionChanged -= (s, e) => OnMemoryChatsUpdated();
+                    if (e.NewValue is IBotMemory { } newMemory)
+                        newMemory.Chats.CollectionChanged += (s, e) => OnMemoryChatsUpdated();
 
-                    IBotMemory newMemory = (IBotMemory)e.NewValue;
-                    newMemory.Chats.CollectionChanged += (s, e) => OnMemoryChatsUpdated();
                     break;
                 }
         }

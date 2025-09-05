@@ -3,8 +3,6 @@
 public sealed partial class App : IDisposable
 {
     private const string ApplicationWasStoppedLogMessage = "Application was stopped with exit code {code}";
-    private const string LogLevelSection = "Logging:LogLevel";
-    private const string FileLoggingSection = "Logging:File";
     private const string AppSettingsPath = "appsettings.json";
 
     private readonly List<IHostedService> _hostedServices = [];
@@ -43,20 +41,23 @@ public sealed partial class App : IDisposable
             .AddTransient<MainWindow>()
             .AddTransient<IDatabaseInitializer, DatabaseInitializer>()
             .AddTelegramBot()
-            .AddPolling()
-            .AddLogging(logging => logging
-                .SetMinimumLevel(LogLevel.Trace) //I don't know why Enum.Parse from Logging:LogLevel do not work, need to put it into configuration.
-                .ClearProviders()
-                .AddFile(configuration.GetSection(FileLoggingSection))
-                .AddConsole()
-            )
-            .AddViewModelLocator(
-                locator => locator
-                    .AddViewModel<MainWindowViewModel, MainWindow>()
-            );
-    }
+            .AddPolling();
 
-  
+        services
+            .AddViewModelLocator(locator => locator
+                .AddViewModel<MainWindowViewModel, MainWindow>()
+            );
+
+        services
+            .AddLogging(logging => logging
+               // .SetMinimumLevel(LogLevel.Trace) //I don't know why Enum.Parse from Logging:LogLevel do not work, need to put it into configuration.
+                .ClearProviders()
+                .AddFile(configuration.GetSection("Logging"))
+                .AddConsole()
+            );
+
+        services.AddSingleton(_ => Options.Create(new TelegramBotClientOptions(@"8367964096:AAGDFcciz8oHuhtOFrdO7fVQ5ACcLwC59FI")));
+    }
 
     protected override async void OnStartup(StartupEventArgs e)
     {

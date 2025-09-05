@@ -18,7 +18,6 @@ global using System.Windows.Input;
 global using System.Windows.Media;
 global using System.Windows.Threading;
 
-
 //Project usings
 global using Metagram.Models.Options;
 global using Metagram.Views;
@@ -38,6 +37,9 @@ global using Metagram.ViewModels.Abstractions;
 //Dapper
 global using Dapper;
 
+// Telegrator
+global using Telegrator;
+
 //Telegram.Bot
 global using Telegram.Bot;
 global using Telegram.Bot.Polling;
@@ -50,6 +52,3 @@ global using Microsoft.Data.Sqlite;
 
 //Logging providers
 global using NReco.Logging.File;
-
-
-
