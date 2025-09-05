@@ -39,6 +39,9 @@ global using Dapper;
 
 // Telegrator
 global using Telegrator;
+global using Telegrator.MadiatorCore;
+global using Telegrator.Handlers.Components;
+global using Telegrator.MadiatorCore.Descriptors;
 
 //Telegram.Bot
 global using Telegram.Bot;

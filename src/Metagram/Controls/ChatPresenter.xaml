@@ -13,13 +13,21 @@
             <ItemsControl ItemsSource="{Binding SelectedChat.Messages, ElementName=this}">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        
-                        <local:ClippingBorder Background="{Binding Converter={converters:SenderToBackgroundConverter}}" HorizontalAlignment="{Binding Converter={converters:SenderToAlignmentConverter}}" CornerRadius="15" MinHeight="30" MaxWidth="300">
-                            <DockPanel>
-                                <Label Content="{Binding Date, Converter={converters:DateTimeToLocaleTimeStringConverter}}" DockPanel.Dock="Right" VerticalAlignment="Bottom" Foreground="Gray" FontSize="10"/>
-                                <TextBlock Text="{Binding Text}" Foreground="White" TextWrapping="WrapWithOverflow" VerticalAlignment="Center" Margin="10,0,10,0"/>
-                            </DockPanel>
-                        </local:ClippingBorder>
+
+                        <ItemsControl ItemsSource="{Binding Value}">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+
+                                    <local:ClippingBorder Background="{Binding Converter={converters:SenderToBackgroundConverter}}" HorizontalAlignment="{Binding Converter={converters:SenderToAlignmentConverter}}" CornerRadius="15" MinHeight="30" MaxWidth="300">
+                                        <DockPanel>
+                                            <Label Content="{Binding Date, Converter={converters:DateTimeToLocaleTimeStringConverter}}" DockPanel.Dock="Right" VerticalAlignment="Bottom" Foreground="Gray" FontSize="10"/>
+                                            <TextBlock Text="{Binding Text}" Foreground="White" TextWrapping="WrapWithOverflow" VerticalAlignment="Center" Margin="10,0,10,0"/>
+                                        </DockPanel>
+                                    </local:ClippingBorder>
+
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
                         
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>

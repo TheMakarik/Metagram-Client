@@ -46,3 +46,12 @@ internal static class ServiceCollectionExtensions
         return services;
     }
 }
+
+public static class LinkedListExtensions
+{
+    public static LinkedList<T> Add<T>(this LinkedList<T> list, T element)
+    {
+        list.AddLast(element);
+        return list;
+    }
+}
