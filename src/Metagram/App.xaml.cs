@@ -1,12 +1,10 @@
-﻿using Metagram.Services;
-using Metagram.Services.ViewServices.Abstractions;
-using Metagram.ViewModels;
+﻿namespace Metagram;
 
-namespace Metagram;
-
-public sealed partial class App : Application, IDisposable
+public sealed partial class App : IDisposable
 {
     private const string ApplicationWasStoppedLogMessage = "Application was stopped with exit code {code}";
+    private const string LogLevelSection = "Logging:LogLevel";
+    private const string FileLoggingSection = "Logging:File";
     private const string AppSettingsPath = "appsettings.json";
 
     private readonly List<IHostedService> _hostedServices = [];
@@ -36,49 +34,32 @@ public sealed partial class App : Application, IDisposable
 
     private static void Configure(IServiceCollection services, IConfigurationManager configuration)
     {
-        // Configuration and settings
         configuration
             .AddJsonFile(AppSettingsPath);
 
-        // TO DO: Add ViewModelLocator, DONE
         services
-            .Configure<HostedUpdateReceiverOptions>(configuration.GetSection(nameof(HostedUpdateReceiverOptions)))
-            .Configure<SqliteOptions>(configuration.GetSection(nameof(SqliteOptions)));
-        
-        services
+            .ConfigureOptions(configuration)
             .AddScoped<ISqliteConnectionFactory, SqliteConnectionFactory>()
             .AddTransient<MainWindow>()
-            .AddTransient<IDatabaseInitializer, DatabaseInitializer>();
-
-        services.AddSingleton(_ => Options.Create(new TelegramBotClientOptions(@"8367964096:AAGDFcciz8oHuhtOFrdO7fVQ5ACcLwC59FI")));
-
-        // Default services
-        services
-            .AddTeletgramBot()
-            .AddPolling();
-
-        // View models and locator
-        services.AddViewModelLocator(locator => locator
-            .AddViewModel<MainWindowViewModel, MainWindow>());
-
-        /* Fuck it, i'll do it myself
-        // Day 4 of waiting when'll TheMakarik remove SeriLog
-        Log.Logger = new LoggerConfiguration()
-            .ReadFrom.Configuration(configuration)
-            .CreateLogger();
-        */
-
-        services.AddLogging(logging => logging
-            .ClearProviders()
-            //.AddSerilog(Log.Logger, dispose: true)
-            .AddConsole()
-            .SetMinimumLevel(LogLevel.Trace));
-
+            .AddTransient<IDatabaseInitializer, DatabaseInitializer>()
+            .AddTelegramBot()
+            .AddPolling()
+            .AddLogging(logging => logging
+                .SetMinimumLevel(LogLevel.Trace) //I don't know why Enum.Parse from Logging:LogLevel do not work, need to put it into configuration.
+                .ClearProviders()
+                .AddFile(configuration.GetSection(FileLoggingSection))
+                .AddConsole()
+            )
+            .AddViewModelLocator(
+                locator => locator
+                    .AddViewModel<MainWindowViewModel, MainWindow>()
+            );
     }
 
-    protected override void OnStartup(StartupEventArgs e)
+  
+
+    protected override async void OnStartup(StartupEventArgs e)
     {
-        // Resolving hosted services
         foreach (IHostedService hostedService in Services.GetServices<IHostedService>())
             _hostedServices.Add(hostedService);
 
@@ -87,6 +68,9 @@ public sealed partial class App : Application, IDisposable
         // Every other background shit should be managed by service, not the host
         Task.WaitAll(_hostedServices.Select(srv => srv.StartAsync(default)).ToArray());
 
+        using IServiceScope scope = Services.CreateScope();
+        await scope.ServiceProvider.GetRequiredService<IDatabaseInitializer>().InitializeAsync();
+        
         _mainWindow.Show();
         base.OnStartup(e);
     }

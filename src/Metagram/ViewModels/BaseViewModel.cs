@@ -1,5 +1,3 @@
-using Metagram.ViewModels.Abstractions;
-
 namespace Metagram.ViewModels;
 
-public abstract class BaseViewModel<F> : ObservableObject, IViewModel<F> where F : FrameworkElement;
+public abstract class BaseViewModel<TFrameworkElement> : ObservableObject, IViewModel<TFrameworkElement> where TFrameworkElement : FrameworkElement;
