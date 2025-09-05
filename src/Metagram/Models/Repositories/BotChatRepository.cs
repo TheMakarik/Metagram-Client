@@ -9,7 +9,7 @@ public class BotChatRepository(
 
     private const string UpdatingBotChatLogMessage = "Updating bot chat with id {id}: new last_update: {last_update}, new last_content: {last_content}";
     
-    public async Task<BotChat> GetAsync(int id)
+    public async Task<BotChatEntity> GetAsync(int id)
     {
         const string query = @"
         SELECT 
@@ -21,12 +21,12 @@ public class BotChatRepository(
            bot_chat_id = @Id";
         
         IDbConnection dbConnection = OpenConnection();
-        BotChat result = await dbConnection.QueryFirstAsync<BotChat>(query, new{ Id = id });
+        BotChatEntity result = await dbConnection.QueryFirstAsync<BotChatEntity>(query, new{ Id = id });
         logger.LogDebug(GettingBotChatFromDatabaseLogMessage, result.BotChatId, result.LastUpdate, result.LastContent);
         return result;
     }
     
-    public async Task UpdateAsync(BotChat entity)
+    public async Task UpdateAsync(BotChatEntity entity)
     {
         const string query = @"
         UPDATE 
@@ -55,7 +55,7 @@ public class BotChatRepository(
 
     }
 
-    public async Task CreateAsync(BotChat entity)
+    public async Task CreateAsync(BotChatEntity entity)
     {
         const string query = @"
         INSERT INTO 

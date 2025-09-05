@@ -1,4 +1,6 @@
 using Metagram.Services.PollingServices.Abstractions;
+using System.Windows.Interop;
+using Chat = Telegram.Bot.Types.Chat;
 
 namespace Metagram;
 
@@ -53,5 +55,27 @@ public static class LinkedListExtensions
     {
         list.AddLast(element);
         return list;
+    }
+}
+
+public static class TelegramBotTypesExtensions
+{
+    public static string? ToTitle(this Chat chat)
+    {
+        if (!string.IsNullOrEmpty(chat.Title))
+            return chat.Title;
+
+        if (!string.IsNullOrEmpty(chat.FirstName))
+        {
+            if (!string.IsNullOrEmpty(chat.LastName))
+                return chat.FirstName + " " + chat.LastName;
+
+            return chat.FirstName;
+        }
+
+        if (!string.IsNullOrEmpty(chat.Username))
+            return chat.Username;
+
+        return null;
     }
 }

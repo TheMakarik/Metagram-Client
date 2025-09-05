@@ -14,7 +14,7 @@ public abstract class RepositoryTestBase : IAsyncLifetime
     
     private static HashSet<int> _takenBotChatIds = new HashSet<int>();
     
-    private static readonly Faker<BotChat> BotChatFaker = new Faker<BotChat>()
+    private static readonly Faker<BotChatEntity> BotChatFaker = new Faker<BotChatEntity>()
         .RuleFor(static botChat => botChat.LastContent, static faker => faker.Lorem.Text())
         .RuleFor(static botChat => botChat.LastUpdate, static faker => faker.Date.Recent(10));
     

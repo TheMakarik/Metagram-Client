@@ -1,20 +1,31 @@
-﻿using System.Collections.ObjectModel;
+﻿using Metagram.Collections;
 using Chat = Telegram.Bot.Types.Chat;
 using Message = Telegram.Bot.Types.Message;
 
 namespace Metagram.Models.Polling;
 
+/*
 public class ChatMemory : DispatcherObject
 {
-    public Chat Chat { get; set; }
-    public ObservableCollection<KeyValuePair<long, LinkedList<Message>>> Messages { get; set; } = [];
+    private readonly Chat _chat;
+    private readonly ObservableMessagesFlow _flow;
+
+    public Chat Chat => _chat;
+    public ObservableMessagesFlow Flow => _flow;
     public string? ChatTitle { get; set; }
 
-    public ChatMemory(Message msg)
+    private ChatMemory(Chat chat)
     {
+        _chat = chat;
+        _flow = new ObservableMessagesFlow(chat);
+
         Chat = msg.Chat;
-        string?[] strings = [Chat.Title, Chat.FirstName, Chat.LastName, Chat.Username];
-        ChatTitle = strings.FirstOrDefault(s => !string.IsNullOrEmpty(s));
+        ChatTitle = Chat.ToTitle();
+    }
+
+    public static ChatMemory FromFirstMessage(Message msg)
+    {
+
     }
 
     public void AddMessage(Message msg)
@@ -32,3 +43,4 @@ public class ChatMemory : DispatcherObject
         });
     }
 }
+*/

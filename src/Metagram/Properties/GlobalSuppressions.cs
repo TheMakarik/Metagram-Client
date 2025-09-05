@@ -8,3 +8,4 @@ using System.Diagnostics.CodeAnalysis;
 [assembly: SuppressMessage("Style", "IDE0090")]
 [assembly: SuppressMessage("Style", "IDE0305")]
 [assembly: SuppressMessage("Performance", "CA1859")]
+[assembly: SuppressMessage("Maintainability", "CA1510")]

@@ -54,4 +54,8 @@
 	  <ProjectReference Include="..\..\dev\Metagram.Analyzers\Metagram.Analyzers.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Models\Authorization\" />
+    </ItemGroup>
+
 </Project>
