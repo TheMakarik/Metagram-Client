@@ -34,9 +34,13 @@ public static class ChatMemoryExtensions
     {
         if (message.From is not { Id: > 0 } from)
             throw new ArgumentException("Sender must not be null", nameof(message));
+        
+        Application.Current.Dispatcher.Invoke(() =>
+        {
+            ObservableMessageGroup group = chatMemory.Flow.FindSender(from);
+            group.Add(message);
+        }); 
 
-        ObservableMessageGroup group = chatMemory.Flow.FindSender(from);
-        group.Add(message);
         return chatMemory;
     }
 }

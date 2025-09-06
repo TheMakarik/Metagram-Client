@@ -19,8 +19,11 @@ public sealed class ObservableMessagesFlow(Chat chat) : ObservableCollection<Obs
             throw new ArgumentNullException(nameof(sender));
 
         ObservableMessageGroup? group = this.LastOrDefault();
-        if (group == null || group.From != sender)
-            return new ObservableMessageGroup(this, sender);
+        if (group == null || group.From.Id != sender.Id)
+        {
+            group = new ObservableMessageGroup(this, sender);
+            Add(group);
+        }
 
         return group;
     }

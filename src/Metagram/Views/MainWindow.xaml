@@ -35,7 +35,7 @@
         </Grid>
 
         <Grid Grid.Row="1" Grid.Column="1" Grid.RowSpan="2" Background="#17212b">
-            <controls:ChatsPanel Width="200" BotMemory="{Binding SelectedSession.Memory, Mode=OneWay}" SelectedChat="{Binding SelectedChat}"/>
+            <controls:ChatsPanel Width="200" BotMemory="{Binding SelectedSession.Memory, Mode=OneWay}" SelectedChat="{Binding SelectedChat, Mode=TwoWay}"/>
         </Grid>
 
         <controls:MessageInputBox Grid.Row="3" Grid.Column="2" Background="#17212b" MessageText="{Binding MessageInput}" SendMessageCommand="{Binding SendMessageCommand}"/>

@@ -10,7 +10,7 @@ public class DateTimeToLocaleTimeStringConverter : MarkupExtension, IValueConver
     public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
     {
         if (value is not DateTime date)
-            throw new ArgumentException(nameof(value));
+            throw new ArgumentException("value must contain a DateTime", nameof(value));
 
         return date.ToString("t", CultureInfo.CurrentCulture);
     }

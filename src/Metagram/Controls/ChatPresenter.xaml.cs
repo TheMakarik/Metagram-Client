@@ -29,7 +29,7 @@ public partial class ChatPresenter
 
     public static readonly DependencyProperty SelectedChatProperty = DependencyProperty.Register(
         nameof(SelectedChat), typeof(ChatMemory), typeof(ChatPresenter),
-        new PropertyMetadata(defaultValue: null));
+        new FrameworkPropertyMetadata(defaultValue: null, FrameworkPropertyMetadataOptions.BindsTwoWayByDefault));
 }
 
 /*

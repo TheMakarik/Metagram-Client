@@ -1,19 +1,33 @@
-﻿using System.Globalization;
+﻿using Metagram.Collections;
+using System.Globalization;
 using System.Windows.Data;
 using System.Windows.Markup;
-using Message = Telegram.Bot.Types.Message;
 
 namespace Metagram.Converters;
 
-[ValueConversion(typeof(LinkedListNode<Message>), typeof(HorizontalAlignment))]
+[ValueConversion(typeof(MessageNode), typeof(HorizontalAlignment))]
 public class MessageGroupIndexToCornerRadiusConverter : MarkupExtension, IValueConverter
 {
+    private static readonly CornerRadius SingleRadius = new CornerRadius(10, 10, 10, 10);
+    private static readonly CornerRadius MiddleRadius = new CornerRadius(0, 3, 3, 0);
+    private static readonly CornerRadius BottomRadius = new CornerRadius(0, 3, 10, 0);
+    private static readonly CornerRadius TopRadius = new CornerRadius(10, 3, 3, 0);
+
     public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
     {
-        if (value is not LinkedListNode<Message> node)
+        if (value is not MessageNode node)
             throw new ArgumentException("should be Message", nameof(value));
 
-        return null;
+        if (node.IsSingle)
+            return SingleRadius;
+
+        if (node.IsFirst)
+            return TopRadius;
+
+        if (node.IsLast)
+            return BottomRadius;
+
+        return MiddleRadius;
     }
 
     public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture) => DependencyProperty.UnsetValue;

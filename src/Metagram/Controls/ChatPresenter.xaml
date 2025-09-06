@@ -16,9 +16,9 @@
 
                         <ItemsControl ItemsSource="{Binding}">
                             <ItemsControl.ItemTemplate>
-                                <DataTemplate DataType="{x:Type collections:MessageNode}">
+                                <DataTemplate>
 
-                                    <local:ClippingBorder Background="{Binding Converter={converters:SenderToBackgroundConverter}}" HorizontalAlignment="{Binding Converter={converters:SenderToAlignmentConverter}}" CornerRadius="15" MinHeight="30" MaxWidth="300">
+                                    <local:ClippingBorder Background="{Binding Message, Converter={converters:SenderToBackgroundConverter}}" HorizontalAlignment="{Binding Message, Converter={converters:SenderToAlignmentConverter}}" CornerRadius="{Binding Converter={converters:MessageGroupIndexToCornerRadiusConverter}}" MinHeight="30" MaxWidth="300">
                                         <DockPanel>
                                             <Label Content="{Binding Message.Date, Converter={converters:DateTimeToLocaleTimeStringConverter}}" DockPanel.Dock="Right" VerticalAlignment="Bottom" Foreground="Gray" FontSize="10"/>
                                             <TextBlock Text="{Binding Message.Text}" Foreground="White" TextWrapping="WrapWithOverflow" VerticalAlignment="Center" Margin="10,0,10,0"/>
@@ -28,7 +28,7 @@
                                 </DataTemplate>
                             </ItemsControl.ItemTemplate>
                         </ItemsControl>
-                        
+
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
