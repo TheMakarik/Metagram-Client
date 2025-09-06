@@ -1,6 +1,6 @@
 namespace Metagram.Models.Entities;
 
-public sealed class BotChat
+public sealed class BotChatEntity
 {
     public int BotChatId { get; set; }
     public DateTime LastUpdate { get; set; } = DateTime.UtcNow;

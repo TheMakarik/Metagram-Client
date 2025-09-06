@@ -1,6 +1,6 @@
 namespace Metagram.Models.Entities;
 
-public sealed class User
+public sealed class UserEntity
 {
     public int UserId { get; set; }
     public int BotChatId { get; set; }

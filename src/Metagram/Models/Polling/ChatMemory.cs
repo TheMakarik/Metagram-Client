@@ -1,46 +1,42 @@
 ﻿using Metagram.Collections;
+using System.Windows.Interop;
 using Chat = Telegram.Bot.Types.Chat;
 using Message = Telegram.Bot.Types.Message;
 
 namespace Metagram.Models.Polling;
 
-/*
-public class ChatMemory : DispatcherObject
+public class ChatMemory
 {
     private readonly Chat _chat;
     private readonly ObservableMessagesFlow _flow;
+    private readonly string? _title;
 
     public Chat Chat => _chat;
     public ObservableMessagesFlow Flow => _flow;
-    public string? ChatTitle { get; set; }
+    public string? Title => _title;
 
-    private ChatMemory(Chat chat)
+    public ChatMemory(Chat chat)
     {
         _chat = chat;
         _flow = new ObservableMessagesFlow(chat);
-
-        Chat = msg.Chat;
-        ChatTitle = Chat.ToTitle();
+        _title = Chat.ToTitle();
     }
 
     public static ChatMemory FromFirstMessage(Message msg)
     {
-
-    }
-
-    public void AddMessage(Message msg)
-    {
-        Application.Current.Dispatcher.Invoke(() =>
-        {
-            if (msg.From is not { Id: > 0 } from)
-                return;
-
-            KeyValuePair<long, LinkedList<Message>> msgGroup = Messages.Last();
-            if (msgGroup.Key != from.Id)
-                msgGroup = new KeyValuePair<long, LinkedList<Message>>(from.Id, []);
-
-            msgGroup.Value.AddLast(msg);
-        });
+        return new ChatMemory(msg.Chat);
     }
 }
-*/
+
+public static class ChatMemoryExtensions
+{
+    public static ChatMemory AddMessage(this ChatMemory chatMemory, Message message)
+    {
+        if (message.From is not { Id: > 0 } from)
+            throw new ArgumentException("Sender must not be null", nameof(message));
+
+        ObservableMessageGroup group = chatMemory.Flow.FindSender(from);
+        group.Add(message);
+        return chatMemory;
+    }
+}

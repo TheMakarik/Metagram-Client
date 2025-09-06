@@ -15,7 +15,7 @@
             </local:ClippingBorder>
 
             <TextBlock DockPanel.Dock="Bottom" Margin="5,0,5,5" Height="10" Text="testLastMessage" Foreground="#7F91A4" FontSize="7"/>
-            <TextBlock x:Name="TextBlock_ChatName" Margin="5" Text="{Binding SelectedChat.ChatTitle, ElementName=this, FallbackValue=testChatName}" FontSize="15" Foreground="White" TextAlignment="Left" VerticalAlignment="Center" Height="20"/>
+            <TextBlock x:Name="TextBlock_ChatName" Margin="5" Text="{Binding SelectedChat.Title, ElementName=this, FallbackValue=testChatName}" FontSize="15" Foreground="White" TextAlignment="Left" VerticalAlignment="Center" Height="20"/>
         </DockPanel>   
     </Grid>
 

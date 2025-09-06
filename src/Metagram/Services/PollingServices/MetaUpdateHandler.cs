@@ -1,16 +1,16 @@
-﻿using Metagram.Services.PollingServices.Abstractions;
+﻿using Metagram.Models.Polling;
 using System.Net.Http;
 using Telegram.Bot.Exceptions;
 
 namespace Metagram.Services.PollingServices;
 
-internal class MetaUpdateHandler(ILogger<MetaUpdateHandler> logger, IBotMemory botMemory) : IUpdateHandler // IUpdateRouter
+internal class MetaUpdateHandler(ILogger<MetaUpdateHandler> logger, BotMemory botMemory) : IUpdateHandler // IUpdateRouter
 {
     private const string ErrorHandlerLogMessage = "Exception occured during handling update. From {source}";
     private const string HandlerTracerLogMessage = "Received update ({id}, {type})";
 
     private readonly ILogger<MetaUpdateHandler> _logger = logger;
-    private readonly IBotMemory _botMemory = botMemory;
+    private readonly BotMemory _botMemory = botMemory;
 
     public Task HandleErrorAsync(ITelegramBotClient botClient, Exception exception, HandleErrorSource source, CancellationToken cancellationToken)
     {

@@ -4,24 +4,24 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Metagram.Controls"
-             xmlns:converters="clr-namespace:Metagram.Converters"
+             xmlns:converters="clr-namespace:Metagram.Converters" xmlns:collections="clr-namespace:Metagram.Collections"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800" x:Name="this">
 
     <Grid>
         <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
-            <ItemsControl ItemsSource="{Binding SelectedChat.Messages, ElementName=this}">
+            <ItemsControl ItemsSource="{Binding SelectedChat.Flow, ElementName=this}">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
 
-                        <ItemsControl ItemsSource="{Binding Value}">
+                        <ItemsControl ItemsSource="{Binding}">
                             <ItemsControl.ItemTemplate>
-                                <DataTemplate>
+                                <DataTemplate DataType="{x:Type collections:MessageNode}">
 
                                     <local:ClippingBorder Background="{Binding Converter={converters:SenderToBackgroundConverter}}" HorizontalAlignment="{Binding Converter={converters:SenderToAlignmentConverter}}" CornerRadius="15" MinHeight="30" MaxWidth="300">
                                         <DockPanel>
-                                            <Label Content="{Binding Date, Converter={converters:DateTimeToLocaleTimeStringConverter}}" DockPanel.Dock="Right" VerticalAlignment="Bottom" Foreground="Gray" FontSize="10"/>
-                                            <TextBlock Text="{Binding Text}" Foreground="White" TextWrapping="WrapWithOverflow" VerticalAlignment="Center" Margin="10,0,10,0"/>
+                                            <Label Content="{Binding Message.Date, Converter={converters:DateTimeToLocaleTimeStringConverter}}" DockPanel.Dock="Right" VerticalAlignment="Bottom" Foreground="Gray" FontSize="10"/>
+                                            <TextBlock Text="{Binding Message.Text}" Foreground="White" TextWrapping="WrapWithOverflow" VerticalAlignment="Center" Margin="10,0,10,0"/>
                                         </DockPanel>
                                     </local:ClippingBorder>
 

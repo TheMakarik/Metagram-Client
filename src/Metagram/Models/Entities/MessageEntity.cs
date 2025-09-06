@@ -1,6 +1,6 @@
 namespace Metagram.Models.Entities;
 
-public sealed class Message
+public sealed class MessageEntity
 {
     public int MessageId { get; set; }
     public long TelegramMessageId { get; set; }

@@ -18,7 +18,7 @@ public abstract class RepositoryTestBase : IAsyncLifetime
         .RuleFor(static botChat => botChat.LastContent, static faker => faker.Lorem.Text())
         .RuleFor(static botChat => botChat.LastUpdate, static faker => faker.Date.Recent(10));
     
-    private static readonly Faker<User> UserFaker = new Faker<User>()
+    private static readonly Faker<UserEntity> UserFaker = new Faker<UserEntity>()
         .RuleFor(static user => user.FirstName, static faker => faker.Name.FirstName())
         .RuleFor(static user => user.Username, static (_, user) => "@" + user.FirstName) //Telegram usernames looks like @durov, @pavel, @monk etc
         .RuleFor(static user => user.BioText, static faker => faker.Lorem.Text())
@@ -27,14 +27,14 @@ public abstract class RepositoryTestBase : IAsyncLifetime
         .RuleFor(static user => user.TelegramUserId, static faker => faker.Random.Long(100000, 999999))
         .RuleFor(static user => user.AvatarsPath, static faker => faker.System.FilePath().OrNull(faker, EmptyAvatarPossibility));
 
-    private static readonly Faker<Chat> ChatFaker = new Faker<Chat>()
+    private static readonly Faker<ChatEntity> ChatFaker = new Faker<ChatEntity>()
         .RuleFor(static user => user.BotChatId, static faker => GetAvailableBotChatId(faker))
         .RuleFor(static chat => chat.ChatName, static faker => faker.Commerce.ProductName())
         .RuleFor(static chat => chat.TelegramChatId, static faker => faker.Random.Long(-10099999999, -10000000))
         .RuleFor(static chat => chat.AvatarsPath, static faker => faker.System.FilePath().OrNull(faker, EmptyAvatarPossibility))
         .RuleFor(static chat => chat.Title, static faker => faker.Lorem.Sentence());
 
-    private static readonly Faker<Message> MessageFaker = new Faker<Message>()
+    private static readonly Faker<MessageEntity> MessageFaker = new Faker<MessageEntity>()
         .RuleFor(static message => message.BotChatId, static faker => faker.Random.Int(1, BotChatsCount))
         .RuleFor(static message => message.EditedAt,
             static faker => faker.Date.Recent().OrNull(faker, MessageIsNotEditedPossibility))

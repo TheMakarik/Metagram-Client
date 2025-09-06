@@ -26,7 +26,7 @@
             <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
 
-        <controls:AccountsPanel Grid.Column="0" Grid.RowSpan="3"/>
+        <controls:AccountsPanel Grid.Column="0" Grid.RowSpan="3" SelectedSession="{Binding SelectedSession}"/>
 
         <Grid Background="#17212b" Grid.Column="1" Grid.Row="0">
             <controls:ClippingBorder CornerRadius="15" Margin="5" Background="#242f3d" Height="30">
@@ -35,7 +35,7 @@
         </Grid>
 
         <Grid Grid.Row="1" Grid.Column="1" Grid.RowSpan="2" Background="#17212b">
-            <controls:ChatsPanel Width="200" SelectedChat="{Binding SelectedChat}"/>
+            <controls:ChatsPanel Width="200" BotMemory="{Binding SelectedSession.Memory, Mode=OneWay}" SelectedChat="{Binding SelectedChat}"/>
         </Grid>
 
         <controls:MessageInputBox Grid.Row="3" Grid.Column="2" Background="#17212b" MessageText="{Binding MessageInput}" SendMessageCommand="{Binding SendMessageCommand}"/>
@@ -57,7 +57,8 @@
 
         <Grid Grid.Column="2" Grid.Row="0" Background="#17212b">
             <DockPanel HorizontalAlignment="Left" Margin="5">
-                <TextBlock Text="{Binding SelectedChat.ChatTitle, FallbackValue=ChatName}" TextAlignment="Left" VerticalAlignment="Center" Foreground="White" FontSize="15" FontWeight="Bold"/>
+                <TextBlock Text="{Binding SelectedChat.Title, FallbackValue=ChatName}" TextAlignment="Left" VerticalAlignment="Center" Foreground="White" FontSize="15" FontWeight="Bold"/>
+                <Label Content="{Binding SelectedChat.Flow.Count}" Foreground="White"/>
             </DockPanel>
         </Grid>
 

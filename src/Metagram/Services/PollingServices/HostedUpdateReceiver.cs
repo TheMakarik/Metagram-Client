@@ -10,7 +10,7 @@ public class HostedUpdateReceiver(
     private const string ReceiverWasStartedLogMessage = "Update receiver have been just started";
     private const string ReceiverWasStoppedLogMessage = "Update receiver was stopped";
     private const string HandlingErrorLogMessage = "Handling error with id {id} and exception {exception}";
-    private const string HandlingUpdateLogMessage = "Handling update with id {id}";
+    private const string HandlingUpdateLogMessage = "Handling update with id '{id}' of type '{type}'";
     private const string ExceptionOccurredLogMessage = "Exception {exception} occurred";
     
     private readonly CancellationTokenSource _cancellationToken = new CancellationTokenSource();
@@ -78,7 +78,7 @@ public class HostedUpdateReceiver(
             request.Timeout = (int)_client.Timeout.TotalSeconds;
             request.Offset = update.Id + 1;
 
-            logger.LogTrace(HandlingUpdateLogMessage, update.Id);
+            logger.LogTrace(HandlingUpdateLogMessage, update.Id, update.Type);
             await _updateHandler.HandleUpdateAsync(_client, update, cancellationToken);
         }
         catch (OperationCanceledException)

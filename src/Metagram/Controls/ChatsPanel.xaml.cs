@@ -1,13 +1,12 @@
 ﻿using Metagram.Models.Polling;
-using Metagram.Services.PollingServices.Abstractions;
 
 namespace Metagram.Controls;
 
 public partial class ChatsPanel
 {
-    public IBotMemory? BotMemory
+    public BotMemory? BotMemory
     {
-        get => (IBotMemory?)GetValue(BotMemoryProperty);
+        get => (BotMemory?)GetValue(BotMemoryProperty);
         set => SetValue(BotMemoryProperty, value);
     }
 
@@ -26,7 +25,6 @@ public partial class ChatsPanel
     public ChatsPanel()
     {
         InitializeComponent();
-        BotMemory = App.Services.GetService<IBotMemory>();
         AddHandler(ChatSelectorButton.ChatSelectedEvent, new EventHandler<ChatSelectedEventArgs>(OnChatSelected));
     }
 
@@ -51,10 +49,10 @@ public partial class ChatsPanel
         {
             case nameof(BotMemory):
                 {
-                    if (e.OldValue is IBotMemory { } oldMemory)
+                    if (e.OldValue is BotMemory { } oldMemory)
                         oldMemory.Chats.CollectionChanged -= (s, e) => OnMemoryChatsUpdated();
 
-                    if (e.NewValue is IBotMemory { } newMemory)
+                    if (e.NewValue is BotMemory { } newMemory)
                         newMemory.Chats.CollectionChanged += (s, e) => OnMemoryChatsUpdated();
 
                     break;
@@ -63,7 +61,7 @@ public partial class ChatsPanel
     }
 
     public static readonly DependencyProperty BotMemoryProperty = DependencyProperty.Register(
-        nameof(BotMemory), typeof(IBotMemory), typeof(ChatsPanel),
+        nameof(BotMemory), typeof(BotMemory), typeof(ChatsPanel),
         new FrameworkPropertyMetadata(defaultValue: null, FrameworkPropertyMetadataOptions.BindsTwoWayByDefault));
 
     public static readonly DependencyProperty SelectedChatProperty = DependencyProperty.Register(

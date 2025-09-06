@@ -1,5 +1,4 @@
 ﻿using Metagram.Models.Polling;
-using Message = Telegram.Bot.Types.Message;
 
 namespace Metagram.Controls;
 

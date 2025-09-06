@@ -12,7 +12,7 @@ public sealed class MetaHandlersManager : IHandlersManager
     public IEnumerable<HandlerDescriptorList> Values => throw new NotImplementedException();
 
     public IHandlersCollection AddDescriptor(HandlerDescriptor descriptor) => throw new NotImplementedException();
-    public UpdateHandlerBase GetHandlerInstance(HandlerDescriptor descriptor, CancellationToken cancellationToken = default(CancellationToken)) => throw new NotImplementedException();
+    public UpdateHandlerBase GetHandlerInstance(HandlerDescriptor descriptor, CancellationToken cancellationToken = default) => throw new NotImplementedException();
     public bool IsEmpty() => throw new NotImplementedException();
     public bool TryGetDescriptorList(UpdateType updateType, out HandlerDescriptorList? list) => throw new NotImplementedException();
 }

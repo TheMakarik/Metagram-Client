@@ -1,12 +1,9 @@
-﻿using Metagram.Services.PollingServices.Abstractions;
-using Message = Telegram.Bot.Types.Message;
+﻿using Message = Telegram.Bot.Types.Message;
 
 namespace Metagram.Controls;
 
 public partial class ChatMessageBubble : UserControl
 {
-    private readonly IBotMemory _botMemory = default!;
-
     public Message? Message
     {
         get => (Message?)GetValue(MessageProperty);
@@ -27,11 +24,6 @@ public partial class ChatMessageBubble : UserControl
 
     public ChatMessageBubble()
     {
-        if (App.Services != null)
-        {
-            _botMemory = App.Services.GetRequiredService<IBotMemory>();
-        }
-
         InitializeComponent();
     }
 

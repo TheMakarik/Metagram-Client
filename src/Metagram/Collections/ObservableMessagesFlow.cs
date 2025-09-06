@@ -1,4 +1,5 @@
 ﻿using System.Collections.ObjectModel;
+using System.Collections.Specialized;
 using System.ComponentModel;
 using Chat = Telegram.Bot.Types.Chat;
 using Message = Telegram.Bot.Types.Message;
@@ -9,7 +10,8 @@ namespace Metagram.Collections;
 public sealed class ObservableMessagesFlow(Chat chat) : ObservableCollection<ObservableMessageGroup>
 {
     public Chat Chat { get; } = chat;
-    public string? ChatTitle { get; }
+    public string? ChatTitle { get; } = chat.ToTitle();
+    public int FullCount => this.Select(c => c.Count).Sum();
 
     public ObservableMessageGroup FindSender(User sender)
     {
@@ -36,6 +38,12 @@ public sealed class ObservableMessageGroup(ObservableMessagesFlow flow, User fro
         
     public MessageNode? First => this.FirstOrDefault();
     public MessageNode? Last => this.LastOrDefault();
+
+    public void Add(Message message)
+    {
+        MessageNode node = new MessageNode(this, message);
+        Add(node);
+    }
 
     protected override void InsertItem(int index, MessageNode item)
     {
@@ -74,19 +82,18 @@ public sealed class ObservableMessageGroup(ObservableMessagesFlow flow, User fro
 
     protected override void ClearItems()
     {
-        foreach (var n in this)
-        {
-            n.Next = null;
-            n.Previous = null;
-        }
+        foreach (MessageNode node in this)
+            node.Dispose();
 
         base.ClearItems();
     }
 }
 
-public sealed partial class MessageNode : ObservableObject
+public sealed partial class MessageNode : ObservableObject, IDisposable
 {
     private readonly ObservableMessageGroup _group;
+
+    private bool _deleted; // aka _dispoded
 
     public ObservableMessageGroup Group => _group;
     public Chat Chat => Group.Chat;
@@ -100,19 +107,24 @@ public sealed partial class MessageNode : ObservableObject
     private Message? message;
 
     [ObservableProperty]
-    private bool? isFirst;
+    private bool isFirst = false;
 
     [ObservableProperty]
-    private bool? isLast;
+    private bool isLast = false;
 
     [ObservableProperty]
-    private bool? isSingle;
+    private bool isSingle = false;
 
     public MessageNode(ObservableMessageGroup group, Message initMessage)
     {
         _group = group;
         message = initMessage;
-        _group.CollectionChanged += 
+        _group.CollectionChanged += GroupChanged;
+    }
+
+    private void GroupChanged(object? sender, NotifyCollectionChangedEventArgs args)
+    {
+        IsSingle = Group.Count == 1;
     }
 
     protected override void OnPropertyChanged(PropertyChangedEventArgs e)
@@ -125,7 +137,56 @@ public sealed partial class MessageNode : ObservableObject
 
                     break;
                 }
+
+            case nameof(Previous):
+                {
+                    if (!IsFirst && Previous == null)
+                    {
+                        IsFirst = true;
+                        break;
+                    }
+
+                    if (IsFirst && Previous != null)
+                    {
+                        IsFirst = false;
+                        break;
+                    }
+
+                    IsFirst = Previous == null;
+                    break;
+                }
+
+            case nameof(Next):
+                {
+                    if (!IsLast && Next == null)
+                    {
+                        IsLast = true;
+                        break;
+                    }
+
+                    if (IsLast && Next != null)
+                    {
+                        IsLast = false;
+                        break;
+                    }
+
+                    IsLast = Next == null;
+                    break;
+                }
         }
+    }
+
+    public void Dispose()
+    {
+        if (_deleted)
+            return;
+
+        Previous = null;
+        Next = null;
+        Message = null;
+
+        _deleted = true;
+        GC.SuppressFinalize(this);
     }
 
     public override string ToString() => Message?.Text ?? "DEBUG_WARN:NULL_NODE_VALUE";

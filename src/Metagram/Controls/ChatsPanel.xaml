@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:Metagram.Controls"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="300" x:Name="this">
-    
+
     <ItemsControl ItemsSource="{Binding BotMemory.Chats, ElementName=this}">
         <ItemsControl.ItemTemplate>
             <DataTemplate>
@@ -14,5 +14,5 @@
             </DataTemplate>
         </ItemsControl.ItemTemplate>
     </ItemsControl>
-    
+
 </UserControl>

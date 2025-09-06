@@ -1,4 +1,7 @@
-﻿namespace Metagram;
+﻿using Metagram.Models.Authorization;
+using Metagram.Services.AuthorizationServices.Abstractions;
+
+namespace Metagram;
 
 public sealed partial class App : IDisposable
 {
@@ -11,7 +14,7 @@ public sealed partial class App : IDisposable
 
     private bool _isDisposed;
 
-    public static IServiceProvider Services { get; private set; } = new ServiceCollection().BuildServiceProvider();
+    public static IServiceProvider Services { get; private set; } = default!;
     public static IConfiguration Configuration { get; private set; } = default!;
 
     public App()
@@ -37,11 +40,9 @@ public sealed partial class App : IDisposable
 
         services
             .ConfigureOptions(configuration)
-            .AddScoped<ISqliteConnectionFactory, SqliteConnectionFactory>()
             .AddTransient<MainWindow>()
-            .AddTransient<IDatabaseInitializer, DatabaseInitializer>()
-            .AddTelegramBot()
-            .AddPolling();
+            .AddDatabase()
+            .AddAuthorization();
 
         services
             .AddViewModelLocator(locator => locator
@@ -50,13 +51,11 @@ public sealed partial class App : IDisposable
 
         services
             .AddLogging(logging => logging
-               // .SetMinimumLevel(LogLevel.Trace) //I don't know why Enum.Parse from Logging:LogLevel do not work, need to put it into configuration.
                 .ClearProviders()
+                .SetMinimumLevel(LogLevel.Trace)
                 .AddFile(configuration.GetSection("Logging"))
                 .AddConsole()
             );
-
-        services.AddSingleton(_ => Options.Create(new TelegramBotClientOptions(@"8367964096:AAGDFcciz8oHuhtOFrdO7fVQ5ACcLwC59FI")));
     }
 
     protected override async void OnStartup(StartupEventArgs e)
@@ -68,6 +67,10 @@ public sealed partial class App : IDisposable
         // Services's StartAsync method should ONLY contain initializations
         // Every other background shit should be managed by service, not the host
         Task.WaitAll(_hostedServices.Select(srv => srv.StartAsync(default)).ToArray());
+
+        IAccountsManager accountsManager = Services.GetRequiredService<IAccountsManager>();
+        accountsManager.Login(new BotAccountInfo(@"8367964096:AAGDFcciz8oHuhtOFrdO7fVQ5ACcLwC59FI"));
+        await accountsManager.StartAsync();
 
         using IServiceScope scope = Services.CreateScope();
         await scope.ServiceProvider.GetRequiredService<IDatabaseInitializer>().InitializeAsync();

@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.Input;
+using Metagram.Models.Authorization;
 using Metagram.Models.Polling;
 using Message = Telegram.Bot.Types.Message;
 
@@ -6,8 +7,10 @@ namespace Metagram.ViewModels;
 
 internal partial class MainWindowViewModel : BaseViewModel<MainWindow>, IMainWindowViewModel
 {
-    private readonly ITelegramBotClient _botClient;
     private readonly ILogger<MainWindowViewModel> _logger;
+
+    [ObservableProperty]
+    private BotRuntimeSession? selectedSession;
 
     [ObservableProperty]
     private ChatMemory? selectedChat;
@@ -18,24 +21,27 @@ internal partial class MainWindowViewModel : BaseViewModel<MainWindow>, IMainWin
     [ObservableProperty]
     private ICommand? sendMessageCommand;
 
-    public MainWindowViewModel(ILogger<MainWindowViewModel> logger, ITelegramBotClient botClient)
+    public MainWindowViewModel(ILogger<MainWindowViewModel> logger)
     {
-        _botClient = botClient;
         _logger = logger;
         sendMessageCommand = new RelayCommand(SendMessage);
     }
 
     private void SendMessage()
     {
+        MessageBox.Show(SelectedSession?.Account.Token ?? "<NULL>");
         try
         {
+            if (SelectedSession == null)
+                return;
+
             if (SelectedChat == null)
                 return;
 
             if (MessageInput == null)
                 return;
 
-            Message message = _botClient.SendMessage(SelectedChat.Chat, MessageInput).Result;
+            Message message = SelectedSession.Client.SendMessage(SelectedChat.Chat, MessageInput).Result;
             SelectedChat.AddMessage(message);
             MessageInput = string.Empty;
         }

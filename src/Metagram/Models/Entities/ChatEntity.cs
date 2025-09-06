@@ -1,6 +1,6 @@
 namespace Metagram.Models.Entities;
 
-public sealed class Chat
+public sealed class ChatEntity
 {
     public int ChatId { get; set; }
     public int BotChatId { get; set; }

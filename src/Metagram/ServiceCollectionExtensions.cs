@@ -1,5 +1,5 @@
-using Metagram.Services.PollingServices.Abstractions;
-using System.Windows.Interop;
+using Metagram.Services.AuthorizationServices;
+using Metagram.Services.AuthorizationServices.Abstractions;
 using Chat = Telegram.Bot.Types.Chat;
 
 namespace Metagram;
@@ -19,12 +19,26 @@ internal static class ServiceCollectionExtensions
         return services;
     }
 
+    internal static IServiceCollection AddDatabase(this IServiceCollection services)
+    {
+        return services
+            .AddScoped<ISqliteConnectionFactory, SqliteConnectionFactory>()
+            .AddTransient<IDatabaseInitializer, DatabaseInitializer>();
+    }
+
+    /*
     internal static IServiceCollection AddPolling(this IServiceCollection services)
     {
         return services
             .AddHostedService<HostedUpdateReceiver>()
-            .AddSingleton<IUpdateHandler, MetaUpdateHandler>()
-            .AddSingleton<IBotMemory, BotMemory>();
+            .AddSingleton<IUpdateHandler, MetaUpdateHandler>();
+    }
+    */
+
+    internal static IServiceCollection AddAuthorization(this IServiceCollection services)
+    {
+        return services
+            .AddSingleton<IAccountsManager, AccountsManager>();
     }
 
     internal static IServiceCollection AddTelegramBot(this IServiceCollection services)
@@ -47,14 +61,13 @@ internal static class ServiceCollectionExtensions
         services.AddSingleton<IViewModelLocator, ViewModelLocator>(_ => locator);
         return services;
     }
-}
 
-public static class LinkedListExtensions
-{
-    public static LinkedList<T> Add<T>(this LinkedList<T> list, T element)
+    public static ILogger<T> Logger<T>(this IServiceProvider serviceProvider)
+        => serviceProvider.GetRequiredService<ILogger<T>>();
+
+    public static TService GetRequiredService<TService>(this IServiceProvider serviceProvider, object[] args)
     {
-        list.AddLast(element);
-        return list;
+        return ActivatorUtilities.CreateInstance<TService>(serviceProvider, args);
     }
 }
 
@@ -78,4 +91,10 @@ public static class TelegramBotTypesExtensions
 
         return null;
     }
+}
+
+public static class CancellationTokenExtensions
+{
+    public static CancellationToken LinkWith(this CancellationToken cancellationToken, params CancellationToken[] cancellationTokens)
+        => CancellationTokenSource.CreateLinkedTokenSource([cancellationToken, ..cancellationTokens]).Token;
 }
