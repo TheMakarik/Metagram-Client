@@ -1,0 +1,13 @@
+/home/themakarik/Metagram/Metagram-Client/src/Metagram.Core/bin/Debug/net10.0/Metagram.Core.deps.json
+/home/themakarik/Metagram/Metagram-Client/src/Metagram.Core/bin/Debug/net10.0/Metagram.Core.dll
+/home/themakarik/Metagram/Metagram-Client/src/Metagram.Core/bin/Debug/net10.0/Metagram.Core.pdb
+/home/themakarik/Metagram/Metagram-Client/src/Metagram.Core/obj/Debug/net10.0/Metagram.Core.csproj.AssemblyReference.cache
+/home/themakarik/Metagram/Metagram-Client/src/Metagram.Core/obj/Debug/net10.0/Avalonia/Resources.Inputs.cache
+/home/themakarik/Metagram/Metagram-Client/src/Metagram.Core/obj/Debug/net10.0/Metagram.Core.GeneratedMSBuildEditorConfig.editorconfig
+/home/themakarik/Metagram/Metagram-Client/src/Metagram.Core/obj/Debug/net10.0/Metagram.Core.AssemblyInfoInputs.cache
+/home/themakarik/Metagram/Metagram-Client/src/Metagram.Core/obj/Debug/net10.0/Metagram.Core.AssemblyInfo.cs
+/home/themakarik/Metagram/Metagram-Client/src/Metagram.Core/obj/Debug/net10.0/Metagram.Core.csproj.CoreCompileInputs.cache
+/home/themakarik/Metagram/Metagram-Client/src/Metagram.Core/obj/Debug/net10.0/Metagram.Core.dll
+/home/themakarik/Metagram/Metagram-Client/src/Metagram.Core/obj/Debug/net10.0/refint/Metagram.Core.dll
+/home/themakarik/Metagram/Metagram-Client/src/Metagram.Core/obj/Debug/net10.0/Metagram.Core.pdb
+/home/themakarik/Metagram/Metagram-Client/src/Metagram.Core/obj/Debug/net10.0/ref/Metagram.Core.dll

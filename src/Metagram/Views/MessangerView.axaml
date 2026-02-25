@@ -1,0 +1,40 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:Metagram.ViewModels"
+             xmlns:controls="using:Metagram.Controls"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:DataType="vm:MessangerViewModel"
+             x:Class="Metagram.Views.MessangerView">
+    
+    <Design.DataContext>
+		<vm:MessangerViewModel/>
+    </Design.DataContext>
+
+    <Grid Background="#0e1621" ColumnDefinitions="Auto,200" RowDefinitions="50,*,Auto">
+
+        <controls:AccountsPanel Grid.Column="0" Grid.RowSpan="3" LoginCommand="{Binding AddMetaBotCommand}" SelectedSession="{Binding SelectedSession}"/>
+
+        <Grid Background="#17212b" Grid.Column="1" Grid.Row="0">
+            <Border CornerRadius="15" Margin="5" Background="#242f3d" Height="30">
+                <!-- Placeholder="Search" PlaceholderForeground="#567883" PlaceholderMargin="0,-6.5,0,0" -->
+                <TextBox Margin="10,5,10,5"/>
+            </Border>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="1" Grid.RowSpan="2" Background="#17212b">
+            <controls:ChatsPanel Width="200" BotMemory="{Binding SelectedSession.Memory}" SelectedChat="{Binding SelectedChat}"/>
+        </Grid>
+
+        <!--controls:MessageInputBox x:Name="messageInputBox" Grid.Row="3" Grid.Column="2" Background="#17212b" MessageText="{Binding MessageInput}" SendMessageCommand="{Binding SendMessageCommand}"/-->
+
+        <Grid Grid.Column="2" Grid.Row="0" Background="#17212b">
+            <DockPanel HorizontalAlignment="Left" Margin="5">
+                <TextBlock Text="{Binding SelectedChat.Title, FallbackValue=ChatName}" TextAlignment="Left" VerticalAlignment="Center" Foreground="White" FontSize="15" FontWeight="Bold"/>
+            </DockPanel>
+        </Grid>
+
+        <!--controls:ChatHistoryView Grid.Column="3" Grid.Row="1" SelectedChat="{Binding SelectedChat}" SelectedSession="{Binding SelectedSession}"/-->
+    </Grid>
+</UserControl>

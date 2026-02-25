@@ -1,0 +1,29 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:auth="using:Metagram.Models.Authorization"
+             xmlns:converters="using:Metagram.Converters"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Metagram.Controls.AccountSelectorButton" x:Name="Root">
+  
+    <Design.DataContext>
+        <auth:BotRuntimeSession/>
+    </Design.DataContext>
+
+    <RadioButton Background="#0e1621" Foreground="#768c9e" Click="ToggleButton_Checked">
+        <Border x:Name="Border">
+            <StackPanel x:Name="Panel" Orientation="Horizontal" Width="200">
+                <Border Width="30" Height="30" Margin="5" CornerRadius="999">
+                    <Image x:Name="Image" 
+                        RenderOptions.BitmapInterpolationMode="HighQuality" RenderOptions.EdgeMode="Aliased"
+                        Source="{Binding #Root.Session, Converter={converters:BotRuntimeSessionToAvatarBitmapConverter}}"/>
+                </Border>
+                
+                <TextBlock
+                    x:Name="Text" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5" TextAlignment="Left"
+                    Text="{Binding #Root.Session.LoggedUser, Converter={converters:UserInfoToStringConverter}}"/>
+            </StackPanel>
+        </Border>
+    </RadioButton>
+</UserControl>

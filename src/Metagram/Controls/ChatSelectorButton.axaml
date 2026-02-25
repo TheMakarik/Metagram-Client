@@ -1,0 +1,20 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:authorization="using:Metagram.Models.Authorization"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:DataType="authorization:BotRuntimeSession"
+             x:Class="Metagram.Controls.ChatSelectorButton" x:Name="Root">
+
+    <RadioButton Height="50" Click="Button_Click">
+        <DockPanel Panel.ZIndex="1" IsHitTestVisible="False">
+            <Border DockPanel.Dock="Left" CornerRadius="100" ClipToBounds="True" Margin="5" Width="40">
+                <Image x:Name="ImageChatIcon"/>
+            </Border>
+        
+            <TextBlock DockPanel.Dock="Bottom" Margin="5,0,5,5" Height="10" Text="testLastMessage" Foreground="#7F91A4" FontSize="7"/>
+            <TextBlock x:Name="TextBlockChatName" Margin="5" Text="{Binding #Root.ChatHistory, FallbackValue=testChatName}" FontSize="15" Foreground="White" TextAlignment="Left" VerticalAlignment="Center" Height="20"/>
+        </DockPanel>   
+    </RadioButton>
+</UserControl>

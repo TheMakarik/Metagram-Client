@@ -1,0 +1,35 @@
+namespace Metagram.Models.DataAccess;
+
+public enum MetagramMessageType
+{
+    Text,
+    Photo,
+    Video,
+    Audio,
+    Voice,
+    Document,
+    Sticker,
+    Animation,
+    VideoNote,
+    Contact,
+    Location,
+    Venue,
+    Poll,
+    Dice,
+    Game,
+    Invoice,
+    SuccessfulPayment,
+    ConnectedWebsite,
+    PassportData,
+    ProximityAlertTriggered,
+    MessageAutoDeleteTimerChanged,
+    ForumTopicCreated,
+    ForumTopicEdited,
+    ForumTopicClosed,
+    ForumTopicReopened,
+    VideoChatScheduled,
+    VideoChatStarted,
+    VideoChatEnded,
+    VideoChatParticipantsInvited,
+    WebAppData
+}

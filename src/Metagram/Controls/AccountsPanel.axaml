@@ -1,0 +1,150 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="using:Metagram.Controls"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Metagram.Controls.AccountsPanel" x:Name="Root">
+
+    <StackPanel>
+        <ToggleButton x:Name="ExpandButton" Background="#0e1621" Foreground="#768c9e" Classes="expandButtonStyle"/>
+        <Button x:Name="AddButton" Background="#0e1621" Foreground="#768c9e" Classes="loginButtonStyle" Command="{Binding LoginCommand, ElementName=Root}"/>
+        
+        <ItemsControl ItemsSource="{Binding AccountsManager.Sessions, ElementName=Root}">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <local:AccountSelectorButton Session="{Binding}"/>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+    </StackPanel>
+    
+    <!--UserControl.Triggers>
+        <Trigger SourceName="expandButton" Property="IsChecked" Value="True">
+            <Trigger.EnterActions>
+                <BeginStoryboard>
+                    <Storyboard>
+                        <DoubleAnimation Storyboard.TargetProperty="Width" To="200" Duration="0:0:0.2"/>
+                    </Storyboard>
+                </BeginStoryboard>
+            </Trigger.EnterActions>
+    
+            <Trigger.ExitActions>
+                <BeginStoryboard>
+                    <Storyboard>
+                        <DoubleAnimation Storyboard.TargetProperty="Width" To="40" Duration="0:0:0.2"/>
+                    </Storyboard>
+                </BeginStoryboard>
+            </Trigger.ExitActions>
+        </Trigger>
+    </UserControl.Triggers-->
+    
+    <UserControl.Styles>
+        <Style Selector="ToggleButton.expandButtonStyle">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ToggleButton">
+                        <Border x:Name="border" Background="{TemplateBinding Background}">
+                            <StackPanel x:Name="panel" Orientation="Horizontal" Width="200">
+                                <Image x:Name="image" Width="30" Height="30" Margin="5">
+                                    <Image.Source>
+                                        <DrawingImage>
+                                            <DrawingImage.Drawing>
+                                                <DrawingGroup ClipGeometry="M0,0 V640 H640 V0 H0 Z">
+                                                    <GeometryDrawing Brush="{Binding Foreground, RelativeSource={RelativeSource TemplatedParent}}" Geometry="F1 M640,640z M0,0z M96,160C96,142.3,110.3,128,128,128L512,128C529.7,128 544,142.3 544,160 544,177.7 529.7,192 512,192L128,192C110.3,192,96,177.7,96,160z M96,320C96,302.3,110.3,288,128,288L512,288C529.7,288 544,302.3 544,320 544,337.7 529.7,352 512,352L128,352C110.3,352,96,337.7,96,320z M544,480C544,497.7,529.7,512,512,512L128,512C110.3,512 96,497.7 96,480 96,462.3 110.3,448 128,448L512,448C529.7,448,544,462.3,544,480z" />
+                                                </DrawingGroup>
+                                            </DrawingImage.Drawing>
+                                        </DrawingImage>
+                                    </Image.Source>
+                                </Image>
+    
+                                <TextBlock
+                                    x:Name="text" Text="Metagram Client"
+                                    VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5"
+                                    Foreground="{Binding Foreground, RelativeSource={RelativeSource TemplatedParent}}"
+                                    TextAlignment="Left"/>
+                                
+                            </StackPanel>
+                        </Border>
+    
+                        <!--ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <ColorAnimation Storyboard.TargetProperty="Background.Color" From="#0e1621" To="#25303e" Duration="0:0:0.1"/>
+                                            <ColorAnimation Storyboard.TargetProperty="Foreground.Color" From="#768c9e" To="#5eb5f7" Duration="0:0:0.1"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.EnterActions>
+    
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <ColorAnimation Storyboard.TargetProperty="Background.Color" From="#25303e" To="#0e1621" Duration="0:0:0.1"/>
+                                            <ColorAnimation Storyboard.TargetProperty="Foreground.Color" From="#5eb5f7" To="#768c9e" Duration="0:0:0.1"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.ExitActions>
+                            </Trigger>
+                        </ControlTemplate.Triggers-->
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    
+        <Style Selector="Button.loginButtonStyle">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="border" Background="{TemplateBinding Background}">
+                            <StackPanel x:Name="panel" Orientation="Horizontal" Width="200">
+                                
+                                <Image x:Name="image" Width="30" Height="30" Margin="5">
+                                    <Image.Source>
+                                        <DrawingImage>
+                                            <DrawingImage.Drawing>
+                                                <DrawingGroup ClipGeometry="M0,0 V640 H640 V0 H0 Z">
+                                                    <GeometryDrawing Brush="{Binding Foreground, RelativeSource={RelativeSource TemplatedParent}}" Geometry="F1 M640,640z M0,0z M160,144C151.2,144,144,151.2,144,160L144,480C144,488.8,151.2,496,160,496L480,496C488.8,496,496,488.8,496,480L496,160C496,151.2,488.8,144,480,144L160,144z M96,160C96,124.7,124.7,96,160,96L480,96C515.3,96,544,124.7,544,160L544,480C544,515.3,515.3,544,480,544L160,544C124.7,544,96,515.3,96,480L96,160z M296,408L296,344 232,344C218.7,344 208,333.3 208,320 208,306.7 218.7,296 232,296L296,296 296,232C296,218.7 306.7,208 320,208 333.3,208 344,218.7 344,232L344,296 408,296C421.3,296 432,306.7 432,320 432,333.3 421.3,344 408,344L344,344 344,408C344,421.3 333.3,432 320,432 306.7,432 296,421.3 296,408z" />
+                                                </DrawingGroup>
+                                            </DrawingImage.Drawing>
+                                        </DrawingImage>
+                                    </Image.Source>
+                                </Image>
+                                
+                                <TextBlock
+                                    x:Name="text" Text="Add Account token"
+                                    VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5"
+                                    Foreground="{Binding Foreground, RelativeSource={RelativeSource TemplatedParent}}"
+                                    TextAlignment="Left"/>
+                                
+                            </StackPanel>
+                        </Border>
+    
+                        <!--ControlTemplate.Triggers>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <ColorAnimation Storyboard.TargetProperty="Background.Color" From="#0e1621" To="#25303e" Duration="0:0:0.1"/>
+                                            <ColorAnimation Storyboard.TargetProperty="Foreground.Color" From="#768c9e" To="#5eb5f7" Duration="0:0:0.1"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.EnterActions>
+    
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <ColorAnimation Storyboard.TargetProperty="Background.Color" From="#25303e" To="#0e1621" Duration="0:0:0.1"/>
+                                            <ColorAnimation Storyboard.TargetProperty="Foreground.Color" From="#5eb5f7" To="#768c9e" Duration="0:0:0.1"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.ExitActions>
+                            </Trigger>
+                        </ControlTemplate.Triggers-->
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Styles>
+</UserControl>
