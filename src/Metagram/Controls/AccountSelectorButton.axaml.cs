@@ -1,7 +1,3 @@
-using Avalonia.Controls;
-using Avalonia.Data;
-using Avalonia.Interactivity;
-
 namespace Metagram.Controls;
 
 public partial class AccountSelectorButton : UserControl

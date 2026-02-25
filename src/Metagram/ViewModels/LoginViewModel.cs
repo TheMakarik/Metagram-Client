@@ -1,7 +1,4 @@
-﻿using System.Linq;
-using System.Windows.Input;
-
-namespace Metagram.ViewModels;
+﻿namespace Metagram.ViewModels;
 
 public partial class LoginViewModel : RoutableViewModelBase
 {

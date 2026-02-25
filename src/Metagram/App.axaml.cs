@@ -1,11 +1,3 @@
-using Avalonia.Controls.ApplicationLifetimes;
-using Avalonia.Markup.Xaml;
-using Metagram.ViewModels;
-using Metagram.Views;
-using NReco.Logging.File;
-using Splat;
-using LogLevel = Microsoft.Extensions.Logging.LogLevel;
-
 namespace Metagram;
 
 public partial class App : Application, IDisposable

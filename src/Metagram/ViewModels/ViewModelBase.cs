@@ -1,6 +1,4 @@
-﻿using ReactiveUI;
-
-namespace Metagram.ViewModels;
+﻿namespace Metagram.ViewModels;
 
 public abstract class ViewModelBase() : ReactiveObject;
 

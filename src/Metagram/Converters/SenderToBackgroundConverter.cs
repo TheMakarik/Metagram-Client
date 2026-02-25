@@ -1,10 +1,4 @@
-﻿using Avalonia.Data.Converters;
-using Avalonia.Markup.Xaml;
-using Avalonia.Media;
-using System.Globalization;
-using Color = Avalonia.Media.Color;
-
-namespace Metagram.Converters;
+﻿namespace Metagram.Converters;
 
 public class SenderToBackgroundConverter : MarkupExtension, IValueConverter
 {

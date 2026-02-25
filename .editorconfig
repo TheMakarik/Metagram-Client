@@ -1,0 +1,29 @@
+# Правила именования для полей (не статических, не readonly)
+dotnet_naming_rule.non_readonly_fields_should_not_have_underscore.severity = warning
+                   dotnet_naming_rule.non_readonly_fields_should_not_have_underscore.symbols = non_readonly_fields
+                                                                                             dotnet_naming_rule.non_readonly_fields_should_not_have_underscore.style = no_underscore_style
+
+                                                                                             # Определение символов: поля, не являющиеся readonly
+                                                                                             dotnet_naming_symbols.non_readonly_fields.applicable_kinds = field
+                                                                                                                  dotnet_naming_symbols.non_readonly_fields.applicable_accessibilities = *
+                                                                                                                                                            dotnet_naming_symbols.non_readonly_fields.required_modifiers = !readonly
+
+                   # Стиль: без подчеркивания, camelCase
+                   dotnet_naming_style.no_underscore_style.capitalization = camel_case
+                   dotnet_naming_style.no_underscore_style.required_prefix =
+                                                          dotnet_naming_style.no_underscore_style.required_suffix =
+                                                          dotnet_naming_style.no_underscore_style.word_separator =
+
+                                                                             # Для статических readonly полей можно использовать подчеркивание
+                                                                             dotnet_naming_rule.static_readonly_fields_should_have_underscore.severity = suggestion
+                                                                                                                                                       dotnet_naming_rule.static_readonly_fields_should_have_underscore.symbols = static_readonly_fields
+                                                                                                                                                       dotnet_naming_rule.static_readonly_fields_should_have_underscore.style = underscore_style
+
+                                                                                                                                                                         dotnet_naming_symbols.static_readonly_fields.applicable_kinds = field
+                                                                                                                                                                                                                      dotnet_naming_symbols.static_readonly_fields.applicable_accessibilities = *
+dotnet_naming_symbols.static_readonly_fields.required_modifiers = static, readonly
+
+dotnet_naming_style.underscore_style.capitalization = camel_case
+                   dotnet_naming_style.underscore_style.required_prefix = _
+                                                        dotnet_naming_style.underscore_style.required_suffix =
+                                                        dotnet_naming_style.underscore_style.word_separator =                                                                                       dotnet_naming_style.underscore_style.word_separator = 

@@ -1,12 +1,3 @@
-using Avalonia;
-using Avalonia.Controls;
-using Avalonia.Data;
-using Avalonia.Interactivity;
-using Avalonia.Markup.Xaml;
-using System.Collections.Specialized;
-using System.Linq;
-using System.Windows.Input;
-
 namespace Metagram.Controls;
 
 public partial class AccountsPanel : UserControl

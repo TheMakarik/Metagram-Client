@@ -1,6 +1,4 @@
-﻿using System.Windows.Input;
-
-namespace Metagram.ViewModels;
+﻿namespace Metagram.ViewModels;
 
 public partial class MainWindowViewModel : ScreenViewModelBase
 {

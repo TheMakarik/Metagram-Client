@@ -1,9 +1,4 @@
-﻿using Avalonia.Data.Converters;
-using Avalonia.Markup.Xaml;
-using Avalonia.Media;
-using System.Globalization;
-
-namespace Metagram.Converters;
+﻿namespace Metagram.Converters;
 
 public class UserInfoToStringConverter : MarkupExtension, IValueConverter
 {

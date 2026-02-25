@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "KiKyz0JIZLM=",
+  "dgSpecHash": "8n3BFzD8yUc=",
   "success": true,
   "projectFilePath": "/home/themakarik/Metagram/Metagram-Client/src/Metagram.Core/Metagram.Core.csproj",
   "expectedPackageFiles": [
@@ -46,9 +46,7 @@
     "/home/themakarik/.nuget/packages/sqlitepclraw.core/2.1.11/sqlitepclraw.core.2.1.11.nupkg.sha512",
     "/home/themakarik/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.1.11/sqlitepclraw.lib.e_sqlite3.2.1.11.nupkg.sha512",
     "/home/themakarik/.nuget/packages/sqlitepclraw.provider.e_sqlite3/2.1.11/sqlitepclraw.provider.e_sqlite3.2.1.11.nupkg.sha512",
-    "/home/themakarik/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
     "/home/themakarik/.nuget/packages/system.reactive/6.1.0/system.reactive.6.1.0.nupkg.sha512",
-    "/home/themakarik/.nuget/packages/system.text.json/8.0.5/system.text.json.8.0.5.nupkg.sha512",
     "/home/themakarik/.nuget/packages/telegram.bot/22.6.2/telegram.bot.22.6.2.nupkg.sha512",
     "/home/themakarik/.nuget/packages/telegrator/1.15.9/telegrator.1.15.9.nupkg.sha512"
   ],

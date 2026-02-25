@@ -1,6 +1,3 @@
-using Avalonia.Controls;
-using Metagram.ViewModels;
-
 namespace Metagram.Views;
 
 public partial class MainWindow : Window
@@ -59,7 +56,7 @@ public partial class MainWindow : Window
         if (cheatCodeProgress.Count == 0)
         {
             cheatCodeProgress = null;
-            MessageBox.Show("Макалик лох");
+            MessageBox.Show("пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ");
             return;
         }
     }

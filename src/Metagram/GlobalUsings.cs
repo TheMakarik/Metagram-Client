@@ -4,9 +4,13 @@ global using Microsoft.Extensions.Configuration;
 global using Microsoft.Extensions.Logging;
 global using Microsoft.Extensions.Options;
 
-// View
+// Avalonia and rxui
 global using Avalonia;
+global using Avalonia.Controls.ApplicationLifetimes;
+global using Avalonia.Markup.Xaml;
+global using Avalonia.Data.Converters;
 global using ReactiveUI;
+global using Avalonia.Controls;
 global using ReactiveUI.Avalonia;
 global using ReactiveUI.Builder;
 global using ReactiveUI.SourceGenerators;
@@ -16,7 +20,17 @@ global using System;
 global using System.Threading.Tasks;
 global using System.Collections.Immutable;
 global using System.Collections.ObjectModel;
+global using System.Collections.Specialized;
 global using System.Diagnostics;
+global using System.Globalization;
+global using System.Linq;
+global using System.Threading;
+global using System.Windows.Input;
+global using Avalonia.Controls.Templates;
+global using Avalonia.Data;
+global using Avalonia.Interactivity;
+global using Avalonia.Layout;
+global using Avalonia.Media;
 
 // Telegrator
 global using Telegrator;
@@ -55,3 +69,15 @@ global using Metagram.Services.Polling;
 //Entity framework
 global using Microsoft.EntityFrameworkCore;
 global using Microsoft.EntityFrameworkCore.Sqlite;
+
+//Metagram View
+global using Metagram.ViewModels;
+global using Metagram.Views;
+
+//Logging
+global using NReco.Logging.File;
+global using LogLevel = Microsoft.Extensions.Logging.LogLevel;
+
+//Splat
+global using Splat;
+global using Color = Avalonia.Media.Color;

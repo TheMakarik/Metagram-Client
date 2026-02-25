@@ -1,7 +1,4 @@
-﻿using Avalonia.Controls;
-using Avalonia.Controls.Templates;
-
-namespace Metagram;
+﻿namespace Metagram;
 
 public class ViewLocator : IDataTemplate, IViewLocator
 {

@@ -1,9 +1,3 @@
-using Avalonia.Controls;
-using Avalonia.Data;
-using Avalonia.Interactivity;
-using System.Collections.Specialized;
-using System.Linq;
-
 namespace Metagram.Controls;
 
 public partial class ChatsPanel : UserControl

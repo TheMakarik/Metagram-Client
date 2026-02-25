@@ -1,5 +1,3 @@
-using Avalonia.Controls;
-
 namespace Metagram.Views;
 
 public partial class LoginView : UserControl, IViewFor

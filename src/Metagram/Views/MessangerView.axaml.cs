@@ -1,6 +1,3 @@
-using Avalonia.Controls;
-using Metagram.ViewModels;
-
 namespace Metagram.Views;
 
 public partial class MessangerView : UserControl, IViewFor

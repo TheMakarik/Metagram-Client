@@ -1,9 +1,4 @@
-﻿using Avalonia.Data.Converters;
-using Avalonia.Markup.Xaml;
-using System.Globalization;
-using System.IO;
-
-namespace Metagram.Converters;
+﻿namespace Metagram.Converters;
 
 public class FileIdToBitmapConverter : MarkupExtension, IValueConverter
 {
