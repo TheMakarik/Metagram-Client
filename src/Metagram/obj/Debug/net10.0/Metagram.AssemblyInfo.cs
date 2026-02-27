@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Metagram")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9b45d2d7f275fc650e077d0fe42c87381dbaf478")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1109c2b8e8e0c552bdd3b88ae8978de40968f5b4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Metagram")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Metagram")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
