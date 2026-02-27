@@ -16,8 +16,10 @@ public partial class MainWindowViewModel : ScreenViewModelBase
         _routeTest = ReactiveCommand.Create(() =>
         {
             this.NavigateTo<MessangerViewModel>();
+            /*
             if (accountsManager.Sessions.Count == 0)
                 this.NavigateTo<LoginViewModel>();
+            */
         });
     }
 }

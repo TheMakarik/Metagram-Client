@@ -11,3 +11,17 @@
 /home/themakarik/Metagram/Metagram-Client/src/Metagram.Core/obj/Debug/net10.0/refint/Metagram.Core.dll
 /home/themakarik/Metagram/Metagram-Client/src/Metagram.Core/obj/Debug/net10.0/Metagram.Core.pdb
 /home/themakarik/Metagram/Metagram-Client/src/Metagram.Core/obj/Debug/net10.0/ref/Metagram.Core.dll
+C:\Users\gutii\source\repos\TheMakarik\Metagram-Client\src\Metagram.Core\bin\Debug\net10.0\Metagram.Core.deps.json
+C:\Users\gutii\source\repos\TheMakarik\Metagram-Client\src\Metagram.Core\bin\Debug\net10.0\Metagram.Core.dll
+C:\Users\gutii\source\repos\TheMakarik\Metagram-Client\src\Metagram.Core\bin\Debug\net10.0\Metagram.Core.pdb
+C:\Users\gutii\source\repos\TheMakarik\Metagram-Client\src\Metagram.Core\obj\Debug\net10.0\Metagram.Core.csproj.AssemblyReference.cache
+C:\Users\gutii\source\repos\TheMakarik\Metagram-Client\src\Metagram.Core\obj\Debug\net10.0\Avalonia\Resources.Inputs.cache
+C:\Users\gutii\source\repos\TheMakarik\Metagram-Client\src\Metagram.Core\obj\Debug\net10.0\Metagram.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gutii\source\repos\TheMakarik\Metagram-Client\src\Metagram.Core\obj\Debug\net10.0\Metagram.Core.AssemblyInfoInputs.cache
+C:\Users\gutii\source\repos\TheMakarik\Metagram-Client\src\Metagram.Core\obj\Debug\net10.0\Metagram.Core.AssemblyInfo.cs
+C:\Users\gutii\source\repos\TheMakarik\Metagram-Client\src\Metagram.Core\obj\Debug\net10.0\Metagram.Core.csproj.CoreCompileInputs.cache
+C:\Users\gutii\source\repos\TheMakarik\Metagram-Client\src\Metagram.Core\obj\Debug\net10.0\Metagram.Core.sourcelink.json
+C:\Users\gutii\source\repos\TheMakarik\Metagram-Client\src\Metagram.Core\obj\Debug\net10.0\Metagram.Core.dll
+C:\Users\gutii\source\repos\TheMakarik\Metagram-Client\src\Metagram.Core\obj\Debug\net10.0\refint\Metagram.Core.dll
+C:\Users\gutii\source\repos\TheMakarik\Metagram-Client\src\Metagram.Core\obj\Debug\net10.0\Metagram.Core.pdb
+C:\Users\gutii\source\repos\TheMakarik\Metagram-Client\src\Metagram.Core\obj\Debug\net10.0\ref\Metagram.Core.dll

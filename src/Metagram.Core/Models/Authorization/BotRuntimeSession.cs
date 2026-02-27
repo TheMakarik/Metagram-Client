@@ -27,7 +27,7 @@ public partial class BotRuntimeSession : IDisposable
     
     public UserProfilePhotos ProfilePhotos => profilePhotos ?? throw new AccountNotLoggedException();
 
-    public BotRuntimeSession(BotAccountInfo account, BotMemory botMemory)
+    public BotRuntimeSession(BotAccountInfo account, BotMemory botMemory, IOptions<HostedUpdateReceiverOptions> options)
     {
         _account = account;
         _memory = botMemory;
@@ -35,7 +35,7 @@ public partial class BotRuntimeSession : IDisposable
         _cancell = new CancellationTokenSource();
 
         _handler = new MetaUpdateHandler(new NullLogger<MetaUpdateHandler>(), this, _memory);
-        _receiver = new HostedUpdateReceiver(_botClient, _handler, new NullLogger<HostedUpdateReceiver>(), null!);
+        _receiver = new HostedUpdateReceiver(_botClient, _handler, new NullLogger<HostedUpdateReceiver>(), options);
     }
 
     public async Task LoginAsync(CancellationToken cancellationToken = default)

@@ -1,77 +1,63 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\",
+  "WorkspaceRootPath": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram\\app.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\app.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram.core\\models\\authorization\\botruntimesession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|solutionrelative:src\\metagram.core\\models\\authorization\\botruntimesession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram.core\\services\\polling\\hostedupdatereceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|solutionrelative:src\\metagram.core\\services\\polling\\hostedupdatereceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gutii\\AppData\\Local\\SourceServer\\a7aca1ed1746362c7ba8ffdfb3e1de734f6669fe6ae1dad66a3efb2773ec6c0b\\src\\ReactiveUI\\RxApp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram\\views\\messangerview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\views\\messangerview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram.core\\services\\authorization\\accountsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|solutionrelative:src\\metagram.core\\services\\authorization\\accountsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram\\views\\loginview.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
-      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\views\\loginview.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+      "AbsoluteMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram.core\\models\\authorization\\botruntimesession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|solutionrelative:src\\metagram.core\\models\\authorization\\botruntimesession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram\\views\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\views\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram.core\\services\\polling\\hostedupdatereceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|solutionrelative:src\\metagram.core\\services\\polling\\hostedupdatereceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram\\views\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
-      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\views\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram\\app.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\app.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram\\controls\\messageinputbox.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\controls\\messageinputbox.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram\\controls\\chatspanel.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\controls\\chatspanel.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram\\controls\\chatselectorbutton.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\controls\\chatselectorbutton.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram\\controls\\chathistoryview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\controls\\chathistoryview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram\\controls\\accountspanel.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\controls\\accountspanel.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram\\controls\\accountselectorbutton.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\controls\\accountselectorbutton.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram\\viewlocator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram\\viewlocator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\viewlocator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram\\typesextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\typesextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gutii\\AppData\\Local\\SourceServer\\387aa6703d3ae98c3c7dda01ea67190cb4ce0e3b2d0b81bd5c25962f9ffd1187\\src\\ReactiveUI\\ReactiveCommand\\ReactiveCommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gutii\\AppData\\Local\\SourceServer\\56c988fc1f6b2b254fe9b3897807802003d5b66cfabd5deb4ca8b0b14c96c263\\src\\ReactiveUI\\Scheduler\\ScheduledSubject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gutii\\AppData\\Local\\Temp\\.vsdbgsrc\\44a410f4a92c262660c006f858e66bfe6c64f1ed24cec073185a89044257fa2c\\Subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gutii\\AppData\\Local\\Temp\\.vsdbgsrc\\5b6b73ad4662fa8bfbb2e7d5bc06cbebecd30de04af46d65848c831a5893994c\\ObserveOnObserverNew.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gutii\\AppData\\Local\\Temp\\.vsdbgsrc\\99d6864578aa73639c0d229ac870281147b9ab157ab0c81a9280f2b5b835c9c8\\LocalScheduler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gutii\\AppData\\Local\\Temp\\.vsdbgsrc\\380116cb8e49143468b6ad0d62bdd52f982e428835ba495f47c234f78bdcb71d\\Sink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gutii\\AppData\\Local\\Temp\\.vsdbgsrc\\b1c9bcffd5bda64ff0cdba4be09ea6f5c136d721699b39525f5c54e9cbd0d341\\Type.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -80,159 +66,191 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gutii\\AppData\\Local\\Temp\\.vsdbgsrc\\d2d253e6e71144f19b66cdb843db43364916c2a4d79dcac46c4a808c5401a7ca\\AvaloniaPropertyRegistry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram\\controls\\accountspanel.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
-      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\controls\\accountspanel.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gutii\\AppData\\Local\\Temp\\.vsdbgsrc\\545ba63746ef37a545bad5002d61a3c24eef60c00fb0b54666b5a2a04c59e487\\AccountsPanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram\\viewmodels\\messangerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\viewmodels\\messangerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram\\views\\loginview.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\views\\loginview.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram\\views\\loginview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram\\views\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\views\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram\\views\\messangerview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\views\\messangerview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram\\views\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\views\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram\\controls\\messageinputbox.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\controls\\messageinputbox.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram\\controls\\chatspanel.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\controls\\chatspanel.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram\\controls\\chatselectorbutton.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\controls\\chatselectorbutton.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram\\controls\\chathistoryview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\controls\\chathistoryview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram\\controls\\accountselectorbutton.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\controls\\accountselectorbutton.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram\\controls\\accountspanel.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\controls\\accountspanel.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram\\controls\\accountspanel.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\controls\\accountspanel.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram\\views\\loginview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\views\\loginview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram\\app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram\\app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram\\viewmodels\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram\\viewmodels\\messangerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\viewmodels\\messangerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram\\viewmodels\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\viewmodels\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram\\typesextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\typesextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram.core\\services\\typesextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram.core\\services\\typesextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|solutionrelative:src\\metagram.core\\services\\typesextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram.core\\services\\viewing\\inavigator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram.core\\services\\viewing\\inavigator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|solutionrelative:src\\metagram.core\\services\\viewing\\inavigator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram.core\\services\\viewing\\navigator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram.core\\services\\viewing\\navigator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|solutionrelative:src\\metagram.core\\services\\viewing\\navigator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram.core\\models\\authorization\\botaccountinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram.core\\models\\authorization\\botaccountinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|solutionrelative:src\\metagram.core\\models\\authorization\\botaccountinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram.core\\services\\authorization\\accountsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|solutionrelative:src\\metagram.core\\services\\authorization\\accountsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram.core\\services\\polling\\metaupdatehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram.core\\services\\polling\\metaupdatehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|solutionrelative:src\\metagram.core\\services\\polling\\metaupdatehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram.core\\models\\options\\hostedupdatereceiveroptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram.core\\models\\options\\hostedupdatereceiveroptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|solutionrelative:src\\metagram.core\\models\\options\\hostedupdatereceiveroptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram.core\\services\\polling\\metahandlersmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram.core\\services\\polling\\metahandlersmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|solutionrelative:src\\metagram.core\\services\\polling\\metahandlersmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram.core\\repositories\\chatlistitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram.core\\repositories\\chatlistitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|solutionrelative:src\\metagram.core\\repositories\\chatlistitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram\\controls\\messageinputbox.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram\\controls\\messageinputbox.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
       "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\controls\\messageinputbox.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram\\views\\messangerview.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram\\views\\messangerview.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
       "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\views\\messangerview.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram\\app.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram\\app.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
       "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\app.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram.core\\services\\authorization\\iaccountsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram.core\\services\\authorization\\iaccountsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|solutionrelative:src\\metagram.core\\services\\authorization\\iaccountsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram\\metagram.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram\\metagram.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\metagram.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram.core\\metagram.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram.core\\metagram.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|solutionrelative:src\\metagram.core\\metagram.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram\\controls\\accountselectorbutton.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram\\controls\\accountselectorbutton.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
       "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\controls\\accountselectorbutton.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram\\controls\\chatselectorbutton.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
-      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\controls\\chatselectorbutton.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram\\controls\\chatspanel.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram\\controls\\chatspanel.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
       "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\controls\\chatspanel.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram.core\\models\\messages\\messagenode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram\\controls\\chatselectorbutton.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\controls\\chatselectorbutton.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram.core\\models\\messages\\messagenode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|solutionrelative:src\\metagram.core\\models\\messages\\messagenode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram\\converters\\userinfotostringconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram\\converters\\userinfotostringconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\converters\\userinfotostringconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram\\converters\\sendertobackgroundconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram\\converters\\sendertobackgroundconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\converters\\sendertobackgroundconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram\\converters\\sendertoalignmentconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram\\converters\\sendertoalignmentconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\converters\\sendertoalignmentconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram\\converters\\observablemessagegrouptoavatatbitmapconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram\\converters\\observablemessagegrouptoavatatbitmapconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\converters\\observablemessagegrouptoavatatbitmapconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram\\converters\\fileidtobitmapconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\converters\\fileidtobitmapconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram\\converters\\datetimetolocaletimestringconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\converters\\datetimetolocaletimestringconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram\\converters\\botruntimesessiontoavatarbitmapconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram\\converters\\botruntimesessiontoavatarbitmapconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\converters\\botruntimesessiontoavatarbitmapconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram\\controls\\chathistoryview.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram\\converters\\datetimetolocaletimestringconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\converters\\datetimetolocaletimestringconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram\\converters\\fileidtobitmapconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\converters\\fileidtobitmapconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram\\controls\\chathistoryview.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
       "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\controls\\chathistoryview.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram.core\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram.core\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|solutionrelative:src\\metagram.core\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8319C904-6CC1-81D8-40B2-1BB959E823A6}|src\\Metagram\\Metagram.csproj|solutionrelative:src\\metagram\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram.core\\models\\messages\\observablemessagegroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|solutionrelative:src\\metagram.core\\models\\messages\\observablemessagegroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram.core\\models\\messages\\observablemessageflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|solutionrelative:src\\metagram.core\\models\\messages\\observablemessageflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|c:\\users\\gutii\\source\\repos\\metagram-client\\src\\metagram.core\\models\\messages\\observablemessageflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|solutionrelative:src\\metagram.core\\models\\messages\\observablemessageflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|c:\\users\\gutii\\source\\repos\\themakarik\\metagram-client\\src\\metagram.core\\models\\messages\\observablemessagegroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECD0BCE5-A510-4806-BC76-89840CC14055}|src\\Metagram.Core\\Metagram.Core.csproj|solutionrelative:src\\metagram.core\\models\\messages\\observablemessagegroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -242,7 +260,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -270,26 +288,104 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "RxApp.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\AppData\\Local\\SourceServer\\a7aca1ed1746362c7ba8ffdfb3e1de734f6669fe6ae1dad66a3efb2773ec6c0b\\src\\ReactiveUI\\RxApp.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\SourceServer\\a7aca1ed1746362c7ba8ffdfb3e1de734f6669fe6ae1dad66a3efb2773ec6c0b\\src\\ReactiveUI\\RxApp.cs",
+              "ToolTip": "C:\\Users\\gutii\\AppData\\Local\\SourceServer\\a7aca1ed1746362c7ba8ffdfb3e1de734f6669fe6ae1dad66a3efb2773ec6c0b\\src\\ReactiveUI\\RxApp.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\SourceServer\\a7aca1ed1746362c7ba8ffdfb3e1de734f6669fe6ae1dad66a3efb2773ec6c0b\\src\\ReactiveUI\\RxApp.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAqwGwAAAAMAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T23:06:37.946Z",
+              "EditorCaption": " [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "App.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\App.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\App.axaml.cs",
               "RelativeDocumentMoniker": "src\\Metagram\\App.axaml.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\App.axaml.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\App.axaml.cs",
               "RelativeToolTip": "src\\Metagram\\App.axaml.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAuwDQAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAACUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-15T15:57:47.765Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "src\\Metagram\\ViewModels\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "src\\Metagram\\ViewModels\\LoginViewModel.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAqwDcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T19:15:14.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AccountsManager.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram.Core\\Services\\Authorization\\AccountsManager.cs",
+              "RelativeDocumentMoniker": "src\\Metagram.Core\\Services\\Authorization\\AccountsManager.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram.Core\\Services\\Authorization\\AccountsManager.cs",
+              "RelativeToolTip": "src\\Metagram.Core\\Services\\Authorization\\AccountsManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABpAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T16:01:36.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HostedUpdateReceiver.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram.Core\\Services\\Polling\\HostedUpdateReceiver.cs",
+              "RelativeDocumentMoniker": "src\\Metagram.Core\\Services\\Polling\\HostedUpdateReceiver.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram.Core\\Services\\Polling\\HostedUpdateReceiver.cs",
+              "RelativeToolTip": "src\\Metagram.Core\\Services\\Polling\\HostedUpdateReceiver.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T16:01:44.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TypesExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\TypesExtensions.cs",
+              "RelativeDocumentMoniker": "src\\Metagram\\TypesExtensions.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\TypesExtensions.cs",
+              "RelativeToolTip": "src\\Metagram\\TypesExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T19:44:03.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BotRuntimeSession.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram.Core\\Models\\Authorization\\BotRuntimeSession.cs",
+              "RelativeDocumentMoniker": "src\\Metagram.Core\\Models\\Authorization\\BotRuntimeSession.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram.Core\\Models\\Authorization\\BotRuntimeSession.cs",
+              "RelativeToolTip": "src\\Metagram.Core\\Models\\Authorization\\BotRuntimeSession.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T09:08:26.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "MainWindowViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\ViewModels\\MainWindowViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\ViewModels\\MainWindowViewModel.cs",
               "RelativeDocumentMoniker": "src\\Metagram\\ViewModels\\MainWindowViewModel.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\ViewModels\\MainWindowViewModel.cs",
-              "RelativeToolTip": "src\\Metagram\\ViewModels\\MainWindowViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAyAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\ViewModels\\MainWindowViewModel.cs*",
+              "RelativeToolTip": "src\\Metagram\\ViewModels\\MainWindowViewModel.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-15T15:56:52.628Z",
               "EditorCaption": ""
@@ -297,229 +393,244 @@
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "LoginView.axaml",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Views\\LoginView.axaml",
-              "RelativeDocumentMoniker": "src\\Metagram\\Views\\LoginView.axaml",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Views\\LoginView.axaml",
-              "RelativeToolTip": "src\\Metagram\\Views\\LoginView.axaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-16T13:12:01.86Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\ViewModels\\LoginViewModel.cs",
-              "RelativeDocumentMoniker": "src\\Metagram\\ViewModels\\LoginViewModel.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\ViewModels\\LoginViewModel.cs",
-              "RelativeToolTip": "src\\Metagram\\ViewModels\\LoginViewModel.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAewDcAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T19:15:14.198Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HostedUpdateReceiver.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram.Core\\Services\\Polling\\HostedUpdateReceiver.cs",
-              "RelativeDocumentMoniker": "src\\Metagram.Core\\Services\\Polling\\HostedUpdateReceiver.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram.Core\\Services\\Polling\\HostedUpdateReceiver.cs",
-              "RelativeToolTip": "src\\Metagram.Core\\Services\\Polling\\HostedUpdateReceiver.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T16:01:44.395Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\appsettings.json",
-              "RelativeDocumentMoniker": "src\\Metagram\\appsettings.json",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\appsettings.json",
-              "RelativeToolTip": "src\\Metagram\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-15T20:40:06.556Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BotRuntimeSession.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram.Core\\Models\\Authorization\\BotRuntimeSession.cs",
-              "RelativeDocumentMoniker": "src\\Metagram.Core\\Models\\Authorization\\BotRuntimeSession.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram.Core\\Models\\Authorization\\BotRuntimeSession.cs",
-              "RelativeToolTip": "src\\Metagram.Core\\Models\\Authorization\\BotRuntimeSession.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAewCUAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T09:08:26.501Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MainWindow.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Views\\MainWindow.axaml.cs",
-              "RelativeDocumentMoniker": "src\\Metagram\\Views\\MainWindow.axaml.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Views\\MainWindow.axaml.cs",
-              "RelativeToolTip": "src\\Metagram\\Views\\MainWindow.axaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T15:57:09.66Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MessangerView.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Views\\MessangerView.axaml.cs",
-              "RelativeDocumentMoniker": "src\\Metagram\\Views\\MessangerView.axaml.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Views\\MessangerView.axaml.cs",
-              "RelativeToolTip": "src\\Metagram\\Views\\MessangerView.axaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T13:11:53.428Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "MainWindow.axaml",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Views\\MainWindow.axaml",
-              "RelativeDocumentMoniker": "src\\Metagram\\Views\\MainWindow.axaml",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Views\\MainWindow.axaml",
-              "RelativeToolTip": "src\\Metagram\\Views\\MainWindow.axaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-15T15:56:51.833Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RxApp.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\AppData\\Local\\SourceServer\\a7aca1ed1746362c7ba8ffdfb3e1de734f6669fe6ae1dad66a3efb2773ec6c0b\\src\\ReactiveUI\\RxApp.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\SourceServer\\a7aca1ed1746362c7ba8ffdfb3e1de734f6669fe6ae1dad66a3efb2773ec6c0b\\src\\ReactiveUI\\RxApp.cs",
-              "ToolTip": "C:\\Users\\gutii\\AppData\\Local\\SourceServer\\a7aca1ed1746362c7ba8ffdfb3e1de734f6669fe6ae1dad66a3efb2773ec6c0b\\src\\ReactiveUI\\RxApp.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\SourceServer\\a7aca1ed1746362c7ba8ffdfb3e1de734f6669fe6ae1dad66a3efb2773ec6c0b\\src\\ReactiveUI\\RxApp.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAewGwAAAAMAAAAAQAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T23:06:37.946Z",
-              "EditorCaption": " [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MessageInputBox.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Controls\\MessageInputBox.axaml.cs",
-              "RelativeDocumentMoniker": "src\\Metagram\\Controls\\MessageInputBox.axaml.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Controls\\MessageInputBox.axaml.cs",
-              "RelativeToolTip": "src\\Metagram\\Controls\\MessageInputBox.axaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T18:36:10.535Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ChatsPanel.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Controls\\ChatsPanel.axaml.cs",
-              "RelativeDocumentMoniker": "src\\Metagram\\Controls\\ChatsPanel.axaml.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Controls\\ChatsPanel.axaml.cs",
-              "RelativeToolTip": "src\\Metagram\\Controls\\ChatsPanel.axaml.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAAAD8AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T18:36:32.005Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ChatSelectorButton.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Controls\\ChatSelectorButton.axaml.cs",
-              "RelativeDocumentMoniker": "src\\Metagram\\Controls\\ChatSelectorButton.axaml.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Controls\\ChatSelectorButton.axaml.cs",
-              "RelativeToolTip": "src\\Metagram\\Controls\\ChatSelectorButton.axaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T12:23:26.14Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ChatHistoryView.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Controls\\ChatHistoryView.axaml.cs",
-              "RelativeDocumentMoniker": "src\\Metagram\\Controls\\ChatHistoryView.axaml.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Controls\\ChatHistoryView.axaml.cs",
-              "RelativeToolTip": "src\\Metagram\\Controls\\ChatHistoryView.axaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T18:24:34.274Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "AccountSelectorButton.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Controls\\AccountSelectorButton.axaml.cs",
-              "RelativeDocumentMoniker": "src\\Metagram\\Controls\\AccountSelectorButton.axaml.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Controls\\AccountSelectorButton.axaml.cs",
-              "RelativeToolTip": "src\\Metagram\\Controls\\AccountSelectorButton.axaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAABxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T22:52:24.764Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "AccountsPanel.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Controls\\AccountsPanel.axaml.cs",
-              "RelativeDocumentMoniker": "src\\Metagram\\Controls\\AccountsPanel.axaml.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Controls\\AccountsPanel.axaml.cs",
-              "RelativeToolTip": "src\\Metagram\\Controls\\AccountsPanel.axaml.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAAAEwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T18:35:59.479Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "AccountsPanel.axaml",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Controls\\AccountsPanel.axaml",
-              "RelativeDocumentMoniker": "src\\Metagram\\Controls\\AccountsPanel.axaml",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Controls\\AccountsPanel.axaml",
-              "RelativeToolTip": "src\\Metagram\\Controls\\AccountsPanel.axaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-15T18:35:59.575Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
               "Title": "ViewLocator.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\ViewLocator.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\ViewLocator.cs",
               "RelativeDocumentMoniker": "src\\Metagram\\ViewLocator.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\ViewLocator.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\ViewLocator.cs",
               "RelativeToolTip": "src\\Metagram\\ViewLocator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-15T20:56:00.442Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 10,
+              "Title": "ReactiveCommand.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\AppData\\Local\\SourceServer\\387aa6703d3ae98c3c7dda01ea67190cb4ce0e3b2d0b81bd5c25962f9ffd1187\\src\\ReactiveUI\\ReactiveCommand\\ReactiveCommand.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\SourceServer\\387aa6703d3ae98c3c7dda01ea67190cb4ce0e3b2d0b81bd5c25962f9ffd1187\\src\\ReactiveUI\\ReactiveCommand\\ReactiveCommand.cs",
+              "ToolTip": "C:\\Users\\gutii\\AppData\\Local\\SourceServer\\387aa6703d3ae98c3c7dda01ea67190cb4ce0e3b2d0b81bd5c25962f9ffd1187\\src\\ReactiveUI\\ReactiveCommand\\ReactiveCommand.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\SourceServer\\387aa6703d3ae98c3c7dda01ea67190cb4ce0e3b2d0b81bd5c25962f9ffd1187\\src\\ReactiveUI\\ReactiveCommand\\ReactiveCommand.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
+              "ViewState": "AgIAAJsDAAAAAAAAAAAqwK4DAAAMAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-27T17:16:57.822Z",
+              "EditorCaption": " [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Sink.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\AppData\\Local\\Temp\\.vsdbgsrc\\380116cb8e49143468b6ad0d62bdd52f982e428835ba495f47c234f78bdcb71d\\Sink.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\380116cb8e49143468b6ad0d62bdd52f982e428835ba495f47c234f78bdcb71d\\Sink.cs",
+              "ToolTip": "C:\\Users\\gutii\\AppData\\Local\\Temp\\.vsdbgsrc\\380116cb8e49143468b6ad0d62bdd52f982e428835ba495f47c234f78bdcb71d\\Sink.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\380116cb8e49143468b6ad0d62bdd52f982e428835ba495f47c234f78bdcb71d\\Sink.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAqwB8AAAACAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-27T17:17:43.887Z",
+              "EditorCaption": " [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\Metagram\\appsettings.json",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\appsettings.json",
+              "RelativeToolTip": "src\\Metagram\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-15T20:40:06.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ObserveOnObserverNew.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\AppData\\Local\\Temp\\.vsdbgsrc\\5b6b73ad4662fa8bfbb2e7d5bc06cbebecd30de04af46d65848c831a5893994c\\ObserveOnObserverNew.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\5b6b73ad4662fa8bfbb2e7d5bc06cbebecd30de04af46d65848c831a5893994c\\ObserveOnObserverNew.cs",
+              "ToolTip": "C:\\Users\\gutii\\AppData\\Local\\Temp\\.vsdbgsrc\\5b6b73ad4662fa8bfbb2e7d5bc06cbebecd30de04af46d65848c831a5893994c\\ObserveOnObserverNew.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\5b6b73ad4662fa8bfbb2e7d5bc06cbebecd30de04af46d65848c831a5893994c\\ObserveOnObserverNew.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
+              "ViewState": "AgIAADwAAAAAAAAAAAAewE0AAAAEAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-27T17:17:45.441Z",
+              "EditorCaption": " [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LocalScheduler.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\AppData\\Local\\Temp\\.vsdbgsrc\\99d6864578aa73639c0d229ac870281147b9ab157ab0c81a9280f2b5b835c9c8\\LocalScheduler.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\99d6864578aa73639c0d229ac870281147b9ab157ab0c81a9280f2b5b835c9c8\\LocalScheduler.cs",
+              "ToolTip": "C:\\Users\\gutii\\AppData\\Local\\Temp\\.vsdbgsrc\\99d6864578aa73639c0d229ac870281147b9ab157ab0c81a9280f2b5b835c9c8\\LocalScheduler.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\99d6864578aa73639c0d229ac870281147b9ab157ab0c81a9280f2b5b835c9c8\\LocalScheduler.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAqwG0AAAACAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-27T17:17:53.572Z",
+              "EditorCaption": " [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ScheduledSubject.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\AppData\\Local\\SourceServer\\56c988fc1f6b2b254fe9b3897807802003d5b66cfabd5deb4ca8b0b14c96c263\\src\\ReactiveUI\\Scheduler\\ScheduledSubject.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\SourceServer\\56c988fc1f6b2b254fe9b3897807802003d5b66cfabd5deb4ca8b0b14c96c263\\src\\ReactiveUI\\Scheduler\\ScheduledSubject.cs",
+              "ToolTip": "C:\\Users\\gutii\\AppData\\Local\\SourceServer\\56c988fc1f6b2b254fe9b3897807802003d5b66cfabd5deb4ca8b0b14c96c263\\src\\ReactiveUI\\Scheduler\\ScheduledSubject.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\SourceServer\\56c988fc1f6b2b254fe9b3897807802003d5b66cfabd5deb4ca8b0b14c96c263\\src\\ReactiveUI\\Scheduler\\ScheduledSubject.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
+              "ViewState": "AgIAACAAAAAAAAAAAAAqwDMAAAAjAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-27T17:18:02.521Z",
+              "EditorCaption": " [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Subject.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\AppData\\Local\\Temp\\.vsdbgsrc\\44a410f4a92c262660c006f858e66bfe6c64f1ed24cec073185a89044257fa2c\\Subject.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\44a410f4a92c262660c006f858e66bfe6c64f1ed24cec073185a89044257fa2c\\Subject.cs",
+              "ToolTip": "C:\\Users\\gutii\\AppData\\Local\\Temp\\.vsdbgsrc\\44a410f4a92c262660c006f858e66bfe6c64f1ed24cec073185a89044257fa2c\\Subject.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\44a410f4a92c262660c006f858e66bfe6c64f1ed24cec073185a89044257fa2c\\Subject.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAqwH4AAAADAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-27T17:17:57.52Z",
+              "EditorCaption": " [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "LoginView.axaml",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Views\\LoginView.axaml",
+              "RelativeDocumentMoniker": "src\\Metagram\\Views\\LoginView.axaml",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Views\\LoginView.axaml",
+              "RelativeToolTip": "src\\Metagram\\Views\\LoginView.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-16T13:12:01.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "MainWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Views\\MainWindow.axaml.cs",
+              "RelativeDocumentMoniker": "src\\Metagram\\Views\\MainWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Views\\MainWindow.axaml.cs",
+              "RelativeToolTip": "src\\Metagram\\Views\\MainWindow.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T15:57:09.66Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "MessangerView.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Views\\MessangerView.axaml.cs",
+              "RelativeDocumentMoniker": "src\\Metagram\\Views\\MessangerView.axaml.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Views\\MessangerView.axaml.cs",
+              "RelativeToolTip": "src\\Metagram\\Views\\MessangerView.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T13:11:53.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MainWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Views\\MainWindow.axaml",
+              "RelativeDocumentMoniker": "src\\Metagram\\Views\\MainWindow.axaml",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Views\\MainWindow.axaml",
+              "RelativeToolTip": "src\\Metagram\\Views\\MainWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-15T15:56:51.833Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "MessageInputBox.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Controls\\MessageInputBox.axaml.cs",
+              "RelativeDocumentMoniker": "src\\Metagram\\Controls\\MessageInputBox.axaml.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Controls\\MessageInputBox.axaml.cs",
+              "RelativeToolTip": "src\\Metagram\\Controls\\MessageInputBox.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T18:36:10.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ChatsPanel.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Controls\\ChatsPanel.axaml.cs",
+              "RelativeDocumentMoniker": "src\\Metagram\\Controls\\ChatsPanel.axaml.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Controls\\ChatsPanel.axaml.cs",
+              "RelativeToolTip": "src\\Metagram\\Controls\\ChatsPanel.axaml.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAAD8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T18:36:32.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ChatSelectorButton.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Controls\\ChatSelectorButton.axaml.cs",
+              "RelativeDocumentMoniker": "src\\Metagram\\Controls\\ChatSelectorButton.axaml.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Controls\\ChatSelectorButton.axaml.cs",
+              "RelativeToolTip": "src\\Metagram\\Controls\\ChatSelectorButton.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T12:23:26.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ChatHistoryView.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Controls\\ChatHistoryView.axaml.cs",
+              "RelativeDocumentMoniker": "src\\Metagram\\Controls\\ChatHistoryView.axaml.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Controls\\ChatHistoryView.axaml.cs",
+              "RelativeToolTip": "src\\Metagram\\Controls\\ChatHistoryView.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T18:24:34.274Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AccountSelectorButton.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Controls\\AccountSelectorButton.axaml.cs",
+              "RelativeDocumentMoniker": "src\\Metagram\\Controls\\AccountSelectorButton.axaml.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Controls\\AccountSelectorButton.axaml.cs",
+              "RelativeToolTip": "src\\Metagram\\Controls\\AccountSelectorButton.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAABxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T22:52:24.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "AccountsPanel.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Controls\\AccountsPanel.axaml.cs",
+              "RelativeDocumentMoniker": "src\\Metagram\\Controls\\AccountsPanel.axaml.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Controls\\AccountsPanel.axaml.cs",
+              "RelativeToolTip": "src\\Metagram\\Controls\\AccountsPanel.axaml.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAAEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T18:35:59.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AccountsPanel.axaml",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Controls\\AccountsPanel.axaml",
+              "RelativeDocumentMoniker": "src\\Metagram\\Controls\\AccountsPanel.axaml",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Controls\\AccountsPanel.axaml",
+              "RelativeToolTip": "src\\Metagram\\Controls\\AccountsPanel.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-15T18:35:59.575Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "Type.cs",
               "DocumentMoniker": "C:\\Users\\gutii\\AppData\\Local\\Temp\\.vsdbgsrc\\b1c9bcffd5bda64ff0cdba4be09ea6f5c136d721699b39525f5c54e9cbd0d341\\Type.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\b1c9bcffd5bda64ff0cdba4be09ea6f5c136d721699b39525f5c54e9cbd0d341\\Type.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\b1c9bcffd5bda64ff0cdba4be09ea6f5c136d721699b39525f5c54e9cbd0d341\\Type.cs",
               "ToolTip": "C:\\Users\\gutii\\AppData\\Local\\Temp\\.vsdbgsrc\\b1c9bcffd5bda64ff0cdba4be09ea6f5c136d721699b39525f5c54e9cbd0d341\\Type.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\b1c9bcffd5bda64ff0cdba4be09ea6f5c136d721699b39525f5c54e9cbd0d341\\Type.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\b1c9bcffd5bda64ff0cdba4be09ea6f5c136d721699b39525f5c54e9cbd0d341\\Type.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
               "ViewState": "AgIAALAEAAAAAAAAAAAewMYEAAACAAAAAQAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-16T22:56:50.424Z",
@@ -527,12 +638,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 17,
               "Title": "AvaloniaPropertyRegistry.cs",
               "DocumentMoniker": "C:\\Users\\gutii\\AppData\\Local\\Temp\\.vsdbgsrc\\d2d253e6e71144f19b66cdb843db43364916c2a4d79dcac46c4a808c5401a7ca\\AvaloniaPropertyRegistry.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\d2d253e6e71144f19b66cdb843db43364916c2a4d79dcac46c4a808c5401a7ca\\AvaloniaPropertyRegistry.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\d2d253e6e71144f19b66cdb843db43364916c2a4d79dcac46c4a808c5401a7ca\\AvaloniaPropertyRegistry.cs",
               "ToolTip": "C:\\Users\\gutii\\AppData\\Local\\Temp\\.vsdbgsrc\\d2d253e6e71144f19b66cdb843db43364916c2a4d79dcac46c4a808c5401a7ca\\AvaloniaPropertyRegistry.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\d2d253e6e71144f19b66cdb843db43364916c2a4d79dcac46c4a808c5401a7ca\\AvaloniaPropertyRegistry.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\d2d253e6e71144f19b66cdb843db43364916c2a4d79dcac46c4a808c5401a7ca\\AvaloniaPropertyRegistry.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
               "ViewState": "AgIAAPMAAAAAAAAAAAAewAkBAAACAAAAAQAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-16T22:56:53.426Z",
@@ -540,12 +651,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 18,
               "Title": "AccountsPanel.cs",
               "DocumentMoniker": "C:\\Users\\gutii\\AppData\\Local\\Temp\\.vsdbgsrc\\545ba63746ef37a545bad5002d61a3c24eef60c00fb0b54666b5a2a04c59e487\\AccountsPanel.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\545ba63746ef37a545bad5002d61a3c24eef60c00fb0b54666b5a2a04c59e487\\AccountsPanel.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\545ba63746ef37a545bad5002d61a3c24eef60c00fb0b54666b5a2a04c59e487\\AccountsPanel.cs",
               "ToolTip": "C:\\Users\\gutii\\AppData\\Local\\Temp\\.vsdbgsrc\\545ba63746ef37a545bad5002d61a3c24eef60c00fb0b54666b5a2a04c59e487\\AccountsPanel.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\545ba63746ef37a545bad5002d61a3c24eef60c00fb0b54666b5a2a04c59e487\\AccountsPanel.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\545ba63746ef37a545bad5002d61a3c24eef60c00fb0b54666b5a2a04c59e487\\AccountsPanel.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
               "ViewState": "AgIAAD4CAAAAAAAAAAAewFQCAAADAAAAAQAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-16T22:57:04.64Z",
@@ -553,477 +664,416 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 30,
               "Title": "LoginView.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Views\\LoginView.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Views\\LoginView.axaml.cs",
               "RelativeDocumentMoniker": "src\\Metagram\\Views\\LoginView.axaml.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Views\\LoginView.axaml.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Views\\LoginView.axaml.cs",
               "RelativeToolTip": "src\\Metagram\\Views\\LoginView.axaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T13:12:01.751Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "app.manifest",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\app.manifest",
-              "RelativeDocumentMoniker": "src\\Metagram\\app.manifest",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\app.manifest",
-              "RelativeToolTip": "src\\Metagram\\app.manifest",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001203|",
-              "WhenOpened": "2026-02-15T15:53:59.467Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "MessangerViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\ViewModels\\MessangerViewModel.cs",
-              "RelativeDocumentMoniker": "src\\Metagram\\ViewModels\\MessangerViewModel.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\ViewModels\\MessangerViewModel.cs",
-              "RelativeToolTip": "src\\Metagram\\ViewModels\\MessangerViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T19:14:46.567Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "TypesExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\TypesExtensions.cs",
-              "RelativeDocumentMoniker": "src\\Metagram\\TypesExtensions.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\TypesExtensions.cs",
-              "RelativeToolTip": "src\\Metagram\\TypesExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T19:44:03.034Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "ViewModelBase.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\ViewModels\\ViewModelBase.cs",
-              "RelativeDocumentMoniker": "src\\Metagram\\ViewModels\\ViewModelBase.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\ViewModels\\ViewModelBase.cs",
-              "RelativeToolTip": "src\\Metagram\\ViewModels\\ViewModelBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T15:56:54.31Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "TypesExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram.Core\\Services\\TypesExtensions.cs",
-              "RelativeDocumentMoniker": "src\\Metagram.Core\\Services\\TypesExtensions.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram.Core\\Services\\TypesExtensions.cs",
-              "RelativeToolTip": "src\\Metagram.Core\\Services\\TypesExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T16:00:07.081Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "INavigator.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram.Core\\Services\\Viewing\\INavigator.cs",
-              "RelativeDocumentMoniker": "src\\Metagram.Core\\Services\\Viewing\\INavigator.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram.Core\\Services\\Viewing\\INavigator.cs",
-              "RelativeToolTip": "src\\Metagram.Core\\Services\\Viewing\\INavigator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T20:48:33.243Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Navigator.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram.Core\\Services\\Viewing\\Navigator.cs",
-              "RelativeDocumentMoniker": "src\\Metagram.Core\\Services\\Viewing\\Navigator.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram.Core\\Services\\Viewing\\Navigator.cs",
-              "RelativeToolTip": "src\\Metagram.Core\\Services\\Viewing\\Navigator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T20:48:40.188Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-16T13:12:01.751Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 31,
-              "Title": "AccountsManager.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram.Core\\Services\\Authorization\\AccountsManager.cs",
-              "RelativeDocumentMoniker": "src\\Metagram.Core\\Services\\Authorization\\AccountsManager.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram.Core\\Services\\Authorization\\AccountsManager.cs",
-              "RelativeToolTip": "src\\Metagram.Core\\Services\\Authorization\\AccountsManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T16:01:36.821Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "BotAccountInfo.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram.Core\\Models\\Authorization\\BotAccountInfo.cs",
-              "RelativeDocumentMoniker": "src\\Metagram.Core\\Models\\Authorization\\BotAccountInfo.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram.Core\\Models\\Authorization\\BotAccountInfo.cs",
-              "RelativeToolTip": "src\\Metagram.Core\\Models\\Authorization\\BotAccountInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T09:08:28.964Z",
-              "EditorCaption": ""
+              "Title": "app.manifest",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\app.manifest",
+              "RelativeDocumentMoniker": "src\\Metagram\\app.manifest",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\app.manifest",
+              "RelativeToolTip": "src\\Metagram\\app.manifest",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001203|",
+              "WhenOpened": "2026-02-15T15:53:59.467Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 32,
-              "Title": "MetaUpdateHandler.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram.Core\\Services\\Polling\\MetaUpdateHandler.cs",
-              "RelativeDocumentMoniker": "src\\Metagram.Core\\Services\\Polling\\MetaUpdateHandler.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram.Core\\Services\\Polling\\MetaUpdateHandler.cs",
-              "RelativeToolTip": "src\\Metagram.Core\\Services\\Polling\\MetaUpdateHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAANAAAAAAAAAA==",
+              "Title": "MessangerViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\ViewModels\\MessangerViewModel.cs",
+              "RelativeDocumentMoniker": "src\\Metagram\\ViewModels\\MessangerViewModel.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\ViewModels\\MessangerViewModel.cs",
+              "RelativeToolTip": "src\\Metagram\\ViewModels\\MessangerViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T16:02:07.01Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-15T19:14:46.567Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 33,
-              "Title": "HostedUpdateReceiverOptions.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram.Core\\Models\\Options\\HostedUpdateReceiverOptions.cs",
-              "RelativeDocumentMoniker": "src\\Metagram.Core\\Models\\Options\\HostedUpdateReceiverOptions.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram.Core\\Models\\Options\\HostedUpdateReceiverOptions.cs",
-              "RelativeToolTip": "src\\Metagram.Core\\Models\\Options\\HostedUpdateReceiverOptions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAwAAAAAAAAAA==",
+              "Title": "ViewModelBase.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\ViewModels\\ViewModelBase.cs",
+              "RelativeDocumentMoniker": "src\\Metagram\\ViewModels\\ViewModelBase.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\ViewModels\\ViewModelBase.cs",
+              "RelativeToolTip": "src\\Metagram\\ViewModels\\ViewModelBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T20:28:57.478Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-15T15:56:54.31Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 34,
-              "Title": "MetaHandlersManager.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram.Core\\Services\\Polling\\MetaHandlersManager.cs",
-              "RelativeDocumentMoniker": "src\\Metagram.Core\\Services\\Polling\\MetaHandlersManager.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram.Core\\Services\\Polling\\MetaHandlersManager.cs",
-              "RelativeToolTip": "src\\Metagram.Core\\Services\\Polling\\MetaHandlersManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Title": "TypesExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram.Core\\Services\\TypesExtensions.cs",
+              "RelativeDocumentMoniker": "src\\Metagram.Core\\Services\\TypesExtensions.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram.Core\\Services\\TypesExtensions.cs",
+              "RelativeToolTip": "src\\Metagram.Core\\Services\\TypesExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T16:01:55.445Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-15T16:00:07.081Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 35,
-              "Title": "ChatListItemRepository.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram.Core\\Repositories\\ChatListItemRepository.cs",
-              "RelativeDocumentMoniker": "src\\Metagram.Core\\Repositories\\ChatListItemRepository.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram.Core\\Repositories\\ChatListItemRepository.cs",
-              "RelativeToolTip": "src\\Metagram.Core\\Repositories\\ChatListItemRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Title": "INavigator.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram.Core\\Services\\Viewing\\INavigator.cs",
+              "RelativeDocumentMoniker": "src\\Metagram.Core\\Services\\Viewing\\INavigator.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram.Core\\Services\\Viewing\\INavigator.cs",
+              "RelativeToolTip": "src\\Metagram.Core\\Services\\Viewing\\INavigator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T16:02:48.762Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-15T20:48:33.243Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 36,
-              "Title": "MessageInputBox.axaml",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Controls\\MessageInputBox.axaml",
-              "RelativeDocumentMoniker": "src\\Metagram\\Controls\\MessageInputBox.axaml",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Controls\\MessageInputBox.axaml",
-              "RelativeToolTip": "src\\Metagram\\Controls\\MessageInputBox.axaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-15T18:36:10.632Z",
-              "EditorCaption": ""
+              "Title": "Navigator.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram.Core\\Services\\Viewing\\Navigator.cs",
+              "RelativeDocumentMoniker": "src\\Metagram.Core\\Services\\Viewing\\Navigator.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram.Core\\Services\\Viewing\\Navigator.cs",
+              "RelativeToolTip": "src\\Metagram.Core\\Services\\Viewing\\Navigator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T20:48:40.188Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 37,
-              "Title": "MessangerView.axaml",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Views\\MessangerView.axaml",
-              "RelativeDocumentMoniker": "src\\Metagram\\Views\\MessangerView.axaml",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Views\\MessangerView.axaml",
-              "RelativeToolTip": "src\\Metagram\\Views\\MessangerView.axaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-16T13:11:53.567Z",
-              "EditorCaption": ""
+              "Title": "BotAccountInfo.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram.Core\\Models\\Authorization\\BotAccountInfo.cs",
+              "RelativeDocumentMoniker": "src\\Metagram.Core\\Models\\Authorization\\BotAccountInfo.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram.Core\\Models\\Authorization\\BotAccountInfo.cs",
+              "RelativeToolTip": "src\\Metagram.Core\\Models\\Authorization\\BotAccountInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T09:08:28.964Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 38,
-              "Title": "App.axaml",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\App.axaml",
-              "RelativeDocumentMoniker": "src\\Metagram\\App.axaml",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\App.axaml",
-              "RelativeToolTip": "src\\Metagram\\App.axaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-15T20:54:51.694Z",
-              "EditorCaption": ""
+              "Title": "MetaUpdateHandler.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram.Core\\Services\\Polling\\MetaUpdateHandler.cs",
+              "RelativeDocumentMoniker": "src\\Metagram.Core\\Services\\Polling\\MetaUpdateHandler.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram.Core\\Services\\Polling\\MetaUpdateHandler.cs",
+              "RelativeToolTip": "src\\Metagram.Core\\Services\\Polling\\MetaUpdateHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T16:02:07.01Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 39,
-              "Title": "IAccountsManager.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram.Core\\Services\\Authorization\\IAccountsManager.cs",
-              "RelativeDocumentMoniker": "src\\Metagram.Core\\Services\\Authorization\\IAccountsManager.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram.Core\\Services\\Authorization\\IAccountsManager.cs",
-              "RelativeToolTip": "src\\Metagram.Core\\Services\\Authorization\\IAccountsManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "HostedUpdateReceiverOptions.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram.Core\\Models\\Options\\HostedUpdateReceiverOptions.cs",
+              "RelativeDocumentMoniker": "src\\Metagram.Core\\Models\\Options\\HostedUpdateReceiverOptions.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram.Core\\Models\\Options\\HostedUpdateReceiverOptions.cs",
+              "RelativeToolTip": "src\\Metagram.Core\\Models\\Options\\HostedUpdateReceiverOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T16:01:42.894Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-15T20:28:57.478Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 40,
-              "Title": "Metagram.csproj",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Metagram.csproj",
-              "RelativeDocumentMoniker": "src\\Metagram\\Metagram.csproj",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Metagram.csproj",
-              "RelativeToolTip": "src\\Metagram\\Metagram.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-02-15T18:33:42.547Z",
-              "EditorCaption": ""
+              "Title": "MetaHandlersManager.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram.Core\\Services\\Polling\\MetaHandlersManager.cs",
+              "RelativeDocumentMoniker": "src\\Metagram.Core\\Services\\Polling\\MetaHandlersManager.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram.Core\\Services\\Polling\\MetaHandlersManager.cs",
+              "RelativeToolTip": "src\\Metagram.Core\\Services\\Polling\\MetaHandlersManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T16:01:55.445Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 41,
-              "Title": "Metagram.Core.csproj",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram.Core\\Metagram.Core.csproj",
-              "RelativeDocumentMoniker": "src\\Metagram.Core\\Metagram.Core.csproj",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram.Core\\Metagram.Core.csproj",
-              "RelativeToolTip": "src\\Metagram.Core\\Metagram.Core.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-02-15T16:04:38.126Z",
-              "EditorCaption": ""
+              "Title": "ChatListItemRepository.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram.Core\\Repositories\\ChatListItemRepository.cs",
+              "RelativeDocumentMoniker": "src\\Metagram.Core\\Repositories\\ChatListItemRepository.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram.Core\\Repositories\\ChatListItemRepository.cs",
+              "RelativeToolTip": "src\\Metagram.Core\\Repositories\\ChatListItemRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T16:02:48.762Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 42,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Program.cs",
-              "RelativeDocumentMoniker": "src\\Metagram\\Program.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Program.cs",
-              "RelativeToolTip": "src\\Metagram\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T15:57:13.148Z",
-              "EditorCaption": ""
+              "Title": "MessageInputBox.axaml",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Controls\\MessageInputBox.axaml",
+              "RelativeDocumentMoniker": "src\\Metagram\\Controls\\MessageInputBox.axaml",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Controls\\MessageInputBox.axaml",
+              "RelativeToolTip": "src\\Metagram\\Controls\\MessageInputBox.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-15T18:36:10.632Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 43,
-              "Title": "AccountSelectorButton.axaml",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Controls\\AccountSelectorButton.axaml",
-              "RelativeDocumentMoniker": "src\\Metagram\\Controls\\AccountSelectorButton.axaml",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Controls\\AccountSelectorButton.axaml",
-              "RelativeToolTip": "src\\Metagram\\Controls\\AccountSelectorButton.axaml",
+              "Title": "MessangerView.axaml",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Views\\MessangerView.axaml",
+              "RelativeDocumentMoniker": "src\\Metagram\\Views\\MessangerView.axaml",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Views\\MessangerView.axaml",
+              "RelativeToolTip": "src\\Metagram\\Views\\MessangerView.axaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-15T22:52:24.876Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "ChatsPanel.axaml",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Controls\\ChatsPanel.axaml",
-              "RelativeDocumentMoniker": "src\\Metagram\\Controls\\ChatsPanel.axaml",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Controls\\ChatsPanel.axaml",
-              "RelativeToolTip": "src\\Metagram\\Controls\\ChatsPanel.axaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-15T18:36:32.097Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-16T13:11:53.567Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 44,
-              "Title": "ChatSelectorButton.axaml",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Controls\\ChatSelectorButton.axaml",
-              "RelativeDocumentMoniker": "src\\Metagram\\Controls\\ChatSelectorButton.axaml",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Controls\\ChatSelectorButton.axaml",
-              "RelativeToolTip": "src\\Metagram\\Controls\\ChatSelectorButton.axaml",
+              "Title": "App.axaml",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\App.axaml",
+              "RelativeDocumentMoniker": "src\\Metagram\\App.axaml",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\App.axaml",
+              "RelativeToolTip": "src\\Metagram\\App.axaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-16T12:23:26.266Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-15T20:54:51.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "IAccountsManager.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram.Core\\Services\\Authorization\\IAccountsManager.cs",
+              "RelativeDocumentMoniker": "src\\Metagram.Core\\Services\\Authorization\\IAccountsManager.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram.Core\\Services\\Authorization\\IAccountsManager.cs",
+              "RelativeToolTip": "src\\Metagram.Core\\Services\\Authorization\\IAccountsManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T16:01:42.894Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 46,
-              "Title": "MessageNode.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram.Core\\Models\\Messages\\MessageNode.cs",
-              "RelativeDocumentMoniker": "src\\Metagram.Core\\Models\\Messages\\MessageNode.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram.Core\\Models\\Messages\\MessageNode.cs",
-              "RelativeToolTip": "src\\Metagram.Core\\Models\\Messages\\MessageNode.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T16:03:43.838Z",
-              "EditorCaption": ""
+              "Title": "Metagram.csproj",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Metagram.csproj",
+              "RelativeDocumentMoniker": "src\\Metagram\\Metagram.csproj",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Metagram.csproj",
+              "RelativeToolTip": "src\\Metagram\\Metagram.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-15T18:33:42.547Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 47,
-              "Title": "UserInfoToStringConverter.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Converters\\UserInfoToStringConverter.cs",
-              "RelativeDocumentMoniker": "src\\Metagram\\Converters\\UserInfoToStringConverter.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Converters\\UserInfoToStringConverter.cs",
-              "RelativeToolTip": "src\\Metagram\\Converters\\UserInfoToStringConverter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAB6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T12:09:09.545Z",
-              "EditorCaption": ""
+              "Title": "Metagram.Core.csproj",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram.Core\\Metagram.Core.csproj",
+              "RelativeDocumentMoniker": "src\\Metagram.Core\\Metagram.Core.csproj",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram.Core\\Metagram.Core.csproj",
+              "RelativeToolTip": "src\\Metagram.Core\\Metagram.Core.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-15T16:04:38.126Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 48,
-              "Title": "SenderToBackgroundConverter.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Converters\\SenderToBackgroundConverter.cs",
-              "RelativeDocumentMoniker": "src\\Metagram\\Converters\\SenderToBackgroundConverter.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Converters\\SenderToBackgroundConverter.cs",
-              "RelativeToolTip": "src\\Metagram\\Converters\\SenderToBackgroundConverter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Program.cs",
+              "RelativeDocumentMoniker": "src\\Metagram\\Program.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Program.cs",
+              "RelativeToolTip": "src\\Metagram\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T12:08:05.818Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-15T15:57:13.148Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 49,
-              "Title": "SenderToAlignmentConverter.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Converters\\SenderToAlignmentConverter.cs",
-              "RelativeDocumentMoniker": "src\\Metagram\\Converters\\SenderToAlignmentConverter.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Converters\\SenderToAlignmentConverter.cs",
-              "RelativeToolTip": "src\\Metagram\\Converters\\SenderToAlignmentConverter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T12:07:16.099Z",
-              "EditorCaption": ""
+              "Title": "AccountSelectorButton.axaml",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Controls\\AccountSelectorButton.axaml",
+              "RelativeDocumentMoniker": "src\\Metagram\\Controls\\AccountSelectorButton.axaml",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Controls\\AccountSelectorButton.axaml",
+              "RelativeToolTip": "src\\Metagram\\Controls\\AccountSelectorButton.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-15T22:52:24.876Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 50,
-              "Title": "ObservableMessageGroupToAvatatBitmapConverter.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Converters\\ObservableMessageGroupToAvatatBitmapConverter.cs",
-              "RelativeDocumentMoniker": "src\\Metagram\\Converters\\ObservableMessageGroupToAvatatBitmapConverter.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Converters\\ObservableMessageGroupToAvatatBitmapConverter.cs",
-              "RelativeToolTip": "src\\Metagram\\Converters\\ObservableMessageGroupToAvatatBitmapConverter.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAABBwAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T09:40:30.524Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "BotRuntimeSessionToAvatarBitmapConverter.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Converters\\BotRuntimeSessionToAvatarBitmapConverter.cs",
-              "RelativeDocumentMoniker": "src\\Metagram\\Converters\\BotRuntimeSessionToAvatarBitmapConverter.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Converters\\BotRuntimeSessionToAvatarBitmapConverter.cs",
-              "RelativeToolTip": "src\\Metagram\\Converters\\BotRuntimeSessionToAvatarBitmapConverter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T09:32:15.971Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "DateTimeToLocaleTimeStringConverter.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Converters\\DateTimeToLocaleTimeStringConverter.cs",
-              "RelativeDocumentMoniker": "src\\Metagram\\Converters\\DateTimeToLocaleTimeStringConverter.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Converters\\DateTimeToLocaleTimeStringConverter.cs",
-              "RelativeToolTip": "src\\Metagram\\Converters\\DateTimeToLocaleTimeStringConverter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T09:32:16.584Z",
-              "EditorCaption": ""
+              "Title": "ChatsPanel.axaml",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Controls\\ChatsPanel.axaml",
+              "RelativeDocumentMoniker": "src\\Metagram\\Controls\\ChatsPanel.axaml",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Controls\\ChatsPanel.axaml",
+              "RelativeToolTip": "src\\Metagram\\Controls\\ChatsPanel.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-15T18:36:32.097Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 51,
-              "Title": "FileIdToBitmapConverter.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Converters\\FileIdToBitmapConverter.cs",
-              "RelativeDocumentMoniker": "src\\Metagram\\Converters\\FileIdToBitmapConverter.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Converters\\FileIdToBitmapConverter.cs",
-              "RelativeToolTip": "src\\Metagram\\Converters\\FileIdToBitmapConverter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Title": "ChatSelectorButton.axaml",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Controls\\ChatSelectorButton.axaml",
+              "RelativeDocumentMoniker": "src\\Metagram\\Controls\\ChatSelectorButton.axaml",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Controls\\ChatSelectorButton.axaml",
+              "RelativeToolTip": "src\\Metagram\\Controls\\ChatSelectorButton.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-16T12:23:26.266Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "MessageNode.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram.Core\\Models\\Messages\\MessageNode.cs",
+              "RelativeDocumentMoniker": "src\\Metagram.Core\\Models\\Messages\\MessageNode.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram.Core\\Models\\Messages\\MessageNode.cs",
+              "RelativeToolTip": "src\\Metagram.Core\\Models\\Messages\\MessageNode.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T09:31:16.039Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-15T16:03:43.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "UserInfoToStringConverter.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Converters\\UserInfoToStringConverter.cs",
+              "RelativeDocumentMoniker": "src\\Metagram\\Converters\\UserInfoToStringConverter.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Converters\\UserInfoToStringConverter.cs",
+              "RelativeToolTip": "src\\Metagram\\Converters\\UserInfoToStringConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAB6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T12:09:09.545Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 54,
-              "Title": "ChatHistoryView.axaml",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Controls\\ChatHistoryView.axaml",
-              "RelativeDocumentMoniker": "src\\Metagram\\Controls\\ChatHistoryView.axaml",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\Controls\\ChatHistoryView.axaml",
-              "RelativeToolTip": "src\\Metagram\\Controls\\ChatHistoryView.axaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-15T18:24:34.365Z",
-              "EditorCaption": ""
+              "Title": "SenderToBackgroundConverter.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Converters\\SenderToBackgroundConverter.cs",
+              "RelativeDocumentMoniker": "src\\Metagram\\Converters\\SenderToBackgroundConverter.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Converters\\SenderToBackgroundConverter.cs",
+              "RelativeToolTip": "src\\Metagram\\Converters\\SenderToBackgroundConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T12:08:05.818Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 55,
-              "Title": "GlobalUsings.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram.Core\\GlobalUsings.cs",
-              "RelativeDocumentMoniker": "src\\Metagram.Core\\GlobalUsings.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram.Core\\GlobalUsings.cs",
-              "RelativeToolTip": "src\\Metagram.Core\\GlobalUsings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAjAAAAAAAAAA==",
+              "Title": "SenderToAlignmentConverter.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Converters\\SenderToAlignmentConverter.cs",
+              "RelativeDocumentMoniker": "src\\Metagram\\Converters\\SenderToAlignmentConverter.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Converters\\SenderToAlignmentConverter.cs",
+              "RelativeToolTip": "src\\Metagram\\Converters\\SenderToAlignmentConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T16:00:38.745Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-16T12:07:16.099Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 56,
-              "Title": "GlobalUsings.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\GlobalUsings.cs",
-              "RelativeDocumentMoniker": "src\\Metagram\\GlobalUsings.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram\\GlobalUsings.cs",
-              "RelativeToolTip": "src\\Metagram\\GlobalUsings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAqAAAAAAAAAA==",
+              "Title": "ObservableMessageGroupToAvatatBitmapConverter.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Converters\\ObservableMessageGroupToAvatatBitmapConverter.cs",
+              "RelativeDocumentMoniker": "src\\Metagram\\Converters\\ObservableMessageGroupToAvatatBitmapConverter.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Converters\\ObservableMessageGroupToAvatatBitmapConverter.cs",
+              "RelativeToolTip": "src\\Metagram\\Converters\\ObservableMessageGroupToAvatatBitmapConverter.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAABBwAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T21:22:02.085Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 58,
-              "Title": "ObservableMessageFlow.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram.Core\\Models\\Messages\\ObservableMessageFlow.cs",
-              "RelativeDocumentMoniker": "src\\Metagram.Core\\Models\\Messages\\ObservableMessageFlow.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram.Core\\Models\\Messages\\ObservableMessageFlow.cs",
-              "RelativeToolTip": "src\\Metagram.Core\\Models\\Messages\\ObservableMessageFlow.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T21:21:04.517Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-16T09:40:30.524Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 57,
+              "Title": "BotRuntimeSessionToAvatarBitmapConverter.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Converters\\BotRuntimeSessionToAvatarBitmapConverter.cs",
+              "RelativeDocumentMoniker": "src\\Metagram\\Converters\\BotRuntimeSessionToAvatarBitmapConverter.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Converters\\BotRuntimeSessionToAvatarBitmapConverter.cs",
+              "RelativeToolTip": "src\\Metagram\\Converters\\BotRuntimeSessionToAvatarBitmapConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T09:32:15.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "DateTimeToLocaleTimeStringConverter.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Converters\\DateTimeToLocaleTimeStringConverter.cs",
+              "RelativeDocumentMoniker": "src\\Metagram\\Converters\\DateTimeToLocaleTimeStringConverter.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Converters\\DateTimeToLocaleTimeStringConverter.cs",
+              "RelativeToolTip": "src\\Metagram\\Converters\\DateTimeToLocaleTimeStringConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T09:32:16.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "FileIdToBitmapConverter.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Converters\\FileIdToBitmapConverter.cs",
+              "RelativeDocumentMoniker": "src\\Metagram\\Converters\\FileIdToBitmapConverter.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Converters\\FileIdToBitmapConverter.cs",
+              "RelativeToolTip": "src\\Metagram\\Converters\\FileIdToBitmapConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T09:31:16.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "ChatHistoryView.axaml",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Controls\\ChatHistoryView.axaml",
+              "RelativeDocumentMoniker": "src\\Metagram\\Controls\\ChatHistoryView.axaml",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\Controls\\ChatHistoryView.axaml",
+              "RelativeToolTip": "src\\Metagram\\Controls\\ChatHistoryView.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-15T18:24:34.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "GlobalUsings.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram.Core\\GlobalUsings.cs",
+              "RelativeDocumentMoniker": "src\\Metagram.Core\\GlobalUsings.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram.Core\\GlobalUsings.cs",
+              "RelativeToolTip": "src\\Metagram.Core\\GlobalUsings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T16:00:38.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "GlobalUsings.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\GlobalUsings.cs",
+              "RelativeDocumentMoniker": "src\\Metagram\\GlobalUsings.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram\\GlobalUsings.cs",
+              "RelativeToolTip": "src\\Metagram\\GlobalUsings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T21:22:02.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "ObservableMessageFlow.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram.Core\\Models\\Messages\\ObservableMessageFlow.cs",
+              "RelativeDocumentMoniker": "src\\Metagram.Core\\Models\\Messages\\ObservableMessageFlow.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram.Core\\Models\\Messages\\ObservableMessageFlow.cs",
+              "RelativeToolTip": "src\\Metagram.Core\\Models\\Messages\\ObservableMessageFlow.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T21:21:04.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
               "Title": "ObservableMessageGroup.cs",
-              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram.Core\\Models\\Messages\\ObservableMessageGroup.cs",
+              "DocumentMoniker": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram.Core\\Models\\Messages\\ObservableMessageGroup.cs",
               "RelativeDocumentMoniker": "src\\Metagram.Core\\Models\\Messages\\ObservableMessageGroup.cs",
-              "ToolTip": "C:\\Users\\gutii\\source\\repos\\Metagram-Client\\src\\Metagram.Core\\Models\\Messages\\ObservableMessageGroup.cs",
+              "ToolTip": "C:\\Users\\gutii\\source\\repos\\TheMakarik\\Metagram-Client\\src\\Metagram.Core\\Models\\Messages\\ObservableMessageGroup.cs",
               "RelativeToolTip": "src\\Metagram.Core\\Models\\Messages\\ObservableMessageGroup.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T21:21:08.566Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-15T21:21:08.566Z"
             }
           ]
         }
