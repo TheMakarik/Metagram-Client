@@ -19,6 +19,7 @@ public class ViewLocator : IDataTemplate, IViewLocator
 
         string name = viewModel.GetType().FullName!.Replace("ViewModel", "View");
         Type? type = Type.GetType(name);
+        App.Services.GetRequiredService<ILogger<ViewLocator>>().LogDebug("Resolve {view} and {viewmodel}", name, viewModel);
 
         if (type == null)
             return null;
