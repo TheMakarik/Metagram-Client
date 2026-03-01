@@ -1,5 +1,6 @@
 <Solution>
   <Folder Name="/Solution items/" />
+  <Project Path="Metagram.Tests/Metagram.Tests.fsproj" />
   <Project Path="src/Metagram.Core/Metagram.Core.csproj" Id="ecd0bce5-a510-4806-bc76-89840cc14055" />
   <Project Path="src/Metagram/Metagram.csproj" />
 </Solution>
