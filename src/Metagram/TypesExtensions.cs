@@ -2,7 +2,7 @@
 
 internal static class ServiceCollectionExtensions
 {
-    public static TService GetRequiredService<TService>(this IServiceProvider serviceProvider, params object[] args)
+    public static TService GetRequiredServiceWithParams<TService>(this IServiceProvider serviceProvider, params object[] args)
     {
         return ActivatorUtilities.CreateInstance<TService>(serviceProvider, args);
     }
@@ -12,7 +12,7 @@ public static class ScreenExtensions
 {
     public static void NavigateTo<TViewModel>(this IScreen screen) where TViewModel : IRoutableViewModel
     {
-        TViewModel vm = App.Services.GetRequiredService<TViewModel>();
+        TViewModel vm = App.Services.GetRequiredServiceWithParams<TViewModel>();
         screen.Router.Navigate.Execute(vm);
     }
 
