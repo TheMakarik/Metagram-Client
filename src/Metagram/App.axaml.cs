@@ -23,7 +23,8 @@ public partial class App : Application, IDisposable
         //TODO: use migrations
         using IServiceScope scope = services.CreateScope();
         scope.ServiceProvider.GetRequiredService<MetagramDbContext>().Database.EnsureCreated();
-
+        
+        
         AvaloniaXamlLoader.Load(this);
     }
 
@@ -44,16 +45,9 @@ public partial class App : Application, IDisposable
     private static void Configure(IServiceCollection services, IConfigurationManager configuration)
     {
         configuration
-            .AddJsonFile("appsettings.json")
-            #if DEBUG
-            .AddJsonFile("appsettings.DEBUG.json", true)
-            #endif
-            ;
+            .AddJsonFile("appsettings.json");
 
         services
-            #if DEBUG
-            .Configure<SqliteEditorOptions>(configuration.GetSection(nameof(SqliteEditorOptions)))
-            #endif
             .Configure<ApplicationDataOptions>(configuration.GetSection(nameof(ApplicationDataOptions)))
             .Configure<HostedUpdateReceiverOptions>(configuration.GetSection(nameof(HostedUpdateReceiverOptions)));
 
