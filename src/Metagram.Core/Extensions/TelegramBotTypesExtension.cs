@@ -1,4 +1,4 @@
-namespace Metagram.Services;
+namespace Metagram.Extensions;
 
 public static class TelegramBotTypesExtensions
 {
@@ -36,16 +36,4 @@ public static class TelegramBotTypesExtensions
 
         return null;
     }
-}
-
-public static class CancellationTokenExtensions
-{
-    public static CancellationToken LinkWith(this CancellationToken cancellationToken, params CancellationToken[] cancellationTokens)
-        => CancellationTokenSource.CreateLinkedTokenSource([cancellationToken, .. cancellationTokens]).Token;
-}
-
-public static class ExceptionExtensions
-{
-    public static Exception Aggregate(this Exception exception)
-        => exception.InnerException != null ? exception.InnerException.Aggregate() : exception;
 }

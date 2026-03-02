@@ -1,4 +1,6 @@
-﻿namespace Metagram.ViewModels;
+﻿using Metagram.Extensions;
+
+namespace Metagram.ViewModels;
 
 public partial class MessangerViewModel : RoutableViewModelBase
 {

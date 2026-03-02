@@ -1,3 +1,5 @@
+using Metagram.Extensions;
+
 namespace Metagram.Controls;
 
 public partial class ChatsPanel : UserControl
