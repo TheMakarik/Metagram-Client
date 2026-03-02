@@ -1,5 +1,3 @@
-using Metagram.Models.DataAccess;
-
 namespace Metagram.Models.DataAccess.Tables;
 
 public sealed class MetagramMessage 

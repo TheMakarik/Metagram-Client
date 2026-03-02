@@ -1,5 +1,3 @@
-using System.Collections.Specialized;
-
 namespace Metagram.Models.Messages;
 
 public sealed partial class MessageNode : ReactiveObject, IDisposable

@@ -23,6 +23,7 @@ global using System.Collections.ObjectModel;
 global using System.Collections.Specialized;
 global using System.Diagnostics;
 global using System.Globalization;
+global using System.IO;
 global using System.Linq;
 global using System.Threading;
 global using System.Windows.Input;
@@ -63,6 +64,7 @@ global using Metagram.Repositories;
 
 // Services
 global using Metagram.Services;
+global using Metagram.Services.ApplicationData;
 global using Metagram.Services.Authorization;
 global using Metagram.Services.Polling;
 

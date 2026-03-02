@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Metagram.Services.Viewing;
+﻿namespace Metagram.Services.Viewing;
 
 /*
 public interface INavigator

@@ -1,6 +1,3 @@
-using System.IO;
-using Metagram.Services.ApplicationData;
-
 namespace Metagram;
 
 public partial class App : Application, IDisposable

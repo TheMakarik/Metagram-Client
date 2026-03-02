@@ -12,10 +12,14 @@ global using ReactiveUI.SourceGenerators;
 
 // System
 global using System;
+global using System.Collections.Generic;
 global using System.Threading.Tasks;
 global using System.Collections.Immutable;
 global using System.Collections.ObjectModel;
+global using System.Collections.Specialized;
 global using System.Diagnostics;
+global using System.Diagnostics.CodeAnalysis;
+global using System.Text;
 
 // Telegrator
 global using Telegrator;
@@ -53,4 +57,6 @@ global using Metagram.Services.Polling;
 
 //Entity framework
 global using Microsoft.EntityFrameworkCore;
+global using Microsoft.EntityFrameworkCore.Metadata.Builders;
 global using Microsoft.EntityFrameworkCore.Sqlite;
+global using Microsoft.Extensions.Logging.Abstractions;

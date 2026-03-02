@@ -1,5 +1,3 @@
-using Microsoft.Extensions.Logging.Abstractions;
-
 namespace Metagram.Models.Authorization;
 
 public partial class BotRuntimeSession : IDisposable

@@ -1,6 +1,3 @@
-using Metagram.Models.Polling;
-using System.Diagnostics.CodeAnalysis;
-
 namespace Metagram.Models.Polling;
 
 public sealed class BotMemory
