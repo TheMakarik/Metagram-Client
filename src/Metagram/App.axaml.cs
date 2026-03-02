@@ -35,7 +35,7 @@ public partial class App : Application, IDisposable
         
         if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
         {
-            MainWindowViewModel vm = Services.GetRequiredServiceWithParams<MainWindowViewModel>();
+            MainWindowViewModel vm = Services.GetRequiredService<MainWindowViewModel>();
             desktop.MainWindow = new MainWindow(vm);
         }
 
@@ -55,14 +55,14 @@ public partial class App : Application, IDisposable
             .AddSingleton<IUpdateHandler, MetaUpdateHandler>()
             .AddSingleton<IAccountsManager, AccountsManager>()
             .AddDbContextFactory<MetagramDbContext>((provider, options) => options
-                .UseSqlite($"Data Source={provider.GetRequiredServiceWithParams<IOptions<ApplicationDataOptions>>().Value.Database};Pooling=True;Cache=Shared;Max Pool Size=5")
+                .UseSqlite($"Data Source={provider.GetRequiredService<IOptions<ApplicationDataOptions>>().Value.Database};Pooling=True;Cache=Shared;Max Pool Size=5")
                 .LogTo(message => provider.GetRequiredService<ILogger<App>>().LogDebug("SQLite Query : {msg}", message))
             );
 
         services
             .AddSingleton<MainWindow>()
             .AddSingleton<MainWindowViewModel>()
-            .AddSingleton<IScreen>(sp => sp.GetRequiredServiceWithParams<MainWindowViewModel>())
+            .AddSingleton<IScreen>(sp => sp.GetRequiredService<MainWindowViewModel>())
             .AddSingleton<LoginViewModel>()
             .AddSingleton<MessangerViewModel>();
 
