@@ -2,13 +2,14 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Metagram.Models.DataAccess;
 
-public class MetagramDbContext : DbContext
+public class MetagramDbContext(DbContextOptions options) : DbContext(options)
 {
     public DbSet<MetagramBot> Clients { get; set; }
     public DbSet<MetagramChat> Chats { get; set; }
     public DbSet<MetagramMessage> Messages { get; set; }
     public DbSet<MetagramUser> Users { get; set; }
     public DbSet<MetagramFile> Files { get; set; }
+    
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

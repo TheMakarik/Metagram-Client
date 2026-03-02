@@ -19,6 +19,10 @@ public partial class App : Application, IDisposable
         // Building providers
         configuration = configurationManager;
         services = servicesCollection.BuildServiceProvider();
+        
+        //TODO: use migrations
+        using IServiceScope scope = services.CreateScope();
+        scope.ServiceProvider.GetRequiredService<MetagramDbContext>().Database.EnsureCreated();
 
         AvaloniaXamlLoader.Load(this);
     }
@@ -40,9 +44,16 @@ public partial class App : Application, IDisposable
     private static void Configure(IServiceCollection services, IConfigurationManager configuration)
     {
         configuration
-            .AddJsonFile("appsettings.json");
+            .AddJsonFile("appsettings.json")
+            #if DEBUG
+            .AddJsonFile("appsettings.DEBUG.json", true)
+            #endif
+            ;
 
         services
+            #if DEBUG
+            .Configure<SqliteEditorOptions>(configuration.GetSection(nameof(SqliteEditorOptions)))
+            #endif
             .Configure<ApplicationDataOptions>(configuration.GetSection(nameof(ApplicationDataOptions)))
             .Configure<HostedUpdateReceiverOptions>(configuration.GetSection(nameof(HostedUpdateReceiverOptions)));
 
@@ -51,7 +62,7 @@ public partial class App : Application, IDisposable
             .AddSingleton<IAccountsManager, AccountsManager>()
             .AddDbContextFactory<MetagramDbContext>((provider, options) => options
                 .UseSqlite($"Data Source={provider.GetRequiredServiceWithParams<IOptions<ApplicationDataOptions>>().Value.Database};Pooling=True;Cache=Shared;Max Pool Size=5")
-                .LogTo(message => provider.GetRequiredServiceWithParams<ILogger<App>>().LogDebug("SQLite Query : {msg}", message))
+                .LogTo(message => provider.GetRequiredService<ILogger<App>>().LogDebug("SQLite Query : {msg}", message))
             );
 
         services
