@@ -1,3 +1,6 @@
+using System.IO;
+using Metagram.Services.ApplicationData;
+
 namespace Metagram;
 
 public partial class App : Application, IDisposable
@@ -19,12 +22,9 @@ public partial class App : Application, IDisposable
         // Building providers
         configuration = configurationManager;
         services = servicesCollection.BuildServiceProvider();
-        
-        //TODO: use migrations
-        using IServiceScope scope = services.CreateScope();
-        scope.ServiceProvider.GetRequiredService<MetagramDbContext>().Database.EnsureCreated();
-        
-        
+
+
+        LoadApplication();
         AvaloniaXamlLoader.Load(this);
     }
 
@@ -52,11 +52,13 @@ public partial class App : Application, IDisposable
             .Configure<HostedUpdateReceiverOptions>(configuration.GetSection(nameof(HostedUpdateReceiverOptions)));
 
         services
+            .AddScoped<IApplicationDataDirectoryCreator, ApplicationDataDirectoryCreator>()
             .AddSingleton<IUpdateHandler, MetaUpdateHandler>()
             .AddSingleton<IAccountsManager, AccountsManager>()
             .AddDbContextFactory<MetagramDbContext>((provider, options) => options
-                .UseSqlite($"Data Source={provider.GetRequiredService<IOptions<ApplicationDataOptions>>().Value.Database};Pooling=True;Cache=Shared;Max Pool Size=5")
-                .LogTo(message => provider.GetRequiredService<ILogger<App>>().LogDebug("SQLite Query : {msg}", message))
+                .EnableSensitiveDataLogging(false)
+                .UseSqlite($"Data Source={provider.GetRequiredService<IOptions<ApplicationDataOptions>>().Value.Database};Pooling=True;Cache=Shared")
+                .LogTo(message => provider.GetRequiredService<ILogger<App>>().LogDebug("SQLite Query : {message}", message))
             );
 
         services
@@ -69,7 +71,13 @@ public partial class App : Application, IDisposable
         services
             .AddLogging(logging => logging
                 .ClearProviders()
-                .SetMinimumLevel(LogLevel.Trace)
+                .SetMinimumLevel(
+                    #if DEBUG
+                    LogLevel.Trace
+                    #else
+                    LogLevel.Information
+                    #endif
+                    )
                 .AddFile(configuration.GetSection("Logging"))
                 .AddConsole()
             );
@@ -89,4 +97,23 @@ public partial class App : Application, IDisposable
         GC.SuppressFinalize(this);
         isDisposed = true;
     }
+    
+    
+    private void LoadApplication()
+    {
+    
+        using IServiceScope scope = services.CreateScope();
+     
+        scope
+            .ServiceProvider
+            .GetRequiredService<IApplicationDataDirectoryCreator>()
+            .CreateIfNotExists();
+        
+        //TODO: use migrations
+        scope
+            .ServiceProvider
+            .GetRequiredService<MetagramDbContext>()
+            .Database.EnsureCreated();
+    }
+
 }

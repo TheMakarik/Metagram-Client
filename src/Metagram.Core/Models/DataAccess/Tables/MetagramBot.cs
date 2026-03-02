@@ -10,4 +10,5 @@ public sealed class MetagramBot
     public string? Description { get; set; }
     public int AvatarId { get; set; }
     public bool IsCurrentBot { get; set; }
+    public MetagramFile? Avatar { get; set; }
 }

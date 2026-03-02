@@ -31,13 +31,6 @@ public class MetagramDbContext(DbContextOptions options) : DbContext(options)
         builder.Property(x => x.Text)
             .HasMaxLength(128)
             .IsRequired(false);
-        builder.Property(x => x.Chat)
-            .IsRequired(false);
-        builder.Property(x => x.User)
-            .IsRequired(false);
-        builder.Property(x => x.Avatar)
-            .IsRequired(false);
-
     }
 
     private void PrepareMetagramUser(EntityTypeBuilder<MetagramUser> builder)
@@ -51,28 +44,15 @@ public class MetagramDbContext(DbContextOptions options) : DbContext(options)
         builder.Property(x => x.Description)
             .IsRequired()
             .HasMaxLength(70);
-        builder
-            .HasIndex(x => x.TelegramId);
-        builder.Property(x => x.Chat)
-            .IsRequired(false);
-        builder.Property(x => x.Messages)
-            .IsRequired(false);
-        builder.Property(x => x.Owner)
-            .IsRequired(false);
-
+        builder.HasIndex(x => x.TelegramId);
     }
 
     private static void PrepareMetagramBot(EntityTypeBuilder<MetagramBot> builder)
     {
-        builder
-            .Property(x => x.TelegramToken)
-            .HasMaxLength(128)
-            .IsRequired();
         builder.Property(x => x.TelegramToken)
             .HasMaxLength(128)
             .IsRequired();
-        builder
-            .HasIndex(x => x.IsCurrentBot);
+        builder.HasIndex(x => x.IsCurrentBot);
         
         builder.Property(x => x.FirstName)
             .IsRequired()
@@ -96,10 +76,7 @@ public class MetagramDbContext(DbContextOptions options) : DbContext(options)
         builder.Property(x => x.Description)
             .IsRequired(false)
             .HasMaxLength(128);
-
-        builder.Property(x => x.Avatar)
-            .IsRequired(false);
-
+        
     }
 
     private static void PrepareMetagramFile(EntityTypeBuilder<MetagramFile> builder)
@@ -108,5 +85,4 @@ public class MetagramDbContext(DbContextOptions options) : DbContext(options)
             .HasMaxLength(500);
         builder.HasIndex(x => x.TelegramId);
     }
-
 }
